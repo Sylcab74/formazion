@@ -17,8 +17,8 @@ $conn = array(
     'host' => 'db',
     'driver' => 'pdo_pgsql',
     'user' => 'dev',
-    'password' => 'formazion',
-    'dbname' => 'formazion_dev',
+    'password' => 'dev_formazion',
+    'dbname' => 'formazion',
     'charset' => 'utf8'
 );
 

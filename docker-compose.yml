@@ -5,8 +5,8 @@ services:
         image: postgres:10
         environment:
             POSTGRES_USER: dev
-            POSTGRES_PASSWORD: formazion
-            POSTGRES_DB: formazion_dev
+            POSTGRES_PASSWORD: "dev_formazion"
+            POSTGRES_DB: formazion
         volumes:
             - ./docker/.data/db:/var/lib/postgresql
         ports:
