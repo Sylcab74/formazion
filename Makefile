@@ -3,12 +3,10 @@ all: docker-build docker-start docker-install # docker-load-fixtures
 #
 # Standards build rules for all projects
 #
-
 build:
-	php bin/console doctrine:schema:drop --full-database --force
-	php bin/console doctrine:schema:create
-	php bin/console doctrine:schema:update --force
-	php bin/console doctrine:fixtures:load -n
+	php vendor/bin/doctrine orm:schema-tool:drop --full-database --force
+	php vendor/bin/doctrine orm:schema-tool:create
+	php vendor/bin/doctrine orm:schema-tool:update --force
 
 test:
 	echo "FIXME: Implement tests"
@@ -19,12 +17,8 @@ analysis:
 #
 # Project specific build rules
 #
-
 docker-install:
-	docker-compose exec php composer install 
-
-docker-load-fixtures:
-	docker-compose exec php php bin/console doctrine:fixtures:load
+	docker-compose exec php composer install
 
 docker-build:
 	docker-compose build

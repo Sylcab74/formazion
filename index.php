@@ -19,12 +19,12 @@ function myAutoloader($class)
 
     if(file_exists("models/".$class))
     {
-        include_once("models/" . $class);
+        include_once("src/models/" . $class);
     } else if (file_exists("core/".$class))
     {
         include_once "core/".$class;
     } else if (file_exists("services/".$class)) {
-        include_once("services/" . $class);
+        include_once("src/services/" . $class);
     }
 }
 
@@ -55,8 +55,8 @@ $params = [
     "URL"=>$uriExploded
 ];
 
-if(file_exists("controllers/".$c.".class.php")){
-    include "controllers/".$c.".class.php";
+if(file_exists("src/controllers/".$c.".class.php")){
+    include "src/controllers/".$c.".class.php";
     $c = "Formazion\\Controller\\" . $c;
     if( class_exists($c) ){
         $objC = new $c();
