@@ -1,0 +1,14 @@
+{
+    "name": "tartiflette/formazion",
+    "require": {
+        "eftec/bladeone": "^3.17",
+        "doctrine/orm": "^2.6",
+        "symfony/yaml": "^4.2"
+    },
+    "authors": [
+        {
+            "name": "scabiati",
+            "email": "cabiati.sylvain@outlook.com"
+        }
+    ]
+}
