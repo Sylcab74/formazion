@@ -1,0 +1,23 @@
+Room:
+    type: entity
+    table: formazion.rooms
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: SEQUENCE
+    fields:
+        number:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+    lifecycleCallbacks: {  }
+    oneToMany:
+        session:
+            targetEntity: session
+            mappedBy: rooms

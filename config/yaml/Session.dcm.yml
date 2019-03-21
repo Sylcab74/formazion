@@ -1,0 +1,77 @@
+Session:
+    type: entity
+    table: formazion.sessions
+    indexes:
+        IDX_40CC11C43BF5B0C2:
+            columns:
+                - formations_id
+        IDX_40CC11C48E2368AB:
+            columns:
+                - rooms_id
+        IDX_40CC11C441807E1D:
+            columns:
+                - teacher_id
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: SEQUENCE
+    fields:
+        start:
+            type: datetime
+            nullable: false
+        end:
+            type: datetime
+            nullable: false
+        hoursperformed:
+            type: integer
+            nullable: true
+            options:
+                unsigned: false
+            column: hoursPerformed
+        report:
+            type: string
+            nullable: true
+            length: 250
+            options:
+                fixed: false
+    manyToOne:
+        formations:
+            targetEntity: formation
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                formations_id:
+                    referencedColumnName: id
+            orphanRemoval: false
+        rooms:
+            targetEntity: room
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                rooms_id:
+                    referencedColumnName: id
+            orphanRemoval: false
+        teacher:
+            targetEntity: person
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                teacher_id:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }
+    oneToMany:
+        studentsSession:
+            targetEntity: studentsSession
+            mappedBy: session

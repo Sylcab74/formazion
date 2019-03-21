@@ -1,0 +1,57 @@
+Person:
+    type: entity
+    table: formazion.persons
+    indexes:
+        IDX_6E68C0B86AE4741E:
+            columns:
+                - companies_id
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: SEQUENCE
+    fields:
+        firstname:
+            type: string
+            nullable: false
+            length: 45
+            options:
+                fixed: false
+        lastname:
+            type: string
+            nullable: false
+            length: 45
+            options:
+                fixed: false
+        role:
+            type: string
+            nullable: false
+            length: 45
+            options:
+                fixed: false
+    manyToOne:
+        companies:
+            targetEntity: company
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                companies_id:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }
+    oneToMany:
+        formations:
+            targetEntity: formation
+            mappedBy: persons
+        sessions:
+            targetEntity: session
+            mappedBy: persons
+        students:
+            targetEntity: student
+            mappedBy: persons
