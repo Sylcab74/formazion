@@ -1,0 +1,564 @@
+[21-Mar-2019 17:23:32 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Formazion\Models\Person' not found in /var/www/formazion/src/controllers/IndexController.class.php:13
+Stack trace:
+#0 /var/www/formazion/index.php(65): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 13
+[21-Mar-2019 17:23:49 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Formazion\Models\Person' not found in /var/www/formazion/src/controllers/IndexController.class.php:13
+Stack trace:
+#0 /var/www/formazion/index.php(65): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 13
+[21-Mar-2019 17:23:50 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Formazion\Models\Person' not found in /var/www/formazion/src/controllers/IndexController.class.php:13
+Stack trace:
+#0 /var/www/formazion/index.php(65): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 13
+[21-Mar-2019 17:26:07 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Formazion\Models\Person' not found in /var/www/formazion/src/controllers/IndexController.class.php:13
+Stack trace:
+#0 /var/www/formazion/index.php(65): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 13
+[21-Mar-2019 17:29:22 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Formazion\Controller\EntityManager' not found in /var/www/formazion/src/controllers/IndexController.class.php:17
+Stack trace:
+#0 /var/www/formazion/index.php(65): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 17
+[21-Mar-2019 17:29:38 Europe/Paris] PHP Fatal error:  Constant expression contains invalid operations in /var/www/formazion/core/EntityManager.class.php on line 8
+[21-Mar-2019 17:29:38 Europe/Paris] PHP Stack trace:
+[21-Mar-2019 17:29:38 Europe/Paris] PHP   1. {main}() /var/www/formazion/index.php:0
+[21-Mar-2019 17:29:38 Europe/Paris] PHP   2. Formazion\Controller\IndexController->indexAction() /var/www/formazion/index.php:65
+[21-Mar-2019 17:29:38 Europe/Paris] PHP   3. spl_autoload_call() /var/www/formazion/src/controllers/IndexController.class.php:18
+[21-Mar-2019 17:29:38 Europe/Paris] PHP   4. Formazion\myAutoloader() /var/www/formazion/src/controllers/IndexController.class.php:18
+[21-Mar-2019 17:30:35 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function flush() on null in /var/www/formazion/src/controllers/IndexController.class.php:18
+Stack trace:
+#0 /var/www/formazion/index.php(65): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 18
+[21-Mar-2019 17:32:03 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Formazion\Model\Person' not found in /var/www/formazion/src/controllers/IndexController.class.php:15
+Stack trace:
+#0 /var/www/formazion/index.php(65): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 15
+[21-Mar-2019 17:34:11 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Formazion\Model\Person' not found in /var/www/formazion/src/controllers/IndexController.class.php:15
+Stack trace:
+#0 /var/www/formazion/index.php(65): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 15
+[21-Mar-2019 17:34:12 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Formazion\Model\Person' not found in /var/www/formazion/src/controllers/IndexController.class.php:15
+Stack trace:
+#0 /var/www/formazion/index.php(65): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 15
+[21-Mar-2019 17:34:34 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Formazion\Model\Person' not found in /var/www/formazion/src/controllers/IndexController.class.php:15
+Stack trace:
+#0 /var/www/formazion/index.php(65): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 15
+[21-Mar-2019 17:35:32 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Formazion\Model\Person' not found in /var/www/formazion/src/controllers/IndexController.class.php:15
+Stack trace:
+#0 /var/www/formazion/index.php(65): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 15
+[21-Mar-2019 17:35:33 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Formazion\Model\Person' not found in /var/www/formazion/src/controllers/IndexController.class.php:15
+Stack trace:
+#0 /var/www/formazion/index.php(65): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 15
+[21-Mar-2019 17:35:42 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Formazion\Model\Person' not found in /var/www/formazion/src/controllers/IndexController.class.php:15
+Stack trace:
+#0 /var/www/formazion/index.php(66): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 15
+[21-Mar-2019 17:35:43 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Formazion\Model\Person' not found in /var/www/formazion/src/controllers/IndexController.class.php:15
+Stack trace:
+#0 /var/www/formazion/index.php(66): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 15
+[21-Mar-2019 17:36:23 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function persist() on null in /var/www/formazion/src/controllers/IndexController.class.php:20
+Stack trace:
+#0 /var/www/formazion/index.php(66): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 20
+[21-Mar-2019 17:37:12 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function persist() on null in /var/www/formazion/src/controllers/IndexController.class.php:20
+Stack trace:
+#0 /var/www/formazion/index.php(66): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 20
+[21-Mar-2019 17:39:37 Europe/Paris] PHP Warning:  require_once(/vendor/fzaninotto/faker/src/autoload.php): failed to open stream: No such file or directory in /var/www/formazion/src/controllers/IndexController.class.php on line 9
+[21-Mar-2019 17:39:37 Europe/Paris] PHP Stack trace:
+[21-Mar-2019 17:39:37 Europe/Paris] PHP   1. {main}() /var/www/formazion/index.php:0
+[21-Mar-2019 17:39:37 Europe/Paris] PHP   2. include() /var/www/formazion/index.php:60
+[21-Mar-2019 17:39:37 Europe/Paris] PHP Fatal error:  require_once(): Failed opening required '/vendor/fzaninotto/faker/src/autoload.php' (include_path='.:/opt/php72/lib/php') in /var/www/formazion/src/controllers/IndexController.class.php on line 9
+[21-Mar-2019 17:39:37 Europe/Paris] PHP Stack trace:
+[21-Mar-2019 17:39:37 Europe/Paris] PHP   1. {main}() /var/www/formazion/index.php:0
+[21-Mar-2019 17:39:37 Europe/Paris] PHP   2. include() /var/www/formazion/index.php:60
+[21-Mar-2019 17:39:45 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function persist() on null in /var/www/formazion/src/controllers/IndexController.class.php:22
+Stack trace:
+#0 /var/www/formazion/index.php(66): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 22
+[21-Mar-2019 17:40:07 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Formazion\Controller\Faker\Factory' not found in /var/www/formazion/src/controllers/IndexController.class.php:18
+Stack trace:
+#0 /var/www/formazion/index.php(66): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 18
+[21-Mar-2019 17:41:28 Europe/Paris] PHP Warning:  require_once(/vendor/fzaninotto/faker/src/autoload.php): failed to open stream: No such file or directory in /var/www/formazion/src/controllers/IndexController.class.php on line 9
+[21-Mar-2019 17:41:28 Europe/Paris] PHP Stack trace:
+[21-Mar-2019 17:41:28 Europe/Paris] PHP   1. {main}() /var/www/formazion/index.php:0
+[21-Mar-2019 17:41:28 Europe/Paris] PHP   2. include() /var/www/formazion/index.php:60
+[21-Mar-2019 17:41:28 Europe/Paris] PHP Fatal error:  require_once(): Failed opening required '/vendor/fzaninotto/faker/src/autoload.php' (include_path='.:/opt/php72/lib/php') in /var/www/formazion/src/controllers/IndexController.class.php on line 9
+[21-Mar-2019 17:41:28 Europe/Paris] PHP Stack trace:
+[21-Mar-2019 17:41:28 Europe/Paris] PHP   1. {main}() /var/www/formazion/index.php:0
+[21-Mar-2019 17:41:28 Europe/Paris] PHP   2. include() /var/www/formazion/index.php:60
+[21-Mar-2019 17:41:53 Europe/Paris] PHP Warning:  require_once(../../vendor/fzaninotto/faker/src/autoload.php): failed to open stream: No such file or directory in /var/www/formazion/src/controllers/IndexController.class.php on line 9
+[21-Mar-2019 17:41:53 Europe/Paris] PHP Stack trace:
+[21-Mar-2019 17:41:53 Europe/Paris] PHP   1. {main}() /var/www/formazion/index.php:0
+[21-Mar-2019 17:41:53 Europe/Paris] PHP   2. include() /var/www/formazion/index.php:60
+[21-Mar-2019 17:41:53 Europe/Paris] PHP Fatal error:  require_once(): Failed opening required '../../vendor/fzaninotto/faker/src/autoload.php' (include_path='.:/opt/php72/lib/php') in /var/www/formazion/src/controllers/IndexController.class.php on line 9
+[21-Mar-2019 17:41:53 Europe/Paris] PHP Stack trace:
+[21-Mar-2019 17:41:53 Europe/Paris] PHP   1. {main}() /var/www/formazion/index.php:0
+[21-Mar-2019 17:41:53 Europe/Paris] PHP   2. include() /var/www/formazion/index.php:60
+[21-Mar-2019 17:42:20 Europe/Paris] PHP Warning:  require_once(../../vendor/fzaninotto/Faker/src/autoload.php): failed to open stream: No such file or directory in /var/www/formazion/src/controllers/IndexController.class.php on line 9
+[21-Mar-2019 17:42:20 Europe/Paris] PHP Stack trace:
+[21-Mar-2019 17:42:20 Europe/Paris] PHP   1. {main}() /var/www/formazion/index.php:0
+[21-Mar-2019 17:42:20 Europe/Paris] PHP   2. include() /var/www/formazion/index.php:60
+[21-Mar-2019 17:42:20 Europe/Paris] PHP Fatal error:  require_once(): Failed opening required '../../vendor/fzaninotto/Faker/src/autoload.php' (include_path='.:/opt/php72/lib/php') in /var/www/formazion/src/controllers/IndexController.class.php on line 9
+[21-Mar-2019 17:42:20 Europe/Paris] PHP Stack trace:
+[21-Mar-2019 17:42:20 Europe/Paris] PHP   1. {main}() /var/www/formazion/index.php:0
+[21-Mar-2019 17:42:20 Europe/Paris] PHP   2. include() /var/www/formazion/index.php:60
+[21-Mar-2019 17:43:12 Europe/Paris] PHP Warning:  require_once(../../vendor/fzaninotto/faker/src/autoload.php): failed to open stream: No such file or directory in /var/www/formazion/src/controllers/IndexController.class.php on line 9
+[21-Mar-2019 17:43:12 Europe/Paris] PHP Stack trace:
+[21-Mar-2019 17:43:12 Europe/Paris] PHP   1. {main}() /var/www/formazion/index.php:0
+[21-Mar-2019 17:43:12 Europe/Paris] PHP   2. include() /var/www/formazion/index.php:60
+[21-Mar-2019 17:43:12 Europe/Paris] PHP Fatal error:  require_once(): Failed opening required '../../vendor/fzaninotto/faker/src/autoload.php' (include_path='.:/opt/php72/lib/php') in /var/www/formazion/src/controllers/IndexController.class.php on line 9
+[21-Mar-2019 17:43:12 Europe/Paris] PHP Stack trace:
+[21-Mar-2019 17:43:12 Europe/Paris] PHP   1. {main}() /var/www/formazion/index.php:0
+[21-Mar-2019 17:43:12 Europe/Paris] PHP   2. include() /var/www/formazion/index.php:60
+[21-Mar-2019 17:43:51 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Formazion\Controller\Faker\Factory' not found in /var/www/formazion/src/controllers/IndexController.class.php:16
+Stack trace:
+#0 /var/www/formazion/index.php(66): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 16
+[21-Mar-2019 17:53:08 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Formazion\Controller\Faker\Factory' not found in /var/www/formazion/src/controllers/IndexController.class.php:18
+Stack trace:
+#0 /var/www/formazion/index.php(66): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 18
+[21-Mar-2019 17:53:27 Europe/Paris] PHP Warning:  require_once(vendor/faker/src/autoload.php): failed to open stream: No such file or directory in /var/www/formazion/src/controllers/IndexController.class.php on line 9
+[21-Mar-2019 17:53:27 Europe/Paris] PHP Stack trace:
+[21-Mar-2019 17:53:27 Europe/Paris] PHP   1. {main}() /var/www/formazion/index.php:0
+[21-Mar-2019 17:53:27 Europe/Paris] PHP   2. include() /var/www/formazion/index.php:60
+[21-Mar-2019 17:53:27 Europe/Paris] PHP Fatal error:  require_once(): Failed opening required 'vendor/faker/src/autoload.php' (include_path='.:/opt/php72/lib/php') in /var/www/formazion/src/controllers/IndexController.class.php on line 9
+[21-Mar-2019 17:53:27 Europe/Paris] PHP Stack trace:
+[21-Mar-2019 17:53:27 Europe/Paris] PHP   1. {main}() /var/www/formazion/index.php:0
+[21-Mar-2019 17:53:27 Europe/Paris] PHP   2. include() /var/www/formazion/index.php:60
+[21-Mar-2019 17:53:32 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Formazion\Controller\Faker\Factory' not found in /var/www/formazion/src/controllers/IndexController.class.php:18
+Stack trace:
+#0 /var/www/formazion/index.php(66): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 18
+[21-Mar-2019 17:54:14 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Formazion\Controller\Faker\Factory' not found in /var/www/formazion/src/controllers/IndexController.class.php:18
+Stack trace:
+#0 /var/www/formazion/index.php(67): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 18
+[21-Mar-2019 17:55:17 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Formazion\Controller\Faker\Factory' not found in /var/www/formazion/src/controllers/IndexController.class.php:18
+Stack trace:
+#0 /var/www/formazion/index.php(69): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 18
+[21-Mar-2019 17:55:18 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Formazion\Controller\Faker\Factory' not found in /var/www/formazion/src/controllers/IndexController.class.php:18
+Stack trace:
+#0 /var/www/formazion/index.php(69): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 18
+[21-Mar-2019 17:55:31 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Formazion\Controller\Faker\Factory' not found in /var/www/formazion/src/controllers/IndexController.class.php:18
+Stack trace:
+#0 /var/www/formazion/index.php(70): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 18
+[21-Mar-2019 17:55:32 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Formazion\Controller\Faker\Factory' not found in /var/www/formazion/src/controllers/IndexController.class.php:18
+Stack trace:
+#0 /var/www/formazion/index.php(70): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 18
+[21-Mar-2019 17:55:51 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Formazion\Controller\Faker\Factory' not found in /var/www/formazion/src/controllers/IndexController.class.php:18
+Stack trace:
+#0 /var/www/formazion/index.php(70): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 18
+[21-Mar-2019 17:55:51 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Formazion\Controller\Faker\Factory' not found in /var/www/formazion/src/controllers/IndexController.class.php:18
+Stack trace:
+#0 /var/www/formazion/index.php(71): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 18
+[21-Mar-2019 17:57:00 Europe/Paris] PHP Warning:  include_once(vendor/fzaninotto/faker/src/Faker/Factory): failed to open stream: No such file or directory in /var/www/formazion/index.php on line 17
+[21-Mar-2019 17:57:00 Europe/Paris] PHP Stack trace:
+[21-Mar-2019 17:57:00 Europe/Paris] PHP   1. {main}() /var/www/formazion/index.php:0
+[21-Mar-2019 17:57:00 Europe/Paris] PHP   2. Formazion\Controller\IndexController->indexAction() /var/www/formazion/index.php:70
+[21-Mar-2019 17:57:00 Europe/Paris] PHP   3. spl_autoload_call() /var/www/formazion/src/controllers/IndexController.class.php:18
+[21-Mar-2019 17:57:00 Europe/Paris] PHP   4. Formazion\myAutoloader() /var/www/formazion/src/controllers/IndexController.class.php:18
+[21-Mar-2019 17:57:00 Europe/Paris] PHP Warning:  include_once(): Failed opening 'vendor/fzaninotto/faker/src/Faker/Factory' for inclusion (include_path='.:/opt/php72/lib/php') in /var/www/formazion/index.php on line 17
+[21-Mar-2019 17:57:00 Europe/Paris] PHP Stack trace:
+[21-Mar-2019 17:57:00 Europe/Paris] PHP   1. {main}() /var/www/formazion/index.php:0
+[21-Mar-2019 17:57:00 Europe/Paris] PHP   2. Formazion\Controller\IndexController->indexAction() /var/www/formazion/index.php:70
+[21-Mar-2019 17:57:00 Europe/Paris] PHP   3. spl_autoload_call() /var/www/formazion/src/controllers/IndexController.class.php:18
+[21-Mar-2019 17:57:00 Europe/Paris] PHP   4. Formazion\myAutoloader() /var/www/formazion/src/controllers/IndexController.class.php:18
+[21-Mar-2019 17:57:00 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Formazion\Controller\Faker\Factory' not found in /var/www/formazion/src/controllers/IndexController.class.php:18
+Stack trace:
+#0 /var/www/formazion/index.php(70): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 18
+[21-Mar-2019 17:57:31 Europe/Paris] PHP Warning:  include_once(vendor/fzaninotto/faker/src/Factory): failed to open stream: No such file or directory in /var/www/formazion/index.php on line 17
+[21-Mar-2019 17:57:31 Europe/Paris] PHP Stack trace:
+[21-Mar-2019 17:57:31 Europe/Paris] PHP   1. {main}() /var/www/formazion/index.php:0
+[21-Mar-2019 17:57:31 Europe/Paris] PHP   2. Formazion\Controller\IndexController->indexAction() /var/www/formazion/index.php:70
+[21-Mar-2019 17:57:31 Europe/Paris] PHP   3. spl_autoload_call() /var/www/formazion/src/controllers/IndexController.class.php:18
+[21-Mar-2019 17:57:31 Europe/Paris] PHP   4. Formazion\myAutoloader() /var/www/formazion/src/controllers/IndexController.class.php:18
+[21-Mar-2019 17:57:31 Europe/Paris] PHP Warning:  include_once(): Failed opening 'vendor/fzaninotto/faker/src/Factory' for inclusion (include_path='.:/opt/php72/lib/php') in /var/www/formazion/index.php on line 17
+[21-Mar-2019 17:57:31 Europe/Paris] PHP Stack trace:
+[21-Mar-2019 17:57:31 Europe/Paris] PHP   1. {main}() /var/www/formazion/index.php:0
+[21-Mar-2019 17:57:31 Europe/Paris] PHP   2. Formazion\Controller\IndexController->indexAction() /var/www/formazion/index.php:70
+[21-Mar-2019 17:57:31 Europe/Paris] PHP   3. spl_autoload_call() /var/www/formazion/src/controllers/IndexController.class.php:18
+[21-Mar-2019 17:57:31 Europe/Paris] PHP   4. Formazion\myAutoloader() /var/www/formazion/src/controllers/IndexController.class.php:18
+[21-Mar-2019 17:57:31 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Formazion\Controller\Faker\Factory' not found in /var/www/formazion/src/controllers/IndexController.class.php:18
+Stack trace:
+#0 /var/www/formazion/index.php(70): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 18
+[21-Mar-2019 17:59:25 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function persist() on null in /var/www/formazion/src/controllers/IndexController.class.php:24
+Stack trace:
+#0 /var/www/formazion/index.php(65): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 24
+[21-Mar-2019 17:59:42 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function persist() on null in /var/www/formazion/src/controllers/IndexController.class.php:25
+Stack trace:
+#0 /var/www/formazion/index.php(65): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 25
+[21-Mar-2019 18:00:06 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function persist() on null in /var/www/formazion/src/controllers/IndexController.class.php:23
+Stack trace:
+#0 /var/www/formazion/index.php(65): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 23
+[21-Mar-2019 18:00:21 Europe/Paris] PHP Warning:  require(../bootstrap.php): failed to open stream: No such file or directory in /var/www/formazion/core/EntityManager.class.php on line 4
+[21-Mar-2019 18:00:21 Europe/Paris] PHP Stack trace:
+[21-Mar-2019 18:00:21 Europe/Paris] PHP   1. {main}() /var/www/formazion/index.php:0
+[21-Mar-2019 18:00:21 Europe/Paris] PHP   2. Formazion\Controller\IndexController->indexAction() /var/www/formazion/index.php:65
+[21-Mar-2019 18:00:21 Europe/Paris] PHP   3. spl_autoload_call() /var/www/formazion/src/controllers/IndexController.class.php:23
+[21-Mar-2019 18:00:21 Europe/Paris] PHP   4. Formazion\myAutoloader() /var/www/formazion/src/controllers/IndexController.class.php:23
+[21-Mar-2019 18:00:21 Europe/Paris] PHP   5. include_once() /var/www/formazion/index.php:25
+[21-Mar-2019 18:00:21 Europe/Paris] PHP Fatal error:  require(): Failed opening required '../bootstrap.php' (include_path='.:/opt/php72/lib/php') in /var/www/formazion/core/EntityManager.class.php on line 4
+[21-Mar-2019 18:00:21 Europe/Paris] PHP Stack trace:
+[21-Mar-2019 18:00:21 Europe/Paris] PHP   1. {main}() /var/www/formazion/index.php:0
+[21-Mar-2019 18:00:21 Europe/Paris] PHP   2. Formazion\Controller\IndexController->indexAction() /var/www/formazion/index.php:65
+[21-Mar-2019 18:00:21 Europe/Paris] PHP   3. spl_autoload_call() /var/www/formazion/src/controllers/IndexController.class.php:23
+[21-Mar-2019 18:00:21 Europe/Paris] PHP   4. Formazion\myAutoloader() /var/www/formazion/src/controllers/IndexController.class.php:23
+[21-Mar-2019 18:00:21 Europe/Paris] PHP   5. include_once() /var/www/formazion/index.php:25
+[21-Mar-2019 18:00:57 Europe/Paris] PHP Warning:  require_once(../bootstrap.php): failed to open stream: No such file or directory in /var/www/formazion/core/EntityManager.class.php on line 4
+[21-Mar-2019 18:00:57 Europe/Paris] PHP Stack trace:
+[21-Mar-2019 18:00:57 Europe/Paris] PHP   1. {main}() /var/www/formazion/index.php:0
+[21-Mar-2019 18:00:57 Europe/Paris] PHP   2. Formazion\Controller\IndexController->indexAction() /var/www/formazion/index.php:65
+[21-Mar-2019 18:00:57 Europe/Paris] PHP   3. spl_autoload_call() /var/www/formazion/src/controllers/IndexController.class.php:23
+[21-Mar-2019 18:00:57 Europe/Paris] PHP   4. Formazion\myAutoloader() /var/www/formazion/src/controllers/IndexController.class.php:23
+[21-Mar-2019 18:00:57 Europe/Paris] PHP   5. include_once() /var/www/formazion/index.php:25
+[21-Mar-2019 18:00:57 Europe/Paris] PHP Fatal error:  require_once(): Failed opening required '../bootstrap.php' (include_path='.:/opt/php72/lib/php') in /var/www/formazion/core/EntityManager.class.php on line 4
+[21-Mar-2019 18:00:57 Europe/Paris] PHP Stack trace:
+[21-Mar-2019 18:00:57 Europe/Paris] PHP   1. {main}() /var/www/formazion/index.php:0
+[21-Mar-2019 18:00:57 Europe/Paris] PHP   2. Formazion\Controller\IndexController->indexAction() /var/www/formazion/index.php:65
+[21-Mar-2019 18:00:57 Europe/Paris] PHP   3. spl_autoload_call() /var/www/formazion/src/controllers/IndexController.class.php:23
+[21-Mar-2019 18:00:57 Europe/Paris] PHP   4. Formazion\myAutoloader() /var/www/formazion/src/controllers/IndexController.class.php:23
+[21-Mar-2019 18:00:57 Europe/Paris] PHP   5. include_once() /var/www/formazion/index.php:25
+[21-Mar-2019 18:02:19 Europe/Paris] PHP Warning:  require(bootstrap.php): failed to open stream: No such file or directory in /var/www/formazion/index.php on line 7
+[21-Mar-2019 18:02:19 Europe/Paris] PHP Stack trace:
+[21-Mar-2019 18:02:19 Europe/Paris] PHP   1. {main}() /var/www/formazion/index.php:0
+[21-Mar-2019 18:02:19 Europe/Paris] PHP Fatal error:  require(): Failed opening required 'bootstrap.php' (include_path='.:/opt/php72/lib/php') in /var/www/formazion/index.php on line 7
+[21-Mar-2019 18:02:19 Europe/Paris] PHP Stack trace:
+[21-Mar-2019 18:02:19 Europe/Paris] PHP   1. {main}() /var/www/formazion/index.php:0
+[21-Mar-2019 18:02:29 Europe/Paris] PHP Warning:  require(bootstrap.php): failed to open stream: No such file or directory in /var/www/formazion/index.php on line 7
+[21-Mar-2019 18:02:29 Europe/Paris] PHP Stack trace:
+[21-Mar-2019 18:02:29 Europe/Paris] PHP   1. {main}() /var/www/formazion/index.php:0
+[21-Mar-2019 18:02:29 Europe/Paris] PHP Fatal error:  require(): Failed opening required 'bootstrap.php' (include_path='.:/opt/php72/lib/php') in /var/www/formazion/index.php on line 7
+[21-Mar-2019 18:02:29 Europe/Paris] PHP Stack trace:
+[21-Mar-2019 18:02:29 Europe/Paris] PHP   1. {main}() /var/www/formazion/index.php:0
+[21-Mar-2019 18:02:30 Europe/Paris] PHP Warning:  require(bootstrap.php): failed to open stream: No such file or directory in /var/www/formazion/index.php on line 7
+[21-Mar-2019 18:02:30 Europe/Paris] PHP Stack trace:
+[21-Mar-2019 18:02:30 Europe/Paris] PHP   1. {main}() /var/www/formazion/index.php:0
+[21-Mar-2019 18:02:30 Europe/Paris] PHP Fatal error:  require(): Failed opening required 'bootstrap.php' (include_path='.:/opt/php72/lib/php') in /var/www/formazion/index.php on line 7
+[21-Mar-2019 18:02:30 Europe/Paris] PHP Stack trace:
+[21-Mar-2019 18:02:30 Europe/Paris] PHP   1. {main}() /var/www/formazion/index.php:0
+[21-Mar-2019 18:02:32 Europe/Paris] PHP Warning:  require(bootstrap.php): failed to open stream: No such file or directory in /var/www/formazion/index.php on line 7
+[21-Mar-2019 18:02:32 Europe/Paris] PHP Stack trace:
+[21-Mar-2019 18:02:32 Europe/Paris] PHP   1. {main}() /var/www/formazion/index.php:0
+[21-Mar-2019 18:02:32 Europe/Paris] PHP Fatal error:  require(): Failed opening required 'bootstrap.php' (include_path='.:/opt/php72/lib/php') in /var/www/formazion/index.php on line 7
+[21-Mar-2019 18:02:32 Europe/Paris] PHP Stack trace:
+[21-Mar-2019 18:02:32 Europe/Paris] PHP   1. {main}() /var/www/formazion/index.php:0
+[21-Mar-2019 18:02:32 Europe/Paris] PHP Warning:  require(bootstrap.php): failed to open stream: No such file or directory in /var/www/formazion/index.php on line 7
+[21-Mar-2019 18:02:32 Europe/Paris] PHP Stack trace:
+[21-Mar-2019 18:02:32 Europe/Paris] PHP   1. {main}() /var/www/formazion/index.php:0
+[21-Mar-2019 18:02:32 Europe/Paris] PHP Fatal error:  require(): Failed opening required 'bootstrap.php' (include_path='.:/opt/php72/lib/php') in /var/www/formazion/index.php on line 7
+[21-Mar-2019 18:02:32 Europe/Paris] PHP Stack trace:
+[21-Mar-2019 18:02:32 Europe/Paris] PHP   1. {main}() /var/www/formazion/index.php:0
+[21-Mar-2019 18:02:32 Europe/Paris] PHP Warning:  require(bootstrap.php): failed to open stream: No such file or directory in /var/www/formazion/index.php on line 7
+[21-Mar-2019 18:02:32 Europe/Paris] PHP Stack trace:
+[21-Mar-2019 18:02:32 Europe/Paris] PHP   1. {main}() /var/www/formazion/index.php:0
+[21-Mar-2019 18:02:32 Europe/Paris] PHP Fatal error:  require(): Failed opening required 'bootstrap.php' (include_path='.:/opt/php72/lib/php') in /var/www/formazion/index.php on line 7
+[21-Mar-2019 18:02:32 Europe/Paris] PHP Stack trace:
+[21-Mar-2019 18:02:32 Europe/Paris] PHP   1. {main}() /var/www/formazion/index.php:0
+[21-Mar-2019 18:02:32 Europe/Paris] PHP Warning:  require(bootstrap.php): failed to open stream: No such file or directory in /var/www/formazion/index.php on line 7
+[21-Mar-2019 18:02:32 Europe/Paris] PHP Stack trace:
+[21-Mar-2019 18:02:32 Europe/Paris] PHP   1. {main}() /var/www/formazion/index.php:0
+[21-Mar-2019 18:02:32 Europe/Paris] PHP Fatal error:  require(): Failed opening required 'bootstrap.php' (include_path='.:/opt/php72/lib/php') in /var/www/formazion/index.php on line 7
+[21-Mar-2019 18:02:32 Europe/Paris] PHP Stack trace:
+[21-Mar-2019 18:02:32 Europe/Paris] PHP   1. {main}() /var/www/formazion/index.php:0
+[21-Mar-2019 18:02:33 Europe/Paris] PHP Warning:  require(bootstrap.php): failed to open stream: No such file or directory in /var/www/formazion/index.php on line 7
+[21-Mar-2019 18:02:33 Europe/Paris] PHP Stack trace:
+[21-Mar-2019 18:02:33 Europe/Paris] PHP   1. {main}() /var/www/formazion/index.php:0
+[21-Mar-2019 18:02:33 Europe/Paris] PHP Fatal error:  require(): Failed opening required 'bootstrap.php' (include_path='.:/opt/php72/lib/php') in /var/www/formazion/index.php on line 7
+[21-Mar-2019 18:02:33 Europe/Paris] PHP Stack trace:
+[21-Mar-2019 18:02:33 Europe/Paris] PHP   1. {main}() /var/www/formazion/index.php:0
+[21-Mar-2019 18:02:52 Europe/Paris] PHP Warning:  require_once(../vendor/autoload.php): failed to open stream: No such file or directory in /var/www/formazion/core/bootstrap.php on line 8
+[21-Mar-2019 18:02:52 Europe/Paris] PHP Stack trace:
+[21-Mar-2019 18:02:52 Europe/Paris] PHP   1. {main}() /var/www/formazion/index.php:0
+[21-Mar-2019 18:02:52 Europe/Paris] PHP   2. require() /var/www/formazion/index.php:7
+[21-Mar-2019 18:02:52 Europe/Paris] PHP Fatal error:  require_once(): Failed opening required '../vendor/autoload.php' (include_path='.:/opt/php72/lib/php') in /var/www/formazion/core/bootstrap.php on line 8
+[21-Mar-2019 18:02:52 Europe/Paris] PHP Stack trace:
+[21-Mar-2019 18:02:52 Europe/Paris] PHP   1. {main}() /var/www/formazion/index.php:0
+[21-Mar-2019 18:02:52 Europe/Paris] PHP   2. require() /var/www/formazion/index.php:7
+[21-Mar-2019 18:02:54 Europe/Paris] PHP Warning:  require_once(../vendor/autoload.php): failed to open stream: No such file or directory in /var/www/formazion/core/bootstrap.php on line 8
+[21-Mar-2019 18:02:54 Europe/Paris] PHP Stack trace:
+[21-Mar-2019 18:02:54 Europe/Paris] PHP   1. {main}() /var/www/formazion/index.php:0
+[21-Mar-2019 18:02:54 Europe/Paris] PHP   2. require() /var/www/formazion/index.php:7
+[21-Mar-2019 18:02:54 Europe/Paris] PHP Fatal error:  require_once(): Failed opening required '../vendor/autoload.php' (include_path='.:/opt/php72/lib/php') in /var/www/formazion/core/bootstrap.php on line 8
+[21-Mar-2019 18:02:54 Europe/Paris] PHP Stack trace:
+[21-Mar-2019 18:02:54 Europe/Paris] PHP   1. {main}() /var/www/formazion/index.php:0
+[21-Mar-2019 18:02:54 Europe/Paris] PHP   2. require() /var/www/formazion/index.php:7
+[21-Mar-2019 18:03:05 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Formazion\Controller\EntityManager' not found in /var/www/formazion/src/controllers/IndexController.class.php:22
+Stack trace:
+#0 /var/www/formazion/index.php(65): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 22
+[21-Mar-2019 18:03:48 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function persist() on null in /var/www/formazion/src/controllers/IndexController.class.php:23
+Stack trace:
+#0 /var/www/formazion/index.php(65): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 23
+[21-Mar-2019 18:05:50 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function persist() on null in /var/www/formazion/src/controllers/IndexController.class.php:24
+Stack trace:
+#0 /var/www/formazion/index.php(65): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 24
+[21-Mar-2019 18:07:27 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function persist() on null in /var/www/formazion/src/controllers/IndexController.class.php:21
+Stack trace:
+#0 /var/www/formazion/index.php(65): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 21
+[21-Mar-2019 18:09:57 Europe/Paris] PHP Fatal error:  Constant expression contains invalid operations in /var/www/formazion/core/EntityManager.class.php on line 8
+[21-Mar-2019 18:09:57 Europe/Paris] PHP Stack trace:
+[21-Mar-2019 18:09:57 Europe/Paris] PHP   1. {main}() /var/www/formazion/index.php:0
+[21-Mar-2019 18:09:57 Europe/Paris] PHP   2. Formazion\Controller\IndexController->indexAction() /var/www/formazion/index.php:65
+[21-Mar-2019 18:09:57 Europe/Paris] PHP   3. spl_autoload_call() /var/www/formazion/src/controllers/IndexController.class.php:20
+[21-Mar-2019 18:09:57 Europe/Paris] PHP   4. Formazion\myAutoloader() /var/www/formazion/src/controllers/IndexController.class.php:20
+[21-Mar-2019 18:15:31 Europe/Paris] PHP Fatal error:  Constant expression contains invalid operations in /var/www/formazion/core/EntityManager.class.php on line 8
+[21-Mar-2019 18:15:31 Europe/Paris] PHP Stack trace:
+[21-Mar-2019 18:15:31 Europe/Paris] PHP   1. {main}() /var/www/formazion/index.php:0
+[21-Mar-2019 18:15:31 Europe/Paris] PHP   2. Formazion\Controller\IndexController->indexAction() /var/www/formazion/index.php:67
+[21-Mar-2019 18:15:31 Europe/Paris] PHP   3. spl_autoload_call() /var/www/formazion/src/controllers/IndexController.class.php:20
+[21-Mar-2019 18:15:31 Europe/Paris] PHP   4. Formazion\myAutoloader() /var/www/formazion/src/controllers/IndexController.class.php:20
+[21-Mar-2019 18:18:46 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function persist() on null in /var/www/formazion/src/controllers/IndexController.class.php:20
+Stack trace:
+#0 /var/www/formazion/index.php(68): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 20
+[21-Mar-2019 18:19:09 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function persist() on null in /var/www/formazion/src/controllers/IndexController.class.php:20
+Stack trace:
+#0 /var/www/formazion/index.php(69): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 20
+[21-Mar-2019 18:19:15 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function persist() on null in /var/www/formazion/src/controllers/IndexController.class.php:20
+Stack trace:
+#0 /var/www/formazion/index.php(67): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 20
+[21-Mar-2019 18:20:37 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'EntityManager.class.php' not found in /var/www/formazion/index.php:25
+Stack trace:
+#0 [internal function]: Formazion\myAutoloader('EntityManager.c...')
+#1 /var/www/formazion/src/controllers/IndexController.class.php(20): spl_autoload_call('Formazion\\Core\\...')
+#2 /var/www/formazion/index.php(66): Formazion\Controller\IndexController->indexAction(Array)
+#3 {main}
+  thrown in /var/www/formazion/index.php on line 25
+[21-Mar-2019 18:21:55 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'EntityManager.class.php' not found in /var/www/formazion/index.php:25
+Stack trace:
+#0 [internal function]: Formazion\myAutoloader('EntityManager.c...')
+#1 /var/www/formazion/src/controllers/IndexController.class.php(20): spl_autoload_call('Formazion\\Core\\...')
+#2 /var/www/formazion/index.php(66): Formazion\Controller\IndexController->indexAction(Array)
+#3 {main}
+  thrown in /var/www/formazion/index.php on line 25
+[21-Mar-2019 18:21:56 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'EntityManager.class.php' not found in /var/www/formazion/index.php:25
+Stack trace:
+#0 [internal function]: Formazion\myAutoloader('EntityManager.c...')
+#1 /var/www/formazion/src/controllers/IndexController.class.php(20): spl_autoload_call('Formazion\\Core\\...')
+#2 /var/www/formazion/index.php(66): Formazion\Controller\IndexController->indexAction(Array)
+#3 {main}
+  thrown in /var/www/formazion/index.php on line 25
+[21-Mar-2019 18:21:57 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'EntityManager.class.php' not found in /var/www/formazion/index.php:25
+Stack trace:
+#0 [internal function]: Formazion\myAutoloader('EntityManager.c...')
+#1 /var/www/formazion/src/controllers/IndexController.class.php(20): spl_autoload_call('Formazion\\Core\\...')
+#2 /var/www/formazion/index.php(66): Formazion\Controller\IndexController->indexAction(Array)
+#3 {main}
+  thrown in /var/www/formazion/index.php on line 25
+[21-Mar-2019 18:22:08 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'EntityManager.class.php' not found in /var/www/formazion/index.php:26
+Stack trace:
+#0 [internal function]: Formazion\myAutoloader('EntityManager.c...')
+#1 /var/www/formazion/src/controllers/IndexController.class.php(20): spl_autoload_call('Formazion\\Core\\...')
+#2 /var/www/formazion/index.php(67): Formazion\Controller\IndexController->indexAction(Array)
+#3 {main}
+  thrown in /var/www/formazion/index.php on line 26
+[21-Mar-2019 18:22:36 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'EntityManager.class.php' not found in /var/www/formazion/index.php:27
+Stack trace:
+#0 [internal function]: Formazion\myAutoloader('EntityManager.c...')
+#1 /var/www/formazion/src/controllers/IndexController.class.php(20): spl_autoload_call('Formazion\\Core\\...')
+#2 /var/www/formazion/index.php(68): Formazion\Controller\IndexController->indexAction(Array)
+#3 {main}
+  thrown in /var/www/formazion/index.php on line 27
+[21-Mar-2019 18:22:59 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Core\EntityManager' not found in /var/www/formazion/index.php:26
+Stack trace:
+#0 [internal function]: Formazion\myAutoloader('EntityManager.c...')
+#1 /var/www/formazion/src/controllers/IndexController.class.php(20): spl_autoload_call('Formazion\\Core\\...')
+#2 /var/www/formazion/index.php(67): Formazion\Controller\IndexController->indexAction(Array)
+#3 {main}
+  thrown in /var/www/formazion/index.php on line 26
+[21-Mar-2019 18:23:18 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Core\EntityManager' not found in /var/www/formazion/index.php:26
+Stack trace:
+#0 [internal function]: Formazion\myAutoloader('EntityManager.c...')
+#1 /var/www/formazion/src/controllers/IndexController.class.php(20): spl_autoload_call('Formazion\\Core\\...')
+#2 /var/www/formazion/index.php(67): Formazion\Controller\IndexController->indexAction(Array)
+#3 {main}
+  thrown in /var/www/formazion/index.php on line 26
+[21-Mar-2019 18:23:33 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function persist() on null in /var/www/formazion/src/controllers/IndexController.class.php:20
+Stack trace:
+#0 /var/www/formazion/index.php(66): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 20
+[21-Mar-2019 18:24:07 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function persist() on null in /var/www/formazion/src/controllers/IndexController.class.php:21
+Stack trace:
+#0 /var/www/formazion/index.php(66): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 21
+[21-Mar-2019 18:31:23 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Formazion\Core\EntityManager' not found in /var/www/formazion/index.php:9
+Stack trace:
+#0 {main}
+  thrown in /var/www/formazion/index.php on line 9
+[21-Mar-2019 18:31:57 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Formazion\Core\EntityManager' not found in /var/www/formazion/index.php:11
+Stack trace:
+#0 {main}
+  thrown in /var/www/formazion/index.php on line 11
+[21-Mar-2019 18:31:59 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Formazion\Core\EntityManager' not found in /var/www/formazion/index.php:11
+Stack trace:
+#0 {main}
+  thrown in /var/www/formazion/index.php on line 11
+[21-Mar-2019 18:33:02 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Formazion\Formazion\Core\EntityManager' not found in /var/www/formazion/index.php:9
+Stack trace:
+#0 {main}
+  thrown in /var/www/formazion/index.php on line 9
+[21-Mar-2019 18:33:09 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Formazion\Core\EntityManager' not found in /var/www/formazion/index.php:9
+Stack trace:
+#0 {main}
+  thrown in /var/www/formazion/index.php on line 9
+[21-Mar-2019 18:33:21 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Core\EntityManager' not found in /var/www/formazion/index.php:9
+Stack trace:
+#0 {main}
+  thrown in /var/www/formazion/index.php on line 9
+[21-Mar-2019 18:33:29 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'EntityManager' not found in /var/www/formazion/index.php:9
+Stack trace:
+#0 {main}
+  thrown in /var/www/formazion/index.php on line 9
+[21-Mar-2019 18:33:47 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'EntityManager' not found in /var/www/formazion/index.php:29
+Stack trace:
+#0 {main}
+  thrown in /var/www/formazion/index.php on line 29
+[21-Mar-2019 18:34:10 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Formazion\EntityManager' not found in /var/www/formazion/index.php:30
+Stack trace:
+#0 {main}
+  thrown in /var/www/formazion/index.php on line 30
+[21-Mar-2019 18:34:32 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function persist() on null in /var/www/formazion/src/controllers/IndexController.class.php:21
+Stack trace:
+#0 /var/www/formazion/index.php(66): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 21
+[21-Mar-2019 18:34:46 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function persist() on null in /var/www/formazion/src/controllers/IndexController.class.php:21
+Stack trace:
+#0 /var/www/formazion/index.php(66): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 21
+[21-Mar-2019 18:34:46 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function persist() on null in /var/www/formazion/src/controllers/IndexController.class.php:21
+Stack trace:
+#0 /var/www/formazion/index.php(66): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 21
+[21-Mar-2019 18:34:47 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function persist() on null in /var/www/formazion/src/controllers/IndexController.class.php:21
+Stack trace:
+#0 /var/www/formazion/index.php(66): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 21
+[21-Mar-2019 18:34:47 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function persist() on null in /var/www/formazion/src/controllers/IndexController.class.php:21
+Stack trace:
+#0 /var/www/formazion/index.php(66): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 21
+[21-Mar-2019 18:34:47 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function persist() on null in /var/www/formazion/src/controllers/IndexController.class.php:21
+Stack trace:
+#0 /var/www/formazion/index.php(66): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 21
+[21-Mar-2019 18:34:48 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function persist() on null in /var/www/formazion/src/controllers/IndexController.class.php:21
+Stack trace:
+#0 /var/www/formazion/index.php(66): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 21
+[21-Mar-2019 18:35:13 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function persist() on null in /var/www/formazion/src/controllers/IndexController.class.php:21
+Stack trace:
+#0 /var/www/formazion/index.php(66): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 21
+[21-Mar-2019 18:36:14 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function persist() on null in /var/www/formazion/src/controllers/IndexController.class.php:21
+Stack trace:
+#0 /var/www/formazion/index.php(66): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 21
+[21-Mar-2019 18:36:16 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function persist() on null in /var/www/formazion/src/controllers/IndexController.class.php:21
+Stack trace:
+#0 /var/www/formazion/index.php(66): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 21
+[21-Mar-2019 18:36:43 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function persist() on null in /var/www/formazion/src/controllers/IndexController.class.php:21
+Stack trace:
+#0 /var/www/formazion/index.php(66): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 21
+[21-Mar-2019 18:36:43 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function persist() on null in /var/www/formazion/src/controllers/IndexController.class.php:21
+Stack trace:
+#0 /var/www/formazion/index.php(66): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 21
+[21-Mar-2019 18:36:44 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function persist() on null in /var/www/formazion/src/controllers/IndexController.class.php:21
+Stack trace:
+#0 /var/www/formazion/index.php(66): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 21
+[21-Mar-2019 18:36:57 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function persist() on null in /var/www/formazion/src/controllers/IndexController.class.php:21
+Stack trace:
+#0 /var/www/formazion/index.php(67): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 21
+[21-Mar-2019 18:36:58 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function persist() on null in /var/www/formazion/src/controllers/IndexController.class.php:21
+Stack trace:
+#0 /var/www/formazion/index.php(67): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 21
+[21-Mar-2019 18:37:07 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function persist() on null in /var/www/formazion/src/controllers/IndexController.class.php:21
+Stack trace:
+#0 /var/www/formazion/index.php(67): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 21

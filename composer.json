@@ -3,7 +3,13 @@
     "require": {
         "eftec/bladeone": "^3.17",
         "doctrine/orm": "^2.6",
-        "symfony/yaml": "^4.2"
+        "symfony/yaml": "^4.2",
+        "fzaninotto/faker": "^1.8"
+    },
+    "autoload": {
+        "psr-0": {
+            "Formazion": "src/"
+        }
     },
     "authors": [
         {

@@ -1,9 +1,9 @@
 <?php
 
-
+namespace Formazion\Model;
 
 /**
- * Person
+ * Person.class
  */
 class Person
 {
@@ -72,7 +72,7 @@ class Person
      *
      * @param string $firstname
      *
-     * @return Person
+     * @return class
      */
     public function setFirstname($firstname)
     {
@@ -96,7 +96,7 @@ class Person
      *
      * @param string $lastname
      *
-     * @return Person
+     * @return class
      */
     public function setLastname($lastname)
     {
@@ -120,7 +120,7 @@ class Person
      *
      * @param string $role
      *
-     * @return Person
+     * @return class
      */
     public function setRole($role)
     {
@@ -144,7 +144,7 @@ class Person
      *
      * @param \formation $formation
      *
-     * @return Person
+     * @return class
      */
     public function addFormation(\formation $formation)
     {
@@ -180,7 +180,7 @@ class Person
      *
      * @param \session $session
      *
-     * @return Person
+     * @return class
      */
     public function addSession(\session $session)
     {
@@ -216,7 +216,7 @@ class Person
      *
      * @param \student $student
      *
-     * @return Person
+     * @return class
      */
     public function addStudent(\student $student)
     {
@@ -252,7 +252,7 @@ class Person
      *
      * @param \company|null $companies
      *
-     * @return Person
+     * @return class
      */
     public function setCompanies(\company $companies = null)
     {
