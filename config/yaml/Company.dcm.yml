@@ -1,0 +1,54 @@
+Company:
+    type: entity
+    table: formazion.companies
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: SEQUENCE
+    fields:
+        name:
+            type: string
+            nullable: false
+            length: 45
+            options:
+                fixed: false
+        numberaddress:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            column: numberAddress
+        street:
+            type: string
+            nullable: false
+            length: 125
+            options:
+                fixed: false
+        postalcode:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            column: postalCode
+        city:
+            type: string
+            nullable: false
+            length: 125
+            options:
+                fixed: false
+        country:
+            type: string
+            nullable: false
+            length: 60
+            options:
+                fixed: false
+    lifecycleCallbacks: {  }
+    oneToMany:
+        persons:
+            targetEntity: person
+            mappedBy: company

@@ -1,0 +1,47 @@
+StudentsSession:
+    type: entity
+    table: formazion.students_sessions
+    indexes:
+        IDX_C1F3C09B1AD8D010:
+            columns:
+                - students_id
+        IDX_C1F3C09BF17C4D8C:
+            columns:
+                - sessions_id
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: SEQUENCE
+    fields:
+        note:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+    manyToOne:
+        students:
+            targetEntity: person
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                students_id:
+                    referencedColumnName: id
+            orphanRemoval: false
+        sessions:
+            targetEntity: sessions
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                sessions_id:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }
