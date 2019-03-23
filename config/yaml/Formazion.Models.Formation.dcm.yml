@@ -1,4 +1,4 @@
-Formation:
+Formazion\Models\Formation:
     type: entity
     table: formazion.formations
     indexes:
@@ -13,7 +13,7 @@ Formation:
                 unsigned: false
             id: true
             generator:
-                strategy: SEQUENCE
+                strategy: IDENTITY
     fields:
         name:
             type: string

@@ -1,4 +1,4 @@
-Session:
+Formazion\Models\Session:
     type: entity
     table: formazion.sessions
     indexes:
@@ -19,7 +19,7 @@ Session:
                 unsigned: false
             id: true
             generator:
-                strategy: SEQUENCE
+                strategy: IDENTITY
     fields:
         start:
             type: datetime
@@ -51,7 +51,7 @@ Session:
                     referencedColumnName: id
             orphanRemoval: false
         rooms:
-            targetEntity: room
+            targetEntity: Room
             cascade: {  }
             fetch: LAZY
             mappedBy: null

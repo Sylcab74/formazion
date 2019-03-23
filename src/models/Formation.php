@@ -1,6 +1,6 @@
 <?php
 
-namespace Formazion\Model;
+namespace Formazion\Models;
 
 /**
  * Formation
@@ -23,7 +23,7 @@ class Formation
     private $session;
 
     /**
-     * @var \person
+     * @var \Formazion\Models\person
      */
     private $responsibleProfessor;
 
@@ -72,11 +72,11 @@ class Formation
     /**
      * Add session.
      *
-     * @param \session $session
+     * @param \Formazion\Models\session $session
      *
      * @return Formation
      */
-    public function addSession(\session $session)
+    public function addSession(\Formazion\Models\session $session)
     {
         $this->session[] = $session;
 
@@ -86,11 +86,11 @@ class Formation
     /**
      * Remove session.
      *
-     * @param \session $session
+     * @param \Formazion\Models\session $session
      *
      * @return boolean TRUE if this collection contained the specified element, FALSE otherwise.
      */
-    public function removeSession(\session $session)
+    public function removeSession(\Formazion\Models\session $session)
     {
         return $this->session->removeElement($session);
     }
@@ -108,11 +108,11 @@ class Formation
     /**
      * Set responsibleProfessor.
      *
-     * @param \person|null $responsibleProfessor
+     * @param \Formazion\Models\person|null $responsibleProfessor
      *
      * @return Formation
      */
-    public function setResponsibleProfessor(\person $responsibleProfessor = null)
+    public function setResponsibleProfessor(\Formazion\Models\person $responsibleProfessor = null)
     {
         $this->responsibleProfessor = $responsibleProfessor;
 
@@ -122,7 +122,7 @@ class Formation
     /**
      * Get responsibleProfessor.
      *
-     * @return \person|null
+     * @return \Formazion\Models\person|null
      */
     public function getResponsibleProfessor()
     {

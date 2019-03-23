@@ -562,3 +562,594 @@ Stack trace:
 #0 /var/www/formazion/index.php(67): Formazion\Controller\IndexController->indexAction(Array)
 #1 {main}
   thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 21
+[23-Mar-2019 15:35:26 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Formazion\Core\EntityManager' not found in /var/www/formazion/index.php:10
+Stack trace:
+#0 {main}
+  thrown in /var/www/formazion/index.php on line 10
+[23-Mar-2019 15:35:27 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Formazion\Core\EntityManager' not found in /var/www/formazion/index.php:10
+Stack trace:
+#0 {main}
+  thrown in /var/www/formazion/index.php on line 10
+[23-Mar-2019 15:36:10 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Formazion\Core\EntityManager' not found in /var/www/formazion/index.php:10
+Stack trace:
+#0 {main}
+  thrown in /var/www/formazion/index.php on line 10
+[23-Mar-2019 15:36:12 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Formazion\Core\EntityManager' not found in /var/www/formazion/index.php:10
+Stack trace:
+#0 {main}
+  thrown in /var/www/formazion/index.php on line 10
+[23-Mar-2019 15:36:30 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Formazion\Controller\Manager' not found in /var/www/formazion/src/controllers/IndexController.class.php:19
+Stack trace:
+#0 /var/www/formazion/index.php(61): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 19
+[23-Mar-2019 15:36:54 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Formazion\Core\Manager' not found in /var/www/formazion/src/controllers/IndexController.class.php:20
+Stack trace:
+#0 /var/www/formazion/index.php(61): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 20
+[23-Mar-2019 15:38:42 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function persist() on null in /var/www/formazion/src/controllers/IndexController.class.php:20
+Stack trace:
+#0 /var/www/formazion/index.php(61): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 20
+[23-Mar-2019 15:39:00 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function persist() on null in /var/www/formazion/src/controllers/IndexController.class.php:20
+Stack trace:
+#0 /var/www/formazion/index.php(61): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 20
+[23-Mar-2019 15:39:01 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function persist() on null in /var/www/formazion/src/controllers/IndexController.class.php:20
+Stack trace:
+#0 /var/www/formazion/index.php(61): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 20
+[23-Mar-2019 15:39:43 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function persist() on null in /var/www/formazion/src/controllers/IndexController.class.php:20
+Stack trace:
+#0 /var/www/formazion/index.php(61): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 20
+[23-Mar-2019 15:39:44 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function persist() on null in /var/www/formazion/src/controllers/IndexController.class.php:20
+Stack trace:
+#0 /var/www/formazion/index.php(61): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 20
+[23-Mar-2019 15:41:30 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function persist() on null in /var/www/formazion/src/controllers/IndexController.class.php:20
+Stack trace:
+#0 /var/www/formazion/index.php(61): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 20
+[23-Mar-2019 15:42:23 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function persist() on null in /var/www/formazion/src/controllers/IndexController.class.php:20
+Stack trace:
+#0 /var/www/formazion/index.php(61): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 20
+[23-Mar-2019 15:42:24 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\Common\Persistence\Mapping\MappingException: No mapping file found named 'Formazion.Model.Person.dcm.yml' for class 'Formazion\Model\Person'. in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php:64
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/DefaultFileLocator.php(108): Doctrine\Common\Persistence\Mapping\MappingException::mappingFileNotFound('Formazion\\Model...', 'Formazion.Model...')
+#1 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/FileDriver.php(90): Doctrine\Common\Persistence\Mapping\Driver\DefaultFileLocator->findMappingFile('Formazion\\Model...')
+#2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php(56): Doctrine\Common\Persistence\Mapping\Driver\FileDriver->getElement('Formazion\\Model...')
+#3 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.ph in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php on line 64
+[23-Mar-2019 15:43:09 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\Common\Persistence\Mapping\MappingException: No mapping file found named 'Formazion.Model.Person.dcm.yml' for class 'Formazion\Model\Person'. in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php:64
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/DefaultFileLocator.php(108): Doctrine\Common\Persistence\Mapping\MappingException::mappingFileNotFound('Formazion\\Model...', 'Formazion.Model...')
+#1 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/FileDriver.php(90): Doctrine\Common\Persistence\Mapping\Driver\DefaultFileLocator->findMappingFile('Formazion\\Model...')
+#2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php(56): Doctrine\Common\Persistence\Mapping\Driver\FileDriver->getElement('Formazion\\Model...')
+#3 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.ph in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php on line 64
+[23-Mar-2019 15:43:22 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\Common\Persistence\Mapping\MappingException: No mapping file found named 'Formazion.Model.Person.dcm.yml' for class 'Formazion\Model\Person'. in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php:64
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/DefaultFileLocator.php(108): Doctrine\Common\Persistence\Mapping\MappingException::mappingFileNotFound('Formazion\\Model...', 'Formazion.Model...')
+#1 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/FileDriver.php(90): Doctrine\Common\Persistence\Mapping\Driver\DefaultFileLocator->findMappingFile('Formazion\\Model...')
+#2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php(56): Doctrine\Common\Persistence\Mapping\Driver\FileDriver->getElement('Formazion\\Model...')
+#3 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.ph in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php on line 64
+[23-Mar-2019 15:43:25 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\Common\Persistence\Mapping\MappingException: No mapping file found named 'Formazion.Model.Person.dcm.yml' for class 'Formazion\Model\Person'. in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php:64
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/DefaultFileLocator.php(108): Doctrine\Common\Persistence\Mapping\MappingException::mappingFileNotFound('Formazion\\Model...', 'Formazion.Model...')
+#1 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/FileDriver.php(90): Doctrine\Common\Persistence\Mapping\Driver\DefaultFileLocator->findMappingFile('Formazion\\Model...')
+#2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php(56): Doctrine\Common\Persistence\Mapping\Driver\FileDriver->getElement('Formazion\\Model...')
+#3 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.ph in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php on line 64
+[23-Mar-2019 15:44:09 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\Common\Persistence\Mapping\MappingException: No mapping file found named 'Formazion.Model.Person.dcm.yml' for class 'Formazion\Model\Person'. in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php:64
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/DefaultFileLocator.php(108): Doctrine\Common\Persistence\Mapping\MappingException::mappingFileNotFound('Formazion\\Model...', 'Formazion.Model...')
+#1 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/FileDriver.php(90): Doctrine\Common\Persistence\Mapping\Driver\DefaultFileLocator->findMappingFile('Formazion\\Model...')
+#2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php(56): Doctrine\Common\Persistence\Mapping\Driver\FileDriver->getElement('Formazion\\Model...')
+#3 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.ph in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php on line 64
+[23-Mar-2019 15:44:10 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\Common\Persistence\Mapping\MappingException: No mapping file found named 'Formazion.Model.Person.dcm.yml' for class 'Formazion\Model\Person'. in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php:64
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/DefaultFileLocator.php(108): Doctrine\Common\Persistence\Mapping\MappingException::mappingFileNotFound('Formazion\\Model...', 'Formazion.Model...')
+#1 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/FileDriver.php(90): Doctrine\Common\Persistence\Mapping\Driver\DefaultFileLocator->findMappingFile('Formazion\\Model...')
+#2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php(56): Doctrine\Common\Persistence\Mapping\Driver\FileDriver->getElement('Formazion\\Model...')
+#3 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.ph in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php on line 64
+[23-Mar-2019 15:44:10 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\Common\Persistence\Mapping\MappingException: No mapping file found named 'Formazion.Model.Person.dcm.yml' for class 'Formazion\Model\Person'. in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php:64
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/DefaultFileLocator.php(108): Doctrine\Common\Persistence\Mapping\MappingException::mappingFileNotFound('Formazion\\Model...', 'Formazion.Model...')
+#1 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/FileDriver.php(90): Doctrine\Common\Persistence\Mapping\Driver\DefaultFileLocator->findMappingFile('Formazion\\Model...')
+#2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php(56): Doctrine\Common\Persistence\Mapping\Driver\FileDriver->getElement('Formazion\\Model...')
+#3 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.ph in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php on line 64
+[23-Mar-2019 15:50:29 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\Common\Persistence\Mapping\MappingException: No mapping file found named 'Formazion.Model.Person.dcm.yml' for class 'Formazion\Model\Person'. in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php:64
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/DefaultFileLocator.php(108): Doctrine\Common\Persistence\Mapping\MappingException::mappingFileNotFound('Formazion\\Model...', 'Formazion.Model...')
+#1 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/FileDriver.php(90): Doctrine\Common\Persistence\Mapping\Driver\DefaultFileLocator->findMappingFile('Formazion\\Model...')
+#2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php(56): Doctrine\Common\Persistence\Mapping\Driver\FileDriver->getElement('Formazion\\Model...')
+#3 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.ph in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php on line 64
+[23-Mar-2019 15:51:48 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\Common\Persistence\Mapping\MappingException: No mapping file found named 'Formazion.Model.Person.dcm.yml' for class 'Formazion\Model\Person'. in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php:64
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/DefaultFileLocator.php(108): Doctrine\Common\Persistence\Mapping\MappingException::mappingFileNotFound('Formazion\\Model...', 'Formazion.Model...')
+#1 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/FileDriver.php(90): Doctrine\Common\Persistence\Mapping\Driver\DefaultFileLocator->findMappingFile('Formazion\\Model...')
+#2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php(56): Doctrine\Common\Persistence\Mapping\Driver\FileDriver->getElement('Formazion\\Model...')
+#3 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.ph in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php on line 64
+[23-Mar-2019 15:52:15 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\Common\Persistence\Mapping\MappingException: No mapping file found named 'Formazion.Model.Person.dcm.yml' for class 'Formazion\Model\Person'. in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php:64
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/DefaultFileLocator.php(108): Doctrine\Common\Persistence\Mapping\MappingException::mappingFileNotFound('Formazion\\Model...', 'Formazion.Model...')
+#1 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/FileDriver.php(90): Doctrine\Common\Persistence\Mapping\Driver\DefaultFileLocator->findMappingFile('Formazion\\Model...')
+#2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php(56): Doctrine\Common\Persistence\Mapping\Driver\FileDriver->getElement('Formazion\\Model...')
+#3 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.ph in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php on line 64
+[23-Mar-2019 15:52:27 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\Common\Persistence\Mapping\MappingException: No mapping file found named 'Formazion.Model.Person.dcm.yml' for class 'Formazion\Model\Person'. in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php:64
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/DefaultFileLocator.php(108): Doctrine\Common\Persistence\Mapping\MappingException::mappingFileNotFound('Formazion\\Model...', 'Formazion.Model...')
+#1 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/FileDriver.php(90): Doctrine\Common\Persistence\Mapping\Driver\DefaultFileLocator->findMappingFile('Formazion\\Model...')
+#2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php(56): Doctrine\Common\Persistence\Mapping\Driver\FileDriver->getElement('Formazion\\Model...')
+#3 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.ph in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php on line 64
+[23-Mar-2019 15:52:44 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\Common\Persistence\Mapping\MappingException: No mapping file found named 'Formazion.Model.Person.dcm.yml' for class 'Formazion\Model\Person'. in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php:64
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/DefaultFileLocator.php(108): Doctrine\Common\Persistence\Mapping\MappingException::mappingFileNotFound('Formazion\\Model...', 'Formazion.Model...')
+#1 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/FileDriver.php(90): Doctrine\Common\Persistence\Mapping\Driver\DefaultFileLocator->findMappingFile('Formazion\\Model...')
+#2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php(56): Doctrine\Common\Persistence\Mapping\Driver\FileDriver->getElement('Formazion\\Model...')
+#3 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.ph in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php on line 64
+[23-Mar-2019 15:53:24 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\Common\Persistence\Mapping\MappingException: No mapping file found named 'Formazion.Model.Person.dcm.yml' for class 'Formazion\Model\Person'. in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php:64
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/DefaultFileLocator.php(108): Doctrine\Common\Persistence\Mapping\MappingException::mappingFileNotFound('Formazion\\Model...', 'Formazion.Model...')
+#1 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/FileDriver.php(90): Doctrine\Common\Persistence\Mapping\Driver\DefaultFileLocator->findMappingFile('Formazion\\Model...')
+#2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php(56): Doctrine\Common\Persistence\Mapping\Driver\FileDriver->getElement('Formazion\\Model...')
+#3 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.ph in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php on line 64
+[23-Mar-2019 15:53:36 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\Common\Persistence\Mapping\MappingException: No mapping file found named 'Formazion.Model.Person.dcm.yml' for class 'Formazion\Model\Person'. in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php:64
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/DefaultFileLocator.php(108): Doctrine\Common\Persistence\Mapping\MappingException::mappingFileNotFound('Formazion\\Model...', 'Formazion.Model...')
+#1 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/FileDriver.php(90): Doctrine\Common\Persistence\Mapping\Driver\DefaultFileLocator->findMappingFile('Formazion\\Model...')
+#2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php(56): Doctrine\Common\Persistence\Mapping\Driver\FileDriver->getElement('Formazion\\Model...')
+#3 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.ph in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php on line 64
+[23-Mar-2019 15:53:38 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\Common\Persistence\Mapping\MappingException: No mapping file found named 'Formazion.Model.Person.dcm.yml' for class 'Formazion\Model\Person'. in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php:64
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/DefaultFileLocator.php(108): Doctrine\Common\Persistence\Mapping\MappingException::mappingFileNotFound('Formazion\\Model...', 'Formazion.Model...')
+#1 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/FileDriver.php(90): Doctrine\Common\Persistence\Mapping\Driver\DefaultFileLocator->findMappingFile('Formazion\\Model...')
+#2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php(56): Doctrine\Common\Persistence\Mapping\Driver\FileDriver->getElement('Formazion\\Model...')
+#3 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.ph in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php on line 64
+[23-Mar-2019 15:55:33 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\Common\Persistence\Mapping\MappingException: No mapping file found named 'Formazion.Model.Person.dcm.yml' for class 'Formazion\Model\Person'. in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php:64
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/DefaultFileLocator.php(108): Doctrine\Common\Persistence\Mapping\MappingException::mappingFileNotFound('Formazion\\Model...', 'Formazion.Model...')
+#1 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/FileDriver.php(90): Doctrine\Common\Persistence\Mapping\Driver\DefaultFileLocator->findMappingFile('Formazion\\Model...')
+#2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php(56): Doctrine\Common\Persistence\Mapping\Driver\FileDriver->getElement('Formazion\\Model...')
+#3 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.ph in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php on line 64
+[23-Mar-2019 15:57:18 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\Common\Persistence\Mapping\MappingException: Invalid mapping file 'Formazion.Model.Person.dcm.yml' for class 'Formazion\Model\Person'. in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php:79
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/FileDriver.php(92): Doctrine\Common\Persistence\Mapping\MappingException::invalidMappingFile('Formazion\\Model...', 'Formazion.Model...')
+#1 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php(56): Doctrine\Common\Persistence\Mapping\Driver\FileDriver->getElement('Formazion\\Model...')
+#2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(151): Doctrine\ORM\Mapping\Driver\YamlDriver->loadMetadataForClass('Formazion\\Model...', Object(Doctrine\ORM\Mapping\ClassMetadata))
+#3 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/AbstractCl in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php on line 79
+[23-Mar-2019 15:58:30 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\Common\Persistence\Mapping\MappingException: Invalid mapping file 'Formazion.Model.Person.dcm.yml' for class 'Formazion\Model\Person'. in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php:79
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/FileDriver.php(92): Doctrine\Common\Persistence\Mapping\MappingException::invalidMappingFile('Formazion\\Model...', 'Formazion.Model...')
+#1 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php(56): Doctrine\Common\Persistence\Mapping\Driver\FileDriver->getElement('Formazion\\Model...')
+#2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(151): Doctrine\ORM\Mapping\Driver\YamlDriver->loadMetadataForClass('Formazion\\Model...', Object(Doctrine\ORM\Mapping\ClassMetadata))
+#3 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/AbstractCl in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php on line 79
+[23-Mar-2019 15:58:31 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\Common\Persistence\Mapping\MappingException: Invalid mapping file 'Formazion.Model.Person.dcm.yml' for class 'Formazion\Model\Person'. in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php:79
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/FileDriver.php(92): Doctrine\Common\Persistence\Mapping\MappingException::invalidMappingFile('Formazion\\Model...', 'Formazion.Model...')
+#1 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php(56): Doctrine\Common\Persistence\Mapping\Driver\FileDriver->getElement('Formazion\\Model...')
+#2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(151): Doctrine\ORM\Mapping\Driver\YamlDriver->loadMetadataForClass('Formazion\\Model...', Object(Doctrine\ORM\Mapping\ClassMetadata))
+#3 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/AbstractCl in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php on line 79
+[23-Mar-2019 15:59:31 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\Common\Persistence\Mapping\MappingException: Invalid mapping file 'Formazion.Model.Person.dcm.yml' for class 'Formazion\Model\Person'. in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php:79
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/FileDriver.php(92): Doctrine\Common\Persistence\Mapping\MappingException::invalidMappingFile('Formazion\\Model...', 'Formazion.Model...')
+#1 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php(56): Doctrine\Common\Persistence\Mapping\Driver\FileDriver->getElement('Formazion\\Model...')
+#2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(151): Doctrine\ORM\Mapping\Driver\YamlDriver->loadMetadataForClass('Formazion\\Model...', Object(Doctrine\ORM\Mapping\ClassMetadata))
+#3 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/AbstractCl in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php on line 79
+[23-Mar-2019 16:00:06 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\Common\Persistence\Mapping\MappingException: Invalid mapping file 'Formazion.Model.Person.dcm.yml' for class 'Formazion\Model\Person'. in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php:79
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/FileDriver.php(92): Doctrine\Common\Persistence\Mapping\MappingException::invalidMappingFile('Formazion\\Model...', 'Formazion.Model...')
+#1 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php(56): Doctrine\Common\Persistence\Mapping\Driver\FileDriver->getElement('Formazion\\Model...')
+#2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(151): Doctrine\ORM\Mapping\Driver\YamlDriver->loadMetadataForClass('Formazion\\Model...', Object(Doctrine\ORM\Mapping\ClassMetadata))
+#3 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/AbstractCl in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php on line 79
+[23-Mar-2019 16:02:17 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\Common\Persistence\Mapping\MappingException: Invalid mapping file 'Formazion.Model.Person.dcm.yml' for class 'Formazion\Model\Person'. in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php:79
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/FileDriver.php(92): Doctrine\Common\Persistence\Mapping\MappingException::invalidMappingFile('Formazion\\Model...', 'Formazion.Model...')
+#1 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php(56): Doctrine\Common\Persistence\Mapping\Driver\FileDriver->getElement('Formazion\\Model...')
+#2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(151): Doctrine\ORM\Mapping\Driver\YamlDriver->loadMetadataForClass('Formazion\\Model...', Object(Doctrine\ORM\Mapping\ClassMetadata))
+#3 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/AbstractCl in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php on line 79
+[23-Mar-2019 16:02:17 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\Common\Persistence\Mapping\MappingException: Invalid mapping file 'Formazion.Model.Person.dcm.yml' for class 'Formazion\Model\Person'. in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php:79
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/FileDriver.php(92): Doctrine\Common\Persistence\Mapping\MappingException::invalidMappingFile('Formazion\\Model...', 'Formazion.Model...')
+#1 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php(56): Doctrine\Common\Persistence\Mapping\Driver\FileDriver->getElement('Formazion\\Model...')
+#2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(151): Doctrine\ORM\Mapping\Driver\YamlDriver->loadMetadataForClass('Formazion\\Model...', Object(Doctrine\ORM\Mapping\ClassMetadata))
+#3 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/AbstractCl in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php on line 79
+[23-Mar-2019 16:10:15 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\Common\Persistence\Mapping\MappingException: Invalid mapping file 'Formazion.Model.Person.dcm.yml' for class 'Formazion\Model\Person'. in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php:79
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/FileDriver.php(92): Doctrine\Common\Persistence\Mapping\MappingException::invalidMappingFile('Formazion\\Model...', 'Formazion.Model...')
+#1 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php(56): Doctrine\Common\Persistence\Mapping\Driver\FileDriver->getElement('Formazion\\Model...')
+#2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(151): Doctrine\ORM\Mapping\Driver\YamlDriver->loadMetadataForClass('Formazion\\Model...', Object(Doctrine\ORM\Mapping\ClassMetadata))
+#3 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/AbstractCl in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php on line 79
+[23-Mar-2019 16:10:41 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\Common\Persistence\Mapping\MappingException: Invalid mapping file 'Formazion.Model.Person.dcm.yml' for class 'Formazion\Model\Person'. in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php:79
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/FileDriver.php(92): Doctrine\Common\Persistence\Mapping\MappingException::invalidMappingFile('Formazion\\Model...', 'Formazion.Model...')
+#1 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php(56): Doctrine\Common\Persistence\Mapping\Driver\FileDriver->getElement('Formazion\\Model...')
+#2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(151): Doctrine\ORM\Mapping\Driver\YamlDriver->loadMetadataForClass('Formazion\\Model...', Object(Doctrine\ORM\Mapping\ClassMetadata))
+#3 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/AbstractCl in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php on line 79
+[23-Mar-2019 16:11:35 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\Common\Persistence\Mapping\MappingException: Invalid mapping file 'Formazion.Model.Person.dcm.yml' for class 'Formazion\Model\Person'. in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php:79
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/FileDriver.php(92): Doctrine\Common\Persistence\Mapping\MappingException::invalidMappingFile('Formazion\\Model...', 'Formazion.Model...')
+#1 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php(56): Doctrine\Common\Persistence\Mapping\Driver\FileDriver->getElement('Formazion\\Model...')
+#2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(151): Doctrine\ORM\Mapping\Driver\YamlDriver->loadMetadataForClass('Formazion\\Model...', Object(Doctrine\ORM\Mapping\ClassMetadata))
+#3 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/AbstractCl in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php on line 79
+[23-Mar-2019 16:11:35 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\Common\Persistence\Mapping\MappingException: Invalid mapping file 'Formazion.Model.Person.dcm.yml' for class 'Formazion\Model\Person'. in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php:79
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/FileDriver.php(92): Doctrine\Common\Persistence\Mapping\MappingException::invalidMappingFile('Formazion\\Model...', 'Formazion.Model...')
+#1 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php(56): Doctrine\Common\Persistence\Mapping\Driver\FileDriver->getElement('Formazion\\Model...')
+#2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(151): Doctrine\ORM\Mapping\Driver\YamlDriver->loadMetadataForClass('Formazion\\Model...', Object(Doctrine\ORM\Mapping\ClassMetadata))
+#3 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/AbstractCl in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php on line 79
+[23-Mar-2019 16:11:36 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\Common\Persistence\Mapping\MappingException: Invalid mapping file 'Formazion.Model.Person.dcm.yml' for class 'Formazion\Model\Person'. in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php:79
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/FileDriver.php(92): Doctrine\Common\Persistence\Mapping\MappingException::invalidMappingFile('Formazion\\Model...', 'Formazion.Model...')
+#1 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php(56): Doctrine\Common\Persistence\Mapping\Driver\FileDriver->getElement('Formazion\\Model...')
+#2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(151): Doctrine\ORM\Mapping\Driver\YamlDriver->loadMetadataForClass('Formazion\\Model...', Object(Doctrine\ORM\Mapping\ClassMetadata))
+#3 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/AbstractCl in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php on line 79
+[23-Mar-2019 16:11:43 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\Common\Persistence\Mapping\MappingException: Invalid mapping file 'Formazion.Model.Person.dcm.yml' for class 'Formazion\Model\Person'. in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php:79
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/FileDriver.php(92): Doctrine\Common\Persistence\Mapping\MappingException::invalidMappingFile('Formazion\\Model...', 'Formazion.Model...')
+#1 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php(56): Doctrine\Common\Persistence\Mapping\Driver\FileDriver->getElement('Formazion\\Model...')
+#2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(151): Doctrine\ORM\Mapping\Driver\YamlDriver->loadMetadataForClass('Formazion\\Model...', Object(Doctrine\ORM\Mapping\ClassMetadata))
+#3 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/AbstractCl in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php on line 79
+[23-Mar-2019 16:11:44 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\Common\Persistence\Mapping\MappingException: Invalid mapping file 'Formazion.Model.Person.dcm.yml' for class 'Formazion\Model\Person'. in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php:79
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/FileDriver.php(92): Doctrine\Common\Persistence\Mapping\MappingException::invalidMappingFile('Formazion\\Model...', 'Formazion.Model...')
+#1 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php(56): Doctrine\Common\Persistence\Mapping\Driver\FileDriver->getElement('Formazion\\Model...')
+#2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(151): Doctrine\ORM\Mapping\Driver\YamlDriver->loadMetadataForClass('Formazion\\Model...', Object(Doctrine\ORM\Mapping\ClassMetadata))
+#3 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/AbstractCl in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php on line 79
+[23-Mar-2019 16:11:49 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\Common\Persistence\Mapping\MappingException: Invalid mapping file 'Formazion.Model.Person.dcm.yml' for class 'Formazion\Model\Person'. in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php:79
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/FileDriver.php(92): Doctrine\Common\Persistence\Mapping\MappingException::invalidMappingFile('Formazion\\Model...', 'Formazion.Model...')
+#1 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php(56): Doctrine\Common\Persistence\Mapping\Driver\FileDriver->getElement('Formazion\\Model...')
+#2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(151): Doctrine\ORM\Mapping\Driver\YamlDriver->loadMetadataForClass('Formazion\\Model...', Object(Doctrine\ORM\Mapping\ClassMetadata))
+#3 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/AbstractCl in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php on line 79
+[23-Mar-2019 16:11:50 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\Common\Persistence\Mapping\MappingException: Invalid mapping file 'Formazion.Model.Person.dcm.yml' for class 'Formazion\Model\Person'. in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php:79
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/FileDriver.php(92): Doctrine\Common\Persistence\Mapping\MappingException::invalidMappingFile('Formazion\\Model...', 'Formazion.Model...')
+#1 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php(56): Doctrine\Common\Persistence\Mapping\Driver\FileDriver->getElement('Formazion\\Model...')
+#2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(151): Doctrine\ORM\Mapping\Driver\YamlDriver->loadMetadataForClass('Formazion\\Model...', Object(Doctrine\ORM\Mapping\ClassMetadata))
+#3 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/AbstractCl in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php on line 79
+[23-Mar-2019 16:13:05 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\Common\Persistence\Mapping\MappingException: Invalid mapping file 'Formazion.Model.Person.dcm.yml' for class 'Formazion\Model\Person'. in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php:79
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/FileDriver.php(92): Doctrine\Common\Persistence\Mapping\MappingException::invalidMappingFile('Formazion\\Model...', 'Formazion.Model...')
+#1 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php(56): Doctrine\Common\Persistence\Mapping\Driver\FileDriver->getElement('Formazion\\Model...')
+#2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(151): Doctrine\ORM\Mapping\Driver\YamlDriver->loadMetadataForClass('Formazion\\Model...', Object(Doctrine\ORM\Mapping\ClassMetadata))
+#3 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/AbstractCl in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php on line 79
+[23-Mar-2019 16:13:05 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\Common\Persistence\Mapping\MappingException: Invalid mapping file 'Formazion.Model.Person.dcm.yml' for class 'Formazion\Model\Person'. in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php:79
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/FileDriver.php(92): Doctrine\Common\Persistence\Mapping\MappingException::invalidMappingFile('Formazion\\Model...', 'Formazion.Model...')
+#1 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php(56): Doctrine\Common\Persistence\Mapping\Driver\FileDriver->getElement('Formazion\\Model...')
+#2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(151): Doctrine\ORM\Mapping\Driver\YamlDriver->loadMetadataForClass('Formazion\\Model...', Object(Doctrine\ORM\Mapping\ClassMetadata))
+#3 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/AbstractCl in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php on line 79
+[23-Mar-2019 16:14:38 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\Common\Persistence\Mapping\MappingException: Invalid mapping file 'Formazion.Model.Person.dcm.yml' for class 'Formazion\Model\Person'. in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php:79
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/FileDriver.php(92): Doctrine\Common\Persistence\Mapping\MappingException::invalidMappingFile('Formazion\\Model...', 'Formazion.Model...')
+#1 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php(56): Doctrine\Common\Persistence\Mapping\Driver\FileDriver->getElement('Formazion\\Model...')
+#2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(151): Doctrine\ORM\Mapping\Driver\YamlDriver->loadMetadataForClass('Formazion\\Model...', Object(Doctrine\ORM\Mapping\ClassMetadata))
+#3 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/AbstractCl in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php on line 79
+[23-Mar-2019 16:14:39 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\Common\Persistence\Mapping\MappingException: Invalid mapping file 'Formazion.Model.Person.dcm.yml' for class 'Formazion\Model\Person'. in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php:79
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/FileDriver.php(92): Doctrine\Common\Persistence\Mapping\MappingException::invalidMappingFile('Formazion\\Model...', 'Formazion.Model...')
+#1 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php(56): Doctrine\Common\Persistence\Mapping\Driver\FileDriver->getElement('Formazion\\Model...')
+#2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(151): Doctrine\ORM\Mapping\Driver\YamlDriver->loadMetadataForClass('Formazion\\Model...', Object(Doctrine\ORM\Mapping\ClassMetadata))
+#3 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/AbstractCl in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php on line 79
+[23-Mar-2019 16:15:03 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\Common\Persistence\Mapping\MappingException: Invalid mapping file 'Formazion.Model.Person.dcm.yml' for class 'Formazion\Model\Person'. in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php:79
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/FileDriver.php(92): Doctrine\Common\Persistence\Mapping\MappingException::invalidMappingFile('Formazion\\Model...', 'Formazion.Model...')
+#1 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php(56): Doctrine\Common\Persistence\Mapping\Driver\FileDriver->getElement('Formazion\\Model...')
+#2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(151): Doctrine\ORM\Mapping\Driver\YamlDriver->loadMetadataForClass('Formazion\\Model...', Object(Doctrine\ORM\Mapping\ClassMetadata))
+#3 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/AbstractCl in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php on line 79
+[23-Mar-2019 16:15:03 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\Common\Persistence\Mapping\MappingException: Invalid mapping file 'Formazion.Model.Person.dcm.yml' for class 'Formazion\Model\Person'. in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php:79
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/FileDriver.php(92): Doctrine\Common\Persistence\Mapping\MappingException::invalidMappingFile('Formazion\\Model...', 'Formazion.Model...')
+#1 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php(56): Doctrine\Common\Persistence\Mapping\Driver\FileDriver->getElement('Formazion\\Model...')
+#2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(151): Doctrine\ORM\Mapping\Driver\YamlDriver->loadMetadataForClass('Formazion\\Model...', Object(Doctrine\ORM\Mapping\ClassMetadata))
+#3 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/AbstractCl in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php on line 79
+[23-Mar-2019 16:19:31 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Formazion\Model\Person' not found in /var/www/formazion/src/controllers/IndexController.class.php:16
+Stack trace:
+#0 /var/www/formazion/index.php(66): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 16
+[23-Mar-2019 16:23:07 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Formazion\Model\Person' not found in /var/www/formazion/src/controllers/IndexController.class.php:16
+Stack trace:
+#0 /var/www/formazion/index.php(66): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 16
+[23-Mar-2019 16:23:08 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Formazion\Model\Person' not found in /var/www/formazion/src/controllers/IndexController.class.php:16
+Stack trace:
+#0 /var/www/formazion/index.php(66): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 16
+[23-Mar-2019 16:26:18 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Formazion\Model\Person' not found in /var/www/formazion/src/controllers/IndexController.class.php:16
+Stack trace:
+#0 /var/www/formazion/index.php(66): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 16
+[23-Mar-2019 16:27:26 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Formazion\Model\Person' not found in /var/www/formazion/src/controllers/IndexController.class.php:16
+Stack trace:
+#0 /var/www/formazion/index.php(66): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 16
+[23-Mar-2019 16:52:44 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Formazion\Model\Person' not found in /var/www/formazion/src/controllers/IndexController.class.php:16
+Stack trace:
+#0 /var/www/formazion/index.php(66): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 16
+[23-Mar-2019 16:52:48 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Formazion\Model\Person' not found in /var/www/formazion/src/controllers/IndexController.class.php:16
+Stack trace:
+#0 /var/www/formazion/index.php(66): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 16
+[23-Mar-2019 16:52:57 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Formazion\Models\Person' not found in /var/www/formazion/src/controllers/IndexController.class.php:16
+Stack trace:
+#0 /var/www/formazion/index.php(66): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 16
+[23-Mar-2019 16:52:59 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Formazion\Models\Person' not found in /var/www/formazion/src/controllers/IndexController.class.php:16
+Stack trace:
+#0 /var/www/formazion/index.php(66): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 16
+[23-Mar-2019 16:53:26 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Formazion\Models\Person' not found in /var/www/formazion/src/controllers/IndexController.class.php:16
+Stack trace:
+#0 /var/www/formazion/index.php(66): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 16
+[23-Mar-2019 16:53:27 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Formazion\Models\Person' not found in /var/www/formazion/src/controllers/IndexController.class.php:16
+Stack trace:
+#0 /var/www/formazion/index.php(66): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 16
+[23-Mar-2019 16:54:17 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Formazion\Models\Person' not found in /var/www/formazion/src/controllers/IndexController.class.php:16
+Stack trace:
+#0 /var/www/formazion/index.php(65): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 16
+[23-Mar-2019 16:54:17 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Formazion\Models\Person' not found in /var/www/formazion/src/controllers/IndexController.class.php:16
+Stack trace:
+#0 /var/www/formazion/index.php(65): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 16
+[23-Mar-2019 16:54:55 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Formazion\Models\Person' not found in /var/www/formazion/src/controllers/IndexController.class.php:16
+Stack trace:
+#0 /var/www/formazion/index.php(66): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 16
+[23-Mar-2019 16:56:22 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Formazion\Models\Person' not found in /var/www/formazion/src/controllers/IndexController.class.php:16
+Stack trace:
+#0 /var/www/formazion/index.php(66): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 16
+[23-Mar-2019 16:56:39 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Formazion\Models\Person' not found in /var/www/formazion/src/controllers/IndexController.class.php:16
+Stack trace:
+#0 /var/www/formazion/index.php(66): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 16
+[23-Mar-2019 16:56:41 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Formazion\Models\Person' not found in /var/www/formazion/src/controllers/IndexController.class.php:16
+Stack trace:
+#0 /var/www/formazion/index.php(66): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 16
+[23-Mar-2019 16:57:30 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Formazion\Models\Person' not found in /var/www/formazion/src/controllers/IndexController.class.php:16
+Stack trace:
+#0 /var/www/formazion/index.php(66): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 16
+[23-Mar-2019 16:57:31 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Formazion\Models\Person' not found in /var/www/formazion/src/controllers/IndexController.class.php:16
+Stack trace:
+#0 /var/www/formazion/index.php(66): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 16
+[23-Mar-2019 16:57:31 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Formazion\Models\Person' not found in /var/www/formazion/src/controllers/IndexController.class.php:16
+Stack trace:
+#0 /var/www/formazion/index.php(66): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 16
+[23-Mar-2019 16:57:31 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Formazion\Models\Person' not found in /var/www/formazion/src/controllers/IndexController.class.php:16
+Stack trace:
+#0 /var/www/formazion/index.php(66): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 16
+[23-Mar-2019 16:57:43 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Formazion\Models\Person' not found in /var/www/formazion/src/controllers/IndexController.class.php:16
+Stack trace:
+#0 /var/www/formazion/index.php(67): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 16
+[23-Mar-2019 16:57:44 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Formazion\Models\Person' not found in /var/www/formazion/src/controllers/IndexController.class.php:16
+Stack trace:
+#0 /var/www/formazion/index.php(67): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 16
+[23-Mar-2019 16:58:00 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Formazion\Models\Person' not found in /var/www/formazion/src/controllers/IndexController.class.php:16
+Stack trace:
+#0 /var/www/formazion/index.php(69): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 16
+[23-Mar-2019 16:58:30 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Formazion\Models\Person' not found in /var/www/formazion/src/controllers/IndexController.class.php:16
+Stack trace:
+#0 /var/www/formazion/index.php(69): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 16
+[23-Mar-2019 16:58:52 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Formazion\Models\Person' not found in /var/www/formazion/src/controllers/IndexController.class.php:16
+Stack trace:
+#0 /var/www/formazion/index.php(69): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 16
+[23-Mar-2019 16:59:13 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\Common\Persistence\Mapping\MappingException: No mapping file found named 'Formazion.Models.Person.dcm.yml' for class 'Formazion\Models\Person'. in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php:64
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/DefaultFileLocator.php(108): Doctrine\Common\Persistence\Mapping\MappingException::mappingFileNotFound('Formazion\\Model...', 'Formazion.Model...')
+#1 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/FileDriver.php(90): Doctrine\Common\Persistence\Mapping\Driver\DefaultFileLocator->findMappingFile('Formazion\\Model...')
+#2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php(56): Doctrine\Common\Persistence\Mapping\Driver\FileDriver->getElement('Formazion\\Model...')
+#3 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory. in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php on line 64
+[23-Mar-2019 16:59:46 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\Common\Persistence\Mapping\MappingException: Invalid mapping file 'Formazion.Models.Person.dcm.yml' for class 'Formazion\Models\Person'. in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php:79
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/FileDriver.php(92): Doctrine\Common\Persistence\Mapping\MappingException::invalidMappingFile('Formazion\\Model...', 'Formazion.Model...')
+#1 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php(56): Doctrine\Common\Persistence\Mapping\Driver\FileDriver->getElement('Formazion\\Model...')
+#2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(151): Doctrine\ORM\Mapping\Driver\YamlDriver->loadMetadataForClass('Formazion\\Model...', Object(Doctrine\ORM\Mapping\ClassMetadata))
+#3 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Abstract in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php on line 79
+[23-Mar-2019 17:00:26 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\Common\Persistence\Mapping\MappingException: Invalid mapping file 'Formazion.Models.Person.dcm.yml' for class 'Formazion\Models\Person'. in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php:79
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/FileDriver.php(92): Doctrine\Common\Persistence\Mapping\MappingException::invalidMappingFile('Formazion\\Model...', 'Formazion.Model...')
+#1 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php(56): Doctrine\Common\Persistence\Mapping\Driver\FileDriver->getElement('Formazion\\Model...')
+#2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(151): Doctrine\ORM\Mapping\Driver\YamlDriver->loadMetadataForClass('Formazion\\Model...', Object(Doctrine\ORM\Mapping\ClassMetadata))
+#3 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Abstract in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php on line 79
+[23-Mar-2019 17:00:27 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\Common\Persistence\Mapping\MappingException: Invalid mapping file 'Formazion.Models.Person.dcm.yml' for class 'Formazion\Models\Person'. in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php:79
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/FileDriver.php(92): Doctrine\Common\Persistence\Mapping\MappingException::invalidMappingFile('Formazion\\Model...', 'Formazion.Model...')
+#1 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php(56): Doctrine\Common\Persistence\Mapping\Driver\FileDriver->getElement('Formazion\\Model...')
+#2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(151): Doctrine\ORM\Mapping\Driver\YamlDriver->loadMetadataForClass('Formazion\\Model...', Object(Doctrine\ORM\Mapping\ClassMetadata))
+#3 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Abstract in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php on line 79
+[23-Mar-2019 17:00:27 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\Common\Persistence\Mapping\MappingException: Invalid mapping file 'Formazion.Models.Person.dcm.yml' for class 'Formazion\Models\Person'. in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php:79
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/FileDriver.php(92): Doctrine\Common\Persistence\Mapping\MappingException::invalidMappingFile('Formazion\\Model...', 'Formazion.Model...')
+#1 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php(56): Doctrine\Common\Persistence\Mapping\Driver\FileDriver->getElement('Formazion\\Model...')
+#2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(151): Doctrine\ORM\Mapping\Driver\YamlDriver->loadMetadataForClass('Formazion\\Model...', Object(Doctrine\ORM\Mapping\ClassMetadata))
+#3 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Abstract in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php on line 79
+[23-Mar-2019 17:00:28 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\Common\Persistence\Mapping\MappingException: Invalid mapping file 'Formazion.Models.Person.dcm.yml' for class 'Formazion\Models\Person'. in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php:79
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/FileDriver.php(92): Doctrine\Common\Persistence\Mapping\MappingException::invalidMappingFile('Formazion\\Model...', 'Formazion.Model...')
+#1 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php(56): Doctrine\Common\Persistence\Mapping\Driver\FileDriver->getElement('Formazion\\Model...')
+#2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(151): Doctrine\ORM\Mapping\Driver\YamlDriver->loadMetadataForClass('Formazion\\Model...', Object(Doctrine\ORM\Mapping\ClassMetadata))
+#3 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Abstract in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php on line 79
+[23-Mar-2019 17:00:43 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\Common\Persistence\Mapping\MappingException: Invalid mapping file 'Formazion.Models.Person.dcm.yml' for class 'Formazion\Models\Person'. in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php:79
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/FileDriver.php(92): Doctrine\Common\Persistence\Mapping\MappingException::invalidMappingFile('Formazion\\Model...', 'Formazion.Model...')
+#1 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php(56): Doctrine\Common\Persistence\Mapping\Driver\FileDriver->getElement('Formazion\\Model...')
+#2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(151): Doctrine\ORM\Mapping\Driver\YamlDriver->loadMetadataForClass('Formazion\\Model...', Object(Doctrine\ORM\Mapping\ClassMetadata))
+#3 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Abstract in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php on line 79
+[23-Mar-2019 17:00:44 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\Common\Persistence\Mapping\MappingException: Invalid mapping file 'Formazion.Models.Person.dcm.yml' for class 'Formazion\Models\Person'. in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php:79
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/FileDriver.php(92): Doctrine\Common\Persistence\Mapping\MappingException::invalidMappingFile('Formazion\\Model...', 'Formazion.Model...')
+#1 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php(56): Doctrine\Common\Persistence\Mapping\Driver\FileDriver->getElement('Formazion\\Model...')
+#2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(151): Doctrine\ORM\Mapping\Driver\YamlDriver->loadMetadataForClass('Formazion\\Model...', Object(Doctrine\ORM\Mapping\ClassMetadata))
+#3 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Abstract in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php on line 79
+[23-Mar-2019 17:06:57 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\ORM\Mapping\MappingException: The target-entity Formazion\Models\student cannot be found in 'Formazion\Models\Person#students'. in /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/MappingException.php:772
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataInfo.php(1032): Doctrine\ORM\Mapping\MappingException::invalidTargetEntityClass('Formazion\\Model...', 'Formazion\\Model...', 'students')
+#1 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(266): Doctrine\ORM\Mapping\ClassMetadataInfo->validateAssociations()
+#2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(245): Doctrine\ORM\Mapping\ClassMetadataFactory->validateRuntimeMetadata(Object(Doctrine\ORM\Mapping\ClassMetadata), NULL)
+#3 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php(305): Doctrine\ORM\Mapping\ClassMetadataFactory->doLoadM in /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/MappingException.php on line 772
+[23-Mar-2019 17:08:02 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\ORM\Mapping\MappingException: The target-entity Formazion\Models\Customer cannot be found in 'Formazion\Models\Person#students'. in /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/MappingException.php:772
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataInfo.php(1032): Doctrine\ORM\Mapping\MappingException::invalidTargetEntityClass('Formazion\\Model...', 'Formazion\\Model...', 'students')
+#1 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(266): Doctrine\ORM\Mapping\ClassMetadataInfo->validateAssociations()
+#2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(245): Doctrine\ORM\Mapping\ClassMetadataFactory->validateRuntimeMetadata(Object(Doctrine\ORM\Mapping\ClassMetadata), NULL)
+#3 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php(305): Doctrine\ORM\Mapping\ClassMetadataFactory->doLoad in /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/MappingException.php on line 772
+[23-Mar-2019 17:09:55 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42P01]: Undefined table: 7 ERROR:  relation "formazion.persons_id_seq" does not exist
+LINE 1: SELECT NEXTVAL('formazion.persons_id_seq')
+                       ^ in /var/www/formazion/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:88
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(88): PDO->query('SELECT NEXTVAL(...')
+#1 /var/www/formazion/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(1010): Doctrine\DBAL\Driver\PDOConnection->query('SELECT NEXTVAL(...')
+#2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Id/SequenceGenerator.php(80): Doctrine\DBAL\Connection->query('SELECT NEXTVAL(...')
+#3 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/UnitOfWork.php(935): Doctrine\ORM\Id\SequenceGenerator->generate(Object(Doctrine\ORM\EntityManager), Object(Formazion\Models\Person))
+#4 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/UnitOfWork.php(1766): Doctrine\ORM\UnitOfWork->persistNew(Obje in /var/www/formazion/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractPostgreSQLDriver.php on line 63
+[23-Mar-2019 17:10:44 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\Common\Persistence\Mapping\MappingException: No mapping file found named 'Formazion.Models.Formation.dcm.yml' for class 'Formazion\Models\Formation'. in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php:64
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/DefaultFileLocator.php(108): Doctrine\Common\Persistence\Mapping\MappingException::mappingFileNotFound('Formazion\\Model...', 'Formazion.Model...')
+#1 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/FileDriver.php(90): Doctrine\Common\Persistence\Mapping\Driver\DefaultFileLocator->findMappingFile('Formazion\\Model...')
+#2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php(56): Doctrine\Common\Persistence\Mapping\Driver\FileDriver->getElement('Formazion\\Model...')
+#3 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFa in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php on line 64
+[23-Mar-2019 17:19:46 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\Common\Persistence\Mapping\MappingException: No mapping file found named 'Formazion.Models.Person.dcm.yml' for class 'Formazion\Models\Person'. in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php:64
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/DefaultFileLocator.php(108): Doctrine\Common\Persistence\Mapping\MappingException::mappingFileNotFound('Formazion\\Model...', 'Formazion.Model...')
+#1 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/FileDriver.php(90): Doctrine\Common\Persistence\Mapping\Driver\DefaultFileLocator->findMappingFile('Formazion\\Model...')
+#2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php(56): Doctrine\Common\Persistence\Mapping\Driver\FileDriver->getElement('Formazion\\Model...')
+#3 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory. in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php on line 64
+[23-Mar-2019 17:21:22 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\Common\Persistence\Mapping\MappingException: Invalid mapping file 'Formazion.Models.Formation.dcm.yml' for class 'Formazion\Models\Formation'. in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php:79
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Driver/FileDriver.php(92): Doctrine\Common\Persistence\Mapping\MappingException::invalidMappingFile('Formazion\\Model...', 'Formazion.Model...')
+#1 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php(56): Doctrine\Common\Persistence\Mapping\Driver\FileDriver->getElement('Formazion\\Model...')
+#2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(151): Doctrine\ORM\Mapping\Driver\YamlDriver->loadMetadataForClass('Formazion\\Model...', Object(Doctrine\ORM\Mapping\ClassMetadata))
+#3 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/Ab in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php on line 79
+[23-Mar-2019 17:21:44 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\ORM\Mapping\MappingException: The target-entity Formazion\Models\room cannot be found in 'Formazion\Models\Session#rooms'. in /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/MappingException.php:772
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataInfo.php(1032): Doctrine\ORM\Mapping\MappingException::invalidTargetEntityClass('Formazion\\Model...', 'Formazion\\Model...', 'rooms')
+#1 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(266): Doctrine\ORM\Mapping\ClassMetadataInfo->validateAssociations()
+#2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(245): Doctrine\ORM\Mapping\ClassMetadataFactory->validateRuntimeMetadata(Object(Doctrine\ORM\Mapping\ClassMetadata), NULL)
+#3 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php(305): Doctrine\ORM\Mapping\ClassMetadataFactory->doLoadMetadata( in /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/MappingException.php on line 772
+[23-Mar-2019 17:22:11 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\ORM\Mapping\MappingException: The target-entity Formazion\Models\Room cannot be found in 'Formazion\Models\Session#rooms'. in /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/MappingException.php:772
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataInfo.php(1032): Doctrine\ORM\Mapping\MappingException::invalidTargetEntityClass('Formazion\\Model...', 'Formazion\\Model...', 'rooms')
+#1 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(266): Doctrine\ORM\Mapping\ClassMetadataInfo->validateAssociations()
+#2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(245): Doctrine\ORM\Mapping\ClassMetadataFactory->validateRuntimeMetadata(Object(Doctrine\ORM\Mapping\ClassMetadata), NULL)
+#3 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php(305): Doctrine\ORM\Mapping\ClassMetadataFactory->doLoadMetadata( in /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/MappingException.php on line 772
+[23-Mar-2019 17:22:38 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\ORM\Mapping\MappingException: The target-entity Formazion\Models\sessions cannot be found in 'Formazion\Models\StudentsSession#sessions'. in /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/MappingException.php:772
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataInfo.php(1032): Doctrine\ORM\Mapping\MappingException::invalidTargetEntityClass('Formazion\\Model...', 'Formazion\\Model...', 'sessions')
+#1 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(266): Doctrine\ORM\Mapping\ClassMetadataInfo->validateAssociations()
+#2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(245): Doctrine\ORM\Mapping\ClassMetadataFactory->validateRuntimeMetadata(Object(Doctrine\ORM\Mapping\ClassMetadata), NULL)
+#3 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php(305): Doctrine\ORM\Mapping\ClassMetadataFactor in /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/MappingException.php on line 772
+[23-Mar-2019 17:22:52 Europe/Paris] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS) in /var/www/formazion/src/models/Person.php on line 8
+[23-Mar-2019 17:22:59 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Formazion\Models\Person' not found in /var/www/formazion/src/controllers/IndexController.class.php:16
+Stack trace:
+#0 /var/www/formazion/index.php(66): Formazion\Controller\IndexController->indexAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/IndexController.class.php on line 16
+[23-Mar-2019 17:23:14 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\ORM\Mapping\MappingException: The target-entity Formazion\Models\sessions cannot be found in 'Formazion\Models\StudentsSession#sessions'. in /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/MappingException.php:772
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataInfo.php(1032): Doctrine\ORM\Mapping\MappingException::invalidTargetEntityClass('Formazion\\Model...', 'Formazion\\Model...', 'sessions')
+#1 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(266): Doctrine\ORM\Mapping\ClassMetadataInfo->validateAssociations()
+#2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(245): Doctrine\ORM\Mapping\ClassMetadataFactory->validateRuntimeMetadata(Object(Doctrine\ORM\Mapping\ClassMetadata), NULL)
+#3 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php(305): Doctrine\ORM\Mapping\ClassMetadataFactor in /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/MappingException.php on line 772
+[23-Mar-2019 17:23:27 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23502]: Not null violation: 7 ERROR:  null value in column "id" violates not-null constraint
+DETAIL:  Failing row contains (null, ccc, cccc, blblbllblbl, null). in /var/www/formazion/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOStatement.php:117
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOStatement.php(117): PDOStatement->execute(NULL)
+#1 /var/www/formazion/vendor/doctrine/dbal/lib/Doctrine/DBAL/Statement.php(153): Doctrine\DBAL\Driver\PDOStatement->execute(NULL)
+#2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Persisters/Entity/BasicEntityPersister.php(285): Doctrine\DBAL\Statement->execute()
+#3 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/UnitOfWork.php(1073): Doctrine\ORM\Persisters\Entity\BasicEntityPersister->executeInserts()
+#4 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/UnitOfWork.php(386): Doctrine\ORM\UnitOfWork->executeInserts(Object(Doctrine\ORM\Mapping\ClassMetadata))
+#5 /var/www/formazion/ in /var/www/formazion/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractPostgreSQLDriver.php on line 45
+[23-Mar-2019 17:34:00 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23502]: Not null violation: 7 ERROR:  null value in column "id" violates not-null constraint
+DETAIL:  Failing row contains (null, ccc, cccc, blblbllblbl, null). in /var/www/formazion/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOStatement.php:117
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOStatement.php(117): PDOStatement->execute(NULL)
+#1 /var/www/formazion/vendor/doctrine/dbal/lib/Doctrine/DBAL/Statement.php(153): Doctrine\DBAL\Driver\PDOStatement->execute(NULL)
+#2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Persisters/Entity/BasicEntityPersister.php(285): Doctrine\DBAL\Statement->execute()
+#3 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/UnitOfWork.php(1073): Doctrine\ORM\Persisters\Entity\BasicEntityPersister->executeInserts()
+#4 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/UnitOfWork.php(386): Doctrine\ORM\UnitOfWork->executeInserts(Object(Doctrine\ORM\Mapping\ClassMetadata))
+#5 /var/www/formazion/ in /var/www/formazion/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractPostgreSQLDriver.php on line 45
+[23-Mar-2019 17:35:49 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23502]: Not null violation: 7 ERROR:  null value in column "id" violates not-null constraint
+DETAIL:  Failing row contains (null, ccc, cccc, blblbllblbl, null). in /var/www/formazion/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOStatement.php:117
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOStatement.php(117): PDOStatement->execute(NULL)
+#1 /var/www/formazion/vendor/doctrine/dbal/lib/Doctrine/DBAL/Statement.php(153): Doctrine\DBAL\Driver\PDOStatement->execute(NULL)
+#2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Persisters/Entity/BasicEntityPersister.php(285): Doctrine\DBAL\Statement->execute()
+#3 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/UnitOfWork.php(1073): Doctrine\ORM\Persisters\Entity\BasicEntityPersister->executeInserts()
+#4 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/UnitOfWork.php(386): Doctrine\ORM\UnitOfWork->executeInserts(Object(Doctrine\ORM\Mapping\ClassMetadata))
+#5 /var/www/formazion/ in /var/www/formazion/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractPostgreSQLDriver.php on line 45
+[23-Mar-2019 18:22:51 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[55000]: Object not in prerequisite state: 7 ERROR:  currval of sequence "persons_id_seq" is not yet defined in this session in /var/www/formazion/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:108
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(108): PDO->lastInsertId('formazion.perso...')
+#1 /var/www/formazion/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(1152): Doctrine\DBAL\Driver\PDOConnection->lastInsertId('formazion.perso...')
+#2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Id/IdentityGenerator.php(55): Doctrine\DBAL\Connection->lastInsertId('formazion.perso...')
+#3 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Persisters/Entity/BasicEntityPersister.php(288): Doctrine\ORM\Id\IdentityGenerator->generate(Object(Doctrine\ORM\EntityManager), Object(Formazion\Models\Person))
+#4 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/UnitOfWork.php(1073): Doctrine\ORM\Persisters\Ent in /var/www/formazion/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php on line 110
+[23-Mar-2019 18:22:53 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[55000]: Object not in prerequisite state: 7 ERROR:  currval of sequence "persons_id_seq" is not yet defined in this session in /var/www/formazion/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:108
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(108): PDO->lastInsertId('formazion.perso...')
+#1 /var/www/formazion/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(1152): Doctrine\DBAL\Driver\PDOConnection->lastInsertId('formazion.perso...')
+#2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Id/IdentityGenerator.php(55): Doctrine\DBAL\Connection->lastInsertId('formazion.perso...')
+#3 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Persisters/Entity/BasicEntityPersister.php(288): Doctrine\ORM\Id\IdentityGenerator->generate(Object(Doctrine\ORM\EntityManager), Object(Formazion\Models\Person))
+#4 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/UnitOfWork.php(1073): Doctrine\ORM\Persisters\Ent in /var/www/formazion/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php on line 110
+[23-Mar-2019 18:32:09 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[55000]: Object not in prerequisite state: 7 ERROR:  currval of sequence "persons_id_seq" is not yet defined in this session in /var/www/formazion/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:108
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(108): PDO->lastInsertId('formazion.perso...')
+#1 /var/www/formazion/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(1152): Doctrine\DBAL\Driver\PDOConnection->lastInsertId('formazion.perso...')
+#2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Id/IdentityGenerator.php(55): Doctrine\DBAL\Connection->lastInsertId('formazion.perso...')
+#3 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Persisters/Entity/BasicEntityPersister.php(288): Doctrine\ORM\Id\IdentityGenerator->generate(Object(Doctrine\ORM\EntityManager), Object(Formazion\Models\Person))
+#4 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/UnitOfWork.php(1073): Doctrine\ORM\Persisters\Ent in /var/www/formazion/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php on line 110
+[23-Mar-2019 18:32:11 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[55000]: Object not in prerequisite state: 7 ERROR:  currval of sequence "persons_id_seq" is not yet defined in this session in /var/www/formazion/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:108
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(108): PDO->lastInsertId('formazion.perso...')
+#1 /var/www/formazion/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(1152): Doctrine\DBAL\Driver\PDOConnection->lastInsertId('formazion.perso...')
+#2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Id/IdentityGenerator.php(55): Doctrine\DBAL\Connection->lastInsertId('formazion.perso...')
+#3 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Persisters/Entity/BasicEntityPersister.php(288): Doctrine\ORM\Id\IdentityGenerator->generate(Object(Doctrine\ORM\EntityManager), Object(Formazion\Models\Person))
+#4 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/UnitOfWork.php(1073): Doctrine\ORM\Persisters\Ent in /var/www/formazion/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php on line 110

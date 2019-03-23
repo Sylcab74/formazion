@@ -1,6 +1,6 @@
 <?php
 
-namespace Formazion\Model;
+namespace Formazion\Models;
 
 /**
  * StudentsSession
@@ -18,12 +18,12 @@ class StudentsSession
     private $note;
 
     /**
-     * @var \person
+     * @var \Formazion\Models\person
      */
     private $students;
 
     /**
-     * @var \sessions
+     * @var \Formazion\Models\session
      */
     private $sessions;
 
@@ -65,11 +65,11 @@ class StudentsSession
     /**
      * Set students.
      *
-     * @param \person|null $students
+     * @param \Formazion\Models\person|null $students
      *
      * @return StudentsSession
      */
-    public function setStudents(\person $students = null)
+    public function setStudents(\Formazion\Models\person $students = null)
     {
         $this->students = $students;
 
@@ -79,7 +79,7 @@ class StudentsSession
     /**
      * Get students.
      *
-     * @return \person|null
+     * @return \Formazion\Models\person|null
      */
     public function getStudents()
     {
@@ -89,11 +89,11 @@ class StudentsSession
     /**
      * Set sessions.
      *
-     * @param \sessions|null $sessions
+     * @param \Formazion\Models\session|null $sessions
      *
      * @return StudentsSession
      */
-    public function setSessions(\sessions $sessions = null)
+    public function setSessions(\Formazion\Models\session $sessions = null)
     {
         $this->sessions = $sessions;
 
@@ -103,7 +103,7 @@ class StudentsSession
     /**
      * Get sessions.
      *
-     * @return \sessions|null
+     * @return \Formazion\Models\session|null
      */
     public function getSessions()
     {

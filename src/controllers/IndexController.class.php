@@ -2,9 +2,9 @@
 
 namespace Formazion\Controller;
 
-use Formazion\Model\Person;
+use Formazion\Core\Manager;
+use Formazion\Models\Person;
 use Formazion\Core\Views;
-use Formazion\Core\EntityManager;
 
 class IndexController
 {
@@ -17,9 +17,9 @@ class IndexController
         $person->setFirstname("ccc");
         $person->setLastname("cccc");
         $person->setRole("blblbllblbl");
-        var_dump(EntityManager::$em);
-        EntityManager::$em->persist($person);
-        $entityManager->flush();
+
+        Manager::$em->persist($person);
+        Manager::$em->flush();
 
         Views::render('home');
     }

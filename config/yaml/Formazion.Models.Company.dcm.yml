@@ -1,4 +1,4 @@
-Company:
+Formazion\Models\Company:
     type: entity
     table: formazion.companies
     id:
@@ -9,7 +9,7 @@ Company:
                 unsigned: false
             id: true
             generator:
-                strategy: SEQUENCE
+                strategy: IDENTITY
     fields:
         name:
             type: string

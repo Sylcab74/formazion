@@ -1,6 +1,6 @@
 <?php
 
-namespace Formazion\Model;
+namespace Formazion\Models;
 
 /**
  * Company
@@ -212,11 +212,11 @@ class Company
     /**
      * Add person.
      *
-     * @param \person $person
+     * @param \Formazion\Models\person $person
      *
      * @return Company
      */
-    public function addPerson(\person $person)
+    public function addPerson(\Formazion\Models\person $person)
     {
         $this->persons[] = $person;
 
@@ -226,11 +226,11 @@ class Company
     /**
      * Remove person.
      *
-     * @param \person $person
+     * @param \Formazion\Models\person $person
      *
      * @return boolean TRUE if this collection contained the specified element, FALSE otherwise.
      */
-    public function removePerson(\person $person)
+    public function removePerson(\Formazion\Models\person $person)
     {
         return $this->persons->removeElement($person);
     }

@@ -1,4 +1,4 @@
-Person:
+Formazion\Models\Person:
     type: entity
     table: formazion.persons
     indexes:
@@ -13,7 +13,7 @@ Person:
                 unsigned: false
             id: true
             generator:
-                strategy: SEQUENCE
+                strategy: IDENTITY
     fields:
         firstname:
             type: string
@@ -48,10 +48,10 @@ Person:
     oneToMany:
         formations:
             targetEntity: formation
-            mappedBy: persons
+            mappedBy: Person
         sessions:
             targetEntity: session
-            mappedBy: persons
+            mappedBy: Person
         students:
-            targetEntity: student
-            mappedBy: persons
+            targetEntity: StudentsSession
+            mappedBy: Person
