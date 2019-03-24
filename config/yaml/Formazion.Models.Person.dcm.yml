@@ -13,7 +13,7 @@ Formazion\Models\Person:
                 unsigned: false
             id: true
             generator:
-                strategy: IDENTITY
+                strategy: SEQUENCE
     fields:
         firstname:
             type: string

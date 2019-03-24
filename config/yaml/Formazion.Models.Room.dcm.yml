@@ -9,7 +9,7 @@ Formazion\Models\Room:
                 unsigned: false
             id: true
             generator:
-                strategy: IDENTITY
+                strategy: SEQUENCE
     fields:
         number:
             type: integer

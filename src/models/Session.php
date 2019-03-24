@@ -25,7 +25,7 @@ class Session
     /**
      * @var int|null
      */
-    private $hoursperformed;
+    private $hoursPerformed;
 
     /**
      * @var string|null
@@ -119,27 +119,28 @@ class Session
     }
 
     /**
-     * Set hoursperformed.
+     * Set hoursPerformed.
      *
-     * @param int|null $hoursperformed
+     * @param int|null $hoursPerformed
      *
      * @return Session
      */
-    public function setHoursperformed($hoursperformed = null)
+    public function setHoursPerformed($hoursPerformed = null)
     {
-        $this->hoursperformed = $hoursperformed;
+        $this->hoursPerformed = $hoursPerformed;
 
         return $this;
     }
 
     /**
-     * Get hoursperformed.
+     * Get hoursPerformed.
      *
      * @return int|null
      */
-    public function getHoursperformed()
+    public function getHoursPerformed()
     {
-        return $this->hoursperformed;
+        var_dump('nique ta putain de mere la pute');
+        return $this->hoursPerformed;
     }
 
     /**

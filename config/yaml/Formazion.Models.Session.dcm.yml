@@ -19,7 +19,7 @@ Formazion\Models\Session:
                 unsigned: false
             id: true
             generator:
-                strategy: IDENTITY
+                strategy: SEQUENCE
     fields:
         start:
             type: datetime
@@ -27,12 +27,12 @@ Formazion\Models\Session:
         end:
             type: datetime
             nullable: false
-        hoursperformed:
+        hoursPerformed:
             type: integer
             nullable: true
             options:
                 unsigned: false
-            column: hoursPerformed
+            column: hours_performed
         report:
             type: string
             nullable: true

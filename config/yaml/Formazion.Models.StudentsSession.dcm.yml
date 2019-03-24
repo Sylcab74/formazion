@@ -16,7 +16,7 @@ Formazion\Models\StudentsSession:
                 unsigned: false
             id: true
             generator:
-                strategy: IDENTITY
+                strategy: SEQUENCE
     fields:
         note:
             type: integer

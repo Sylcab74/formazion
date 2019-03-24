@@ -3,8 +3,6 @@
 <?php $this->startSection('title', 'Accueil'); ?>
 
 <?php $this->startSection('content'); ?>
- <?php echo static::e($test); ?>
-
  <h1>Le contenu de Formazion</h1>
 <?php $this->stopSection(); ?>
 
