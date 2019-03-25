@@ -13,7 +13,7 @@ Formazion\Models\Person:
                 unsigned: false
             id: true
             generator:
-                strategy: SEQUENCE
+                strategy: AUTO
     fields:
         firstname:
             type: string
@@ -47,10 +47,10 @@ Formazion\Models\Person:
     lifecycleCallbacks: {  }
     oneToMany:
         formations:
-            targetEntity: formation
+            targetEntity: Formation
             mappedBy: Person
         sessions:
-            targetEntity: session
+            targetEntity: Session
             mappedBy: Person
         students:
             targetEntity: StudentsSession

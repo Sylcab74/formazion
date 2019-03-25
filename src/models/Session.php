@@ -15,12 +15,12 @@ class Session
     /**
      * @var \DateTime
      */
-    private $start;
+    private $starting;
 
     /**
      * @var \DateTime
      */
-    private $end;
+    private $ending;
 
     /**
      * @var int|null
@@ -73,13 +73,13 @@ class Session
     /**
      * Set start.
      *
-     * @param \DateTime $start
+     * @param \DateTime $starting
      *
      * @return Session
      */
-    public function setStart($start)
+    public function setStarting($starting)
     {
-        $this->start = $start;
+        $this->starting = $starting;
 
         return $this;
     }
@@ -89,21 +89,21 @@ class Session
      *
      * @return \DateTime
      */
-    public function getStart()
+    public function getStarting()
     {
-        return $this->start;
+        return $this->starting;
     }
 
     /**
-     * Set end.
+     * Set ending.
      *
-     * @param \DateTime $end
+     * @param \DateTime $ending
      *
      * @return Session
      */
-    public function setEnd($end)
+    public function setEnding($ending)
     {
-        $this->end = $end;
+        $this->ending = $ending;
 
         return $this;
     }
@@ -113,9 +113,9 @@ class Session
      *
      * @return \DateTime
      */
-    public function getEnd()
+    public function getEnding()
     {
-        return $this->end;
+        return $this->ending;
     }
 
     /**

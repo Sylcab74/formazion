@@ -9,7 +9,7 @@ Formazion\Models\Company:
                 unsigned: false
             id: true
             generator:
-                strategy: SEQUENCE
+                strategy: AUTO
     fields:
         name:
             type: string
@@ -50,5 +50,5 @@ Formazion\Models\Company:
     lifecycleCallbacks: {  }
     oneToMany:
         persons:
-            targetEntity: person
+            targetEntity: Person
             mappedBy: company

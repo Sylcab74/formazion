@@ -83,8 +83,8 @@ class IndexController
             $session->setTeacher($teachers[$faker->numberBetween($min = 0, $max = 9)]);
             $session->setFormations($formations[$faker->numberBetween($min = 0, $max = 9)]);
             $session->setRooms($rooms[$faker->numberBetween($min = 0, $max = 9)]);
-            $session->setStart($dateStart);
-            $session->setEnd($dateEnd);
+            $session->setStarting($dateStart);
+            $session->setEnding($dateEnd);
 
             if ($i % 2 == 0) {
                 $session->setHoursPerformed(2);
@@ -101,11 +101,10 @@ class IndexController
             $studentsSession = new StudentsSession();
             $studentsSession->setSessions($sessions[$faker->numberBetween($min = 0, $max = 19)]);
             $studentsSession->setStudents($students[$faker->numberBetween($min = 0, $max = 19)]);
+            $studentsSession->setNote($faker->numberBetween($min = 0, $max = 20));
 
             Manager::$em->persist($studentsSession);
         }
-
-
 
         Manager::$em->flush();
 
