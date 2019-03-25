@@ -2614,3 +2614,99 @@ Stack trace:
 #2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Persisters/Entity/BasicEntityPersister.php(285): Doctrine\DBAL\Statement->execute()
 #3 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/UnitOfWork.php(1073): Doctrine\ORM\Persisters\Entity\BasicEntityPersister->executeInserts()
 #4 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/UnitOfWork.php(386): Doctrine\ORM\UnitOfWork->executeInserts(Object(Doctrine\O in /var/www/formazion/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractPostgreSQLDriver.php on line 60
+[25-Mar-2019 22:00:33 Europe/Paris] PHP Fatal error:  Uncaught Error: Cannot access private property Formazion\Models\Person::$firstname in /var/www/formazion/cache/e83249bd3ba79932e16fb1fb5100dafade9954c2.bladec:9
+Stack trace:
+#0 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(2150): include()
+#1 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(375): eftec\bladeone\BladeOne->evaluatePath('./cache/e83249b...', Array)
+#2 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(305): eftec\bladeone\BladeOne->runInternal('home', Array, 0, true, 0)
+#3 /var/www/formazion/core/Views.class.php(16): eftec\bladeone\BladeOne->run('home', Array)
+#4 /var/www/formazion/src/controllers/IndexController.class.php(16): Formazion\Core\Views::render('home', Array)
+#5 /var/www/formazion/index.php(66): Formazion\Controller\IndexController->indexAction(Array)
+#6 {main}
+  thrown in /var/www/formazion/cache/e83249bd3ba79932e16fb1fb5100dafade9954c2.bladec on line 9
+[25-Mar-2019 22:02:49 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to undefined method Formazion\Models\Person::getName() in /var/www/formazion/cache/e83249bd3ba79932e16fb1fb5100dafade9954c2.bladec:13
+Stack trace:
+#0 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(2150): include()
+#1 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(375): eftec\bladeone\BladeOne->evaluatePath('./cache/e83249b...', Array)
+#2 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(305): eftec\bladeone\BladeOne->runInternal('home', Array, 0, true, 0)
+#3 /var/www/formazion/core/Views.class.php(16): eftec\bladeone\BladeOne->run('home', Array)
+#4 /var/www/formazion/src/controllers/IndexController.class.php(18): Formazion\Core\Views::render('home', Array)
+#5 /var/www/formazion/index.php(66): Formazion\Controller\IndexController->indexAction(Array)
+#6 {main}
+  thrown in /var/www/formazion/cache/e83249bd3ba79932e16fb1fb5100dafade9954c2.bladec on line 13
+[25-Mar-2019 22:30:33 Europe/Paris] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /var/www/formazion/src/controllers/RoomController.class.php on line 27
+[25-Mar-2019 22:32:04 Europe/Paris] PHP Warning:  Invalid argument supplied for foreach() in /var/www/formazion/cache/4029d8fca5ca0f6a1443fa527cc378ba7ddf919d.bladec on line 12
+[25-Mar-2019 22:32:04 Europe/Paris] PHP Stack trace:
+[25-Mar-2019 22:32:04 Europe/Paris] PHP   1. {main}() /var/www/formazion/index.php:0
+[25-Mar-2019 22:32:04 Europe/Paris] PHP   2. Formazion\Controller\RoomController->createAction() /var/www/formazion/index.php:66
+[25-Mar-2019 22:32:04 Europe/Paris] PHP   3. Formazion\Core\Views::render() /var/www/formazion/src/controllers/RoomController.class.php:30
+[25-Mar-2019 22:32:04 Europe/Paris] PHP   4. eftec\bladeone\BladeOne->run() /var/www/formazion/core/Views.class.php:16
+[25-Mar-2019 22:32:04 Europe/Paris] PHP   5. eftec\bladeone\BladeOne->runInternal() /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php:305
+[25-Mar-2019 22:32:04 Europe/Paris] PHP   6. eftec\bladeone\BladeOne->evaluatePath() /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php:375
+[25-Mar-2019 22:32:04 Europe/Paris] PHP   7. include() /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php:2150
+[25-Mar-2019 22:34:50 Europe/Paris] PHP Fatal error:  Uncaught BadMethodCallException: Undefined method 'setNumber'. The method name must start with either findBy, findOneBy or countBy! in /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/EntityRepository.php:238
+Stack trace:
+#0 /var/www/formazion/src/controllers/RoomController.class.php(30): Doctrine\ORM\EntityRepository->__call('setNumber', Array)
+#1 /var/www/formazion/index.php(66): Formazion\Controller\RoomController->createAction(Array)
+#2 {main}
+  thrown in /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/EntityRepository.php on line 238
+[25-Mar-2019 22:51:18 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function getNumber() on array in /var/www/formazion/cache/a2f150fa2931df429a9cba5d999ba4eb6fdd4426.bladec:8
+Stack trace:
+#0 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(2150): include()
+#1 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(375): eftec\bladeone\BladeOne->evaluatePath('./cache/a2f150f...', Array)
+#2 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(305): eftec\bladeone\BladeOne->runInternal('room.show', Array, 0, true, 0)
+#3 /var/www/formazion/core/Views.class.php(16): eftec\bladeone\BladeOne->run('room.show', Array)
+#4 /var/www/formazion/src/controllers/RoomController.class.php(26): Formazion\Core\Views::render('room.show', Array)
+#5 /var/www/formazion/index.php(66): Formazion\Controller\RoomController->showAction(Array)
+#6 {main}
+  thrown in /var/www/formazion/cache/a2f150fa2931df429a9cba5d999ba4eb6fdd4426.bladec on line 8
+[25-Mar-2019 22:52:28 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  invalid input syntax for integer: "Formazion\Models\Room" in /var/www/formazion/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOStatement.php:117
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOStatement.php(117): PDOStatement->execute(NULL)
+#1 /var/www/formazion/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(903): Doctrine\DBAL\Driver\PDOStatement->execute()
+#2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Persisters/Entity/BasicEntityPersister.php(733): Doctrine\DBAL\Connection->executeQuery('SELECT t0.id AS...', Array, Array)
+#3 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Persisters/Entity/BasicEntityPersister.php(751): Doctrine\ORM\Persisters\Entity\BasicEntityPersister->load(Array, NULL)
+#4 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php(460): Doctrine\ORM\Persisters\Entity\BasicEntityPersister->loadById(Array)
+#5 /var/www/formazion/ven in /var/www/formazion/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractPostgreSQLDriver.php on line 79
+[25-Mar-2019 22:55:40 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\ORM\ORMException: The identifier id is missing for a query of Formazion\Models\Room in /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/ORMException.php:309
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php(410): Doctrine\ORM\ORMException::missingIdentifierField('Formazion\\Model...', 'id')
+#1 /var/www/formazion/src/controllers/RoomController.class.php(58): Doctrine\ORM\EntityManager->find('Formazion\\Model...', Array)
+#2 /var/www/formazion/index.php(66): Formazion\Controller\RoomController->editAction(Array)
+#3 {main}
+  thrown in /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/ORMException.php on line 309
+[25-Mar-2019 22:56:03 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\ORM\ORMException: The identifier id is missing for a query of Formazion\Models\Room in /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/ORMException.php:309
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php(410): Doctrine\ORM\ORMException::missingIdentifierField('Formazion\\Model...', 'id')
+#1 /var/www/formazion/src/controllers/RoomController.class.php(58): Doctrine\ORM\EntityManager->find('Formazion\\Model...', Array)
+#2 /var/www/formazion/index.php(66): Formazion\Controller\RoomController->editAction(Array)
+#3 {main}
+  thrown in /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/ORMException.php on line 309
+[25-Mar-2019 22:56:56 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\ORM\ORMException: The identifier id is missing for a query of Formazion\Models\Room in /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/ORMException.php:309
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php(410): Doctrine\ORM\ORMException::missingIdentifierField('Formazion\\Model...', 'id')
+#1 /var/www/formazion/src/controllers/RoomController.class.php(58): Doctrine\ORM\EntityManager->find('Formazion\\Model...', Array)
+#2 /var/www/formazion/index.php(66): Formazion\Controller\RoomController->editAction(Array)
+#3 {main}
+  thrown in /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/ORMException.php on line 309
+[25-Mar-2019 23:00:42 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\ORM\ORMException: The identifier id is missing for a query of Formazion\Models\Room in /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/ORMException.php:309
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php(410): Doctrine\ORM\ORMException::missingIdentifierField('Formazion\\Model...', 'id')
+#1 /var/www/formazion/src/controllers/RoomController.class.php(58): Doctrine\ORM\EntityManager->find('Formazion\\Model...', Array)
+#2 /var/www/formazion/index.php(66): Formazion\Controller\RoomController->editAction(Array)
+#3 {main}
+  thrown in /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/ORMException.php on line 309
+[25-Mar-2019 23:05:01 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\ORM\ORMException: The identifier id is missing for a query of Formazion\Models\Room in /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/ORMException.php:309
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php(410): Doctrine\ORM\ORMException::missingIdentifierField('Formazion\\Model...', 'id')
+#1 /var/www/formazion/src/controllers/RoomController.class.php(23): Doctrine\ORM\EntityManager->find('Formazion\\Model...', Array)
+#2 /var/www/formazion/index.php(66): Formazion\Controller\RoomController->showAction(Array)
+#3 {main}
+  thrown in /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/ORMException.php on line 309
+[25-Mar-2019 23:05:47 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\ORM\ORMException: The identifier id is missing for a query of Formazion\Models\Room in /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/ORMException.php:309
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php(410): Doctrine\ORM\ORMException::missingIdentifierField('Formazion\\Model...', 'id')
+#1 /var/www/formazion/src/controllers/RoomController.class.php(23): Doctrine\ORM\EntityManager->find('Formazion\\Model...', Array)
+#2 /var/www/formazion/index.php(66): Formazion\Controller\RoomController->showAction(Array)
+#3 {main}
+  thrown in /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/ORMException.php on line 309
