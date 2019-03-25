@@ -1,6 +1,6 @@
 <?php
 
-
+namespace Formazion\Models;
 
 /**
  * Person
@@ -43,7 +43,7 @@ class Person
     private $students;
 
     /**
-     * @var \company
+     * @var \Formazion\Models\company
      */
     private $companies;
 
@@ -142,11 +142,11 @@ class Person
     /**
      * Add formation.
      *
-     * @param \formation $formation
+     * @param \Formazion\Models\formation $formation
      *
      * @return Person
      */
-    public function addFormation(\formation $formation)
+    public function addFormation(\Formazion\Models\formation $formation)
     {
         $this->formations[] = $formation;
 
@@ -156,11 +156,11 @@ class Person
     /**
      * Remove formation.
      *
-     * @param \formation $formation
+     * @param \Formazion\Models\formation $formation
      *
      * @return boolean TRUE if this collection contained the specified element, FALSE otherwise.
      */
-    public function removeFormation(\formation $formation)
+    public function removeFormation(\Formazion\Models\formation $formation)
     {
         return $this->formations->removeElement($formation);
     }
@@ -178,11 +178,11 @@ class Person
     /**
      * Add session.
      *
-     * @param \session $session
+     * @param \Formazion\Models\session $session
      *
      * @return Person
      */
-    public function addSession(\session $session)
+    public function addSession(\Formazion\Models\session $session)
     {
         $this->sessions[] = $session;
 
@@ -192,11 +192,11 @@ class Person
     /**
      * Remove session.
      *
-     * @param \session $session
+     * @param \Formazion\Models\session $session
      *
      * @return boolean TRUE if this collection contained the specified element, FALSE otherwise.
      */
-    public function removeSession(\session $session)
+    public function removeSession(\Formazion\Models\session $session)
     {
         return $this->sessions->removeElement($session);
     }
@@ -214,11 +214,11 @@ class Person
     /**
      * Add student.
      *
-     * @param \student $student
+     * @param \Formazion\Models\StudentsSession $student
      *
      * @return Person
      */
-    public function addStudent(\student $student)
+    public function addStudent(\Formazion\Models\StudentsSession $student)
     {
         $this->students[] = $student;
 
@@ -228,11 +228,11 @@ class Person
     /**
      * Remove student.
      *
-     * @param \student $student
+     * @param \Formazion\Models\StudentsSession $student
      *
      * @return boolean TRUE if this collection contained the specified element, FALSE otherwise.
      */
-    public function removeStudent(\student $student)
+    public function removeStudent(\Formazion\Models\StudentsSession $student)
     {
         return $this->students->removeElement($student);
     }
@@ -250,11 +250,11 @@ class Person
     /**
      * Set companies.
      *
-     * @param \company|null $companies
+     * @param \Formazion\Models\company|null $companies
      *
      * @return Person
      */
-    public function setCompanies(\company $companies = null)
+    public function setCompanies(\Formazion\Models\company $companies = null)
     {
         $this->companies = $companies;
 
@@ -264,7 +264,7 @@ class Person
     /**
      * Get companies.
      *
-     * @return \company|null
+     * @return \Formazion\Models\company|null
      */
     public function getCompanies()
     {

@@ -2,7 +2,8 @@
 
 namespace Formazion\Controller;
 
-use \Formazion\Core\Views;
+use Formazion\Core\{Manager, Views};
+use Formazion\Models\{Room, Formation, Person, Company, Session, StudentsSession};
 
 class IndexController
 {

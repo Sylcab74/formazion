@@ -1,4 +1,4 @@
-Session:
+Formazion\Models\Session:
     type: entity
     table: formazion.sessions
     indexes:
@@ -19,20 +19,20 @@ Session:
                 unsigned: false
             id: true
             generator:
-                strategy: SEQUENCE
+                strategy: AUTO
     fields:
-        start:
+        starting:
             type: datetime
             nullable: false
-        end:
+        ending:
             type: datetime
             nullable: false
-        hoursperformed:
+        hoursPerformed:
             type: integer
             nullable: true
             options:
                 unsigned: false
-            column: hoursPerformed
+            column: hours_performed
         report:
             type: string
             nullable: true
@@ -51,7 +51,7 @@ Session:
                     referencedColumnName: id
             orphanRemoval: false
         rooms:
-            targetEntity: room
+            targetEntity: Room
             cascade: {  }
             fetch: LAZY
             mappedBy: null

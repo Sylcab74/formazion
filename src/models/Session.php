@@ -1,6 +1,6 @@
 <?php
 
-
+namespace Formazion\Models;
 
 /**
  * Session
@@ -15,17 +15,17 @@ class Session
     /**
      * @var \DateTime
      */
-    private $start;
+    private $starting;
 
     /**
      * @var \DateTime
      */
-    private $end;
+    private $ending;
 
     /**
      * @var int|null
      */
-    private $hoursperformed;
+    private $hoursPerformed;
 
     /**
      * @var string|null
@@ -38,17 +38,17 @@ class Session
     private $studentsSession;
 
     /**
-     * @var \formation
+     * @var \Formazion\Models\formation
      */
     private $formations;
 
     /**
-     * @var \room
+     * @var \Formazion\Models\Room
      */
     private $rooms;
 
     /**
-     * @var \person
+     * @var \Formazion\Models\person
      */
     private $teacher;
 
@@ -73,13 +73,13 @@ class Session
     /**
      * Set start.
      *
-     * @param \DateTime $start
+     * @param \DateTime $starting
      *
      * @return Session
      */
-    public function setStart($start)
+    public function setStarting($starting)
     {
-        $this->start = $start;
+        $this->starting = $starting;
 
         return $this;
     }
@@ -89,21 +89,21 @@ class Session
      *
      * @return \DateTime
      */
-    public function getStart()
+    public function getStarting()
     {
-        return $this->start;
+        return $this->starting;
     }
 
     /**
-     * Set end.
+     * Set ending.
      *
-     * @param \DateTime $end
+     * @param \DateTime $ending
      *
      * @return Session
      */
-    public function setEnd($end)
+    public function setEnding($ending)
     {
-        $this->end = $end;
+        $this->ending = $ending;
 
         return $this;
     }
@@ -113,33 +113,34 @@ class Session
      *
      * @return \DateTime
      */
-    public function getEnd()
+    public function getEnding()
     {
-        return $this->end;
+        return $this->ending;
     }
 
     /**
-     * Set hoursperformed.
+     * Set hoursPerformed.
      *
-     * @param int|null $hoursperformed
+     * @param int|null $hoursPerformed
      *
      * @return Session
      */
-    public function setHoursperformed($hoursperformed = null)
+    public function setHoursPerformed($hoursPerformed = null)
     {
-        $this->hoursperformed = $hoursperformed;
+        $this->hoursPerformed = $hoursPerformed;
 
         return $this;
     }
 
     /**
-     * Get hoursperformed.
+     * Get hoursPerformed.
      *
      * @return int|null
      */
-    public function getHoursperformed()
+    public function getHoursPerformed()
     {
-        return $this->hoursperformed;
+        var_dump('nique ta putain de mere la pute');
+        return $this->hoursPerformed;
     }
 
     /**
@@ -169,11 +170,11 @@ class Session
     /**
      * Add studentsSession.
      *
-     * @param \studentsSession $studentsSession
+     * @param \Formazion\Models\studentsSession $studentsSession
      *
      * @return Session
      */
-    public function addStudentsSession(\studentsSession $studentsSession)
+    public function addStudentsSession(\Formazion\Models\studentsSession $studentsSession)
     {
         $this->studentsSession[] = $studentsSession;
 
@@ -183,11 +184,11 @@ class Session
     /**
      * Remove studentsSession.
      *
-     * @param \studentsSession $studentsSession
+     * @param \Formazion\Models\studentsSession $studentsSession
      *
      * @return boolean TRUE if this collection contained the specified element, FALSE otherwise.
      */
-    public function removeStudentsSession(\studentsSession $studentsSession)
+    public function removeStudentsSession(\Formazion\Models\studentsSession $studentsSession)
     {
         return $this->studentsSession->removeElement($studentsSession);
     }
@@ -205,11 +206,11 @@ class Session
     /**
      * Set formations.
      *
-     * @param \formation|null $formations
+     * @param \Formazion\Models\formation|null $formations
      *
      * @return Session
      */
-    public function setFormations(\formation $formations = null)
+    public function setFormations(\Formazion\Models\formation $formations = null)
     {
         $this->formations = $formations;
 
@@ -219,7 +220,7 @@ class Session
     /**
      * Get formations.
      *
-     * @return \formation|null
+     * @return \Formazion\Models\formation|null
      */
     public function getFormations()
     {
@@ -229,11 +230,11 @@ class Session
     /**
      * Set rooms.
      *
-     * @param \room|null $rooms
+     * @param \Formazion\Models\Room|null $rooms
      *
      * @return Session
      */
-    public function setRooms(\room $rooms = null)
+    public function setRooms(\Formazion\Models\Room $rooms = null)
     {
         $this->rooms = $rooms;
 
@@ -243,7 +244,7 @@ class Session
     /**
      * Get rooms.
      *
-     * @return \room|null
+     * @return \Formazion\Models\Room|null
      */
     public function getRooms()
     {
@@ -253,11 +254,11 @@ class Session
     /**
      * Set teacher.
      *
-     * @param \person|null $teacher
+     * @param \Formazion\Models\person|null $teacher
      *
      * @return Session
      */
-    public function setTeacher(\person $teacher = null)
+    public function setTeacher(\Formazion\Models\person $teacher = null)
     {
         $this->teacher = $teacher;
 
@@ -267,7 +268,7 @@ class Session
     /**
      * Get teacher.
      *
-     * @return \person|null
+     * @return \Formazion\Models\person|null
      */
     public function getTeacher()
     {

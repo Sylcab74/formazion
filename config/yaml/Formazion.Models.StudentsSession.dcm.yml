@@ -1,4 +1,4 @@
-StudentsSession:
+Formazion\Models\StudentsSession:
     type: entity
     table: formazion.students_sessions
     indexes:
@@ -16,7 +16,7 @@ StudentsSession:
                 unsigned: false
             id: true
             generator:
-                strategy: SEQUENCE
+                strategy: AUTO
     fields:
         note:
             type: integer
@@ -35,7 +35,7 @@ StudentsSession:
                     referencedColumnName: id
             orphanRemoval: false
         sessions:
-            targetEntity: sessions
+            targetEntity: session
             cascade: {  }
             fetch: LAZY
             mappedBy: null

@@ -1,4 +1,4 @@
-Formation:
+Formazion\Models\Formation:
     type: entity
     table: formazion.formations
     indexes:
@@ -13,7 +13,7 @@ Formation:
                 unsigned: false
             id: true
             generator:
-                strategy: SEQUENCE
+                strategy: AUTO
     fields:
         name:
             type: string
@@ -35,5 +35,5 @@ Formation:
     lifecycleCallbacks: {  }
     oneToMany:
         session:
-            targetEntity: session
+            targetEntity: Session
             mappedBy: formations

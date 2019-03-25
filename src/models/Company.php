@@ -1,6 +1,6 @@
 <?php
 
-
+namespace Formazion\Models;
 
 /**
  * Company
@@ -20,7 +20,7 @@ class Company
     /**
      * @var int
      */
-    private $numberaddress;
+    private $numberAddress;
 
     /**
      * @var string
@@ -30,7 +30,7 @@ class Company
     /**
      * @var int
      */
-    private $postalcode;
+    private $postalCode;
 
     /**
      * @var string
@@ -90,27 +90,27 @@ class Company
     }
 
     /**
-     * Set numberaddress.
+     * Set numberAddress.
      *
-     * @param int $numberaddress
+     * @param int $numberAddress
      *
      * @return Company
      */
-    public function setNumberaddress($numberaddress)
+    public function setNumberAddress($numberAddress)
     {
-        $this->numberaddress = $numberaddress;
+        $this->numberAddress = $numberAddress;
 
         return $this;
     }
 
     /**
-     * Get numberaddress.
+     * Get numberAddress.
      *
      * @return int
      */
-    public function getNumberaddress()
+    public function getNumberAddress()
     {
-        return $this->numberaddress;
+        return $this->numberAddress;
     }
 
     /**
@@ -138,27 +138,27 @@ class Company
     }
 
     /**
-     * Set postalcode.
+     * Set postalCode.
      *
-     * @param int $postalcode
+     * @param int $postalCode
      *
      * @return Company
      */
-    public function setPostalcode($postalcode)
+    public function setPostalCode($postalCode)
     {
-        $this->postalcode = $postalcode;
+        $this->postalCode = $postalCode;
 
         return $this;
     }
 
     /**
-     * Get postalcode.
+     * Get postalCode.
      *
      * @return int
      */
-    public function getPostalcode()
+    public function getPostalCode()
     {
-        return $this->postalcode;
+        return $this->postalCode;
     }
 
     /**
@@ -212,11 +212,11 @@ class Company
     /**
      * Add person.
      *
-     * @param \person $person
+     * @param \Formazion\Models\person $person
      *
      * @return Company
      */
-    public function addPerson(\person $person)
+    public function addPerson(\Formazion\Models\person $person)
     {
         $this->persons[] = $person;
 
@@ -226,11 +226,11 @@ class Company
     /**
      * Remove person.
      *
-     * @param \person $person
+     * @param \Formazion\Models\person $person
      *
      * @return boolean TRUE if this collection contained the specified element, FALSE otherwise.
      */
-    public function removePerson(\person $person)
+    public function removePerson(\Formazion\Models\person $person)
     {
         return $this->persons->removeElement($person);
     }

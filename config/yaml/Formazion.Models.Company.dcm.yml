@@ -1,4 +1,4 @@
-Company:
+Formazion\Models\Company:
     type: entity
     table: formazion.companies
     id:
@@ -9,7 +9,7 @@ Company:
                 unsigned: false
             id: true
             generator:
-                strategy: SEQUENCE
+                strategy: AUTO
     fields:
         name:
             type: string
@@ -17,24 +17,24 @@ Company:
             length: 45
             options:
                 fixed: false
-        numberaddress:
+        numberAddress:
             type: integer
             nullable: false
             options:
                 unsigned: false
-            column: numberAddress
+            column: number_address
         street:
             type: string
             nullable: false
             length: 125
             options:
                 fixed: false
-        postalcode:
+        postalCode:
             type: integer
             nullable: false
             options:
                 unsigned: false
-            column: postalCode
+            column: postal_code
         city:
             type: string
             nullable: false
@@ -50,5 +50,5 @@ Company:
     lifecycleCallbacks: {  }
     oneToMany:
         persons:
-            targetEntity: person
+            targetEntity: Person
             mappedBy: company

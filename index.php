@@ -1,29 +1,30 @@
 <?php
 namespace Formazion;
 
+use Formazion\Core\Manager;
+
 session_start();
 
 require 'vendor/autoload.php';
-require 'bootstrap.php'; 
+include_once "core/Manager.class.php";
+
+Manager::getInstance();
 
 /***
  * @param $class
  */
-function myAutoloader($class)
+function myAutoloader($classParams)
 {
-    $class = $class.'.class.php';
+    $class = $classParams.'.class.php';
     $class = str_replace('Formazion\\Service\\', '', $class);
-    $class = str_replace('Formazion\\Model\\', '', $class);
+    $classModel = str_replace('Formazion\\Models\\', '', $classParams.'.php');
     $class = str_replace('Formazion\\Core\\', '', $class);
 
-
-    if(file_exists("models/".$class))
-    {
-        include_once("src/models/" . $class);
-    } else if (file_exists("core/".$class))
-    {
+    if(file_exists("src/models/".$classModel)) {
+        include_once("src/models/" . $classModel );
+    } else if (file_exists("core/".$class)) {
         include_once "core/".$class;
-    } else if (file_exists("services/".$class)) {
+    } else if (file_exists("src/services/".$class)) {
         include_once("src/services/" . $class);
     }
 }

@@ -1,6 +1,6 @@
 <?php
 
-
+namespace Formazion\Models;
 
 /**
  * Room
@@ -67,11 +67,11 @@ class Room
     /**
      * Add session.
      *
-     * @param \session $session
+     * @param \Formazion\Models\session $session
      *
      * @return Room
      */
-    public function addSession(\session $session)
+    public function addSession(\Formazion\Models\session $session)
     {
         $this->session[] = $session;
 
@@ -81,11 +81,11 @@ class Room
     /**
      * Remove session.
      *
-     * @param \session $session
+     * @param \Formazion\Models\session $session
      *
      * @return boolean TRUE if this collection contained the specified element, FALSE otherwise.
      */
-    public function removeSession(\session $session)
+    public function removeSession(\Formazion\Models\session $session)
     {
         return $this->session->removeElement($session);
     }

@@ -1,4 +1,4 @@
-Room:
+Formazion\Models\Room:
     type: entity
     table: formazion.rooms
     id:
@@ -9,7 +9,7 @@ Room:
                 unsigned: false
             id: true
             generator:
-                strategy: SEQUENCE
+                strategy: AUTO
     fields:
         number:
             type: integer
