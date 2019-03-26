@@ -24,7 +24,7 @@
                     <a class="nav-link" href="#">Sessions</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Formations</a>
+                    <a class="nav-link" href="/formation">Formations</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/company">Companies</a>
