@@ -20,7 +20,6 @@ class FormationController
     public function showAction($params)
     {
         $id = $params['URL'][0];
-        $post = $params['POST'];
         $formation = Manager::$em->find(Formation::class, $id);
 
         return Views::render('formation.show', [

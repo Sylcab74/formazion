@@ -21,7 +21,7 @@
                     <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Sessions</a>
+                    <a class="nav-link" href="/session">Sessions</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/formation">Formations</a>
@@ -35,7 +35,7 @@
             </ul>
         </div>
     </nav>
-    <main>
+    <main class="container">
         @yield('content')
     </main>
     <footer>

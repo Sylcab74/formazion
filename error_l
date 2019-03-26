@@ -2834,3 +2834,168 @@ Stack trace:
 #2 /var/www/formazion/index.php(66): Formazion\Controller\FormationController->deleteAction(Array)
 #3 {main}
   thrown in /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/ORMInvalidArgumentException.php on line 189
+[26-Mar-2019 22:27:25 Europe/Paris] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /var/www/formazion/cache/f1240e17edcf333bb3d4717854092a016f100e3f.bladec on line 8
+[26-Mar-2019 22:27:36 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to undefined method Formazion\Models\Session::getRoom() in /var/www/formazion/cache/f1240e17edcf333bb3d4717854092a016f100e3f.bladec:10
+Stack trace:
+#0 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(2150): include()
+#1 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(375): eftec\bladeone\BladeOne->evaluatePath('./cache/f1240e1...', Array)
+#2 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(305): eftec\bladeone\BladeOne->runInternal('session.show', Array, 0, true, 0)
+#3 /var/www/formazion/core/Views.class.php(16): eftec\bladeone\BladeOne->run('session.show', Array)
+#4 /var/www/formazion/src/controllers/SessionController.class.php(26): Formazion\Core\Views::render('session.show', Array)
+#5 /var/www/formazion/index.php(66): Formazion\Controller\SessionController->showAction(Array)
+#6 {main}
+  thrown in /var/www/formazion/cache/f1240e17edcf333bb3d4717854092a016f100e3f.bladec on line 10
+[26-Mar-2019 22:27:51 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function getId() on null in /var/www/formazion/cache/f1240e17edcf333bb3d4717854092a016f100e3f.bladec:18
+Stack trace:
+#0 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(2150): include()
+#1 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(375): eftec\bladeone\BladeOne->evaluatePath('./cache/f1240e1...', Array)
+#2 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(305): eftec\bladeone\BladeOne->runInternal('session.show', Array, 0, true, 0)
+#3 /var/www/formazion/core/Views.class.php(16): eftec\bladeone\BladeOne->run('session.show', Array)
+#4 /var/www/formazion/src/controllers/SessionController.class.php(26): Formazion\Core\Views::render('session.show', Array)
+#5 /var/www/formazion/index.php(66): Formazion\Controller\SessionController->showAction(Array)
+#6 {main}
+  thrown in /var/www/formazion/cache/f1240e17edcf333bb3d4717854092a016f100e3f.bladec on line 18
+[26-Mar-2019 22:54:53 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\Common\Persistence\Mapping\MappingException: Class 'Formazion\Controller\Person' does not exist in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php:93
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php(24): Doctrine\Common\Persistence\Mapping\MappingException::nonExistingClass('Formazion\\Contr...')
+#1 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php(251): Doctrine\Common\Persistence\Mapping\RuntimeReflectionService->getParentClasses('Formazion\\Contr...')
+#2 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php(284): Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory->getParentClasses('Formazion\\Contr...')
+#3 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(78): Do in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php on line 93
+[26-Mar-2019 22:55:04 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function getId() on null in /var/www/formazion/cache/d7dc26d8536b759dfbb76160a75597f752725453.bladec:16
+Stack trace:
+#0 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(2150): include()
+#1 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(375): eftec\bladeone\BladeOne->evaluatePath('./cache/d7dc26d...', Array)
+#2 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(305): eftec\bladeone\BladeOne->runInternal('formation.edit', Array, 0, true, 0)
+#3 /var/www/formazion/core/Views.class.php(16): eftec\bladeone\BladeOne->run('formation.edit', Array)
+#4 /var/www/formazion/src/controllers/SessionController.class.php(99): Formazion\Core\Views::render('formation.edit', Array)
+#5 /var/www/formazion/index.php(66): Formazion\Controller\SessionController->editAction(Array)
+#6 {main}
+  thrown in /var/www/formazion/cache/d7dc26d8536b759dfbb76160a75597f752725453.bladec on line 16
+[26-Mar-2019 22:55:56 Europe/Paris] PHP Warning:  Invalid argument supplied for foreach() in /var/www/formazion/cache/d7dc26d8536b759dfbb76160a75597f752725453.bladec on line 34
+[26-Mar-2019 22:55:56 Europe/Paris] PHP Stack trace:
+[26-Mar-2019 22:55:56 Europe/Paris] PHP   1. {main}() /var/www/formazion/index.php:0
+[26-Mar-2019 22:55:56 Europe/Paris] PHP   2. Formazion\Controller\SessionController->editAction() /var/www/formazion/index.php:66
+[26-Mar-2019 22:55:56 Europe/Paris] PHP   3. Formazion\Core\Views::render() /var/www/formazion/src/controllers/SessionController.class.php:99
+[26-Mar-2019 22:55:56 Europe/Paris] PHP   4. eftec\bladeone\BladeOne->run() /var/www/formazion/core/Views.class.php:16
+[26-Mar-2019 22:55:56 Europe/Paris] PHP   5. eftec\bladeone\BladeOne->runInternal() /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php:305
+[26-Mar-2019 22:55:56 Europe/Paris] PHP   6. eftec\bladeone\BladeOne->evaluatePath() /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php:375
+[26-Mar-2019 22:55:56 Europe/Paris] PHP   7. include() /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php:2150
+[26-Mar-2019 22:56:20 Europe/Paris] PHP Warning:  Invalid argument supplied for foreach() in /var/www/formazion/cache/fccf8510dc818a7e6c69c279cde52d19595c02e1.bladec on line 34
+[26-Mar-2019 22:56:20 Europe/Paris] PHP Stack trace:
+[26-Mar-2019 22:56:20 Europe/Paris] PHP   1. {main}() /var/www/formazion/index.php:0
+[26-Mar-2019 22:56:20 Europe/Paris] PHP   2. Formazion\Controller\SessionController->editAction() /var/www/formazion/index.php:66
+[26-Mar-2019 22:56:20 Europe/Paris] PHP   3. Formazion\Core\Views::render() /var/www/formazion/src/controllers/SessionController.class.php:99
+[26-Mar-2019 22:56:20 Europe/Paris] PHP   4. eftec\bladeone\BladeOne->run() /var/www/formazion/core/Views.class.php:16
+[26-Mar-2019 22:56:20 Europe/Paris] PHP   5. eftec\bladeone\BladeOne->runInternal() /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php:305
+[26-Mar-2019 22:56:20 Europe/Paris] PHP   6. eftec\bladeone\BladeOne->evaluatePath() /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php:375
+[26-Mar-2019 22:56:20 Europe/Paris] PHP   7. include() /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php:2150
+[26-Mar-2019 22:57:25 Europe/Paris] PHP Warning:  Invalid argument supplied for foreach() in /var/www/formazion/cache/fccf8510dc818a7e6c69c279cde52d19595c02e1.bladec on line 34
+[26-Mar-2019 22:57:25 Europe/Paris] PHP Stack trace:
+[26-Mar-2019 22:57:25 Europe/Paris] PHP   1. {main}() /var/www/formazion/index.php:0
+[26-Mar-2019 22:57:25 Europe/Paris] PHP   2. Formazion\Controller\SessionController->editAction() /var/www/formazion/index.php:66
+[26-Mar-2019 22:57:25 Europe/Paris] PHP   3. Formazion\Core\Views::render() /var/www/formazion/src/controllers/SessionController.class.php:101
+[26-Mar-2019 22:57:25 Europe/Paris] PHP   4. eftec\bladeone\BladeOne->run() /var/www/formazion/core/Views.class.php:16
+[26-Mar-2019 22:57:25 Europe/Paris] PHP   5. eftec\bladeone\BladeOne->runInternal() /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php:305
+[26-Mar-2019 22:57:25 Europe/Paris] PHP   6. eftec\bladeone\BladeOne->evaluatePath() /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php:375
+[26-Mar-2019 22:57:25 Europe/Paris] PHP   7. include() /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php:2150
+[26-Mar-2019 23:01:47 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Formazion\Controller\Datetime' not found in /var/www/formazion/src/controllers/SessionController.class.php:80
+Stack trace:
+#0 /var/www/formazion/index.php(66): Formazion\Controller\SessionController->editAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/SessionController.class.php on line 80
+[26-Mar-2019 23:02:09 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23502]: Not null violation: 7 ERROR:  null value in column "responsible_professor_id" violates not-null constraint
+DETAIL:  Failing row contains (133, Blick, Mante and O'Conner, null). in /var/www/formazion/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOStatement.php:117
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOStatement.php(117): PDOStatement->execute(NULL)
+#1 /var/www/formazion/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(1054): Doctrine\DBAL\Driver\PDOStatement->execute()
+#2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Persisters/Entity/BasicEntityPersister.php(499): Doctrine\DBAL\Connection->executeUpdate('UPDATE formazio...', Array, Array)
+#3 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Persisters/Entity/BasicEntityPersister.php(388): Doctrine\ORM\Persisters\Entity\BasicEntityPersister->updateTable(Object(DoctrineProxies\__CG__\Formazion\Models\Formation), 'formazion.forma...', Array, NULL)
+#4 /var in /var/www/formazion/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractPostgreSQLDriver.php on line 45
+[26-Mar-2019 23:04:47 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23502]: Not null violation: 7 ERROR:  null value in column "teacher_id" violates not-null constraint
+DETAIL:  Failing row contains (255, 2018-07-04 16:48:00, 2018-07-04 13:17:00, 2, Ad id ratione cupiditate et. Est accusantium laborum totam nihil..., 133, 138, null). in /var/www/formazion/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOStatement.php:117
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOStatement.php(117): PDOStatement->execute(NULL)
+#1 /var/www/formazion/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(1054): Doctrine\DBAL\Driver\PDOStatement->execute()
+#2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Persisters/Entity/BasicEntityPersister.php(499): Doctrine\DBAL\Connection->executeUpdate('UPDATE formazio...', Array, Array)
+#3 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Persisters/Entity/BasicEntityPersister.php(388): Doctrine\ORM\Persisters\Entity\BasicEntityPersister->updateTable(Object(Formazion\M in /var/www/formazion/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractPostgreSQLDriver.php on line 45
+[26-Mar-2019 23:05:36 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23502]: Not null violation: 7 ERROR:  null value in column "teacher_id" violates not-null constraint
+DETAIL:  Failing row contains (255, 2018-07-04 16:00:00, 2018-07-04 13:00:00, 2, Ad id ratione cupiditate et. Est accusantium laborum totam nihil..., 133, 138, null). in /var/www/formazion/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOStatement.php:117
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOStatement.php(117): PDOStatement->execute(NULL)
+#1 /var/www/formazion/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(1054): Doctrine\DBAL\Driver\PDOStatement->execute()
+#2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Persisters/Entity/BasicEntityPersister.php(499): Doctrine\DBAL\Connection->executeUpdate('UPDATE formazio...', Array, Array)
+#3 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Persisters/Entity/BasicEntityPersister.php(388): Doctrine\ORM\Persisters\Entity\BasicEntityPersister->updateTable(Object(Formazion\M in /var/www/formazion/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractPostgreSQLDriver.php on line 45
+[26-Mar-2019 23:08:11 Europe/Paris] PHP Warning:  Invalid argument supplied for foreach() in /var/www/formazion/cache/fccf8510dc818a7e6c69c279cde52d19595c02e1.bladec on line 34
+[26-Mar-2019 23:08:11 Europe/Paris] PHP Stack trace:
+[26-Mar-2019 23:08:11 Europe/Paris] PHP   1. {main}() /var/www/formazion/index.php:0
+[26-Mar-2019 23:08:11 Europe/Paris] PHP   2. Formazion\Controller\SessionController->editAction() /var/www/formazion/index.php:66
+[26-Mar-2019 23:08:11 Europe/Paris] PHP   3. Formazion\Core\Views::render() /var/www/formazion/src/controllers/SessionController.class.php:102
+[26-Mar-2019 23:08:11 Europe/Paris] PHP   4. eftec\bladeone\BladeOne->run() /var/www/formazion/core/Views.class.php:16
+[26-Mar-2019 23:08:11 Europe/Paris] PHP   5. eftec\bladeone\BladeOne->runInternal() /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php:305
+[26-Mar-2019 23:08:11 Europe/Paris] PHP   6. eftec\bladeone\BladeOne->evaluatePath() /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php:375
+[26-Mar-2019 23:08:11 Europe/Paris] PHP   7. include() /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php:2150
+[26-Mar-2019 23:10:19 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\Common\Persistence\Mapping\MappingException: Class 'Formazion\Controller\Room' does not exist in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php:93
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php(24): Doctrine\Common\Persistence\Mapping\MappingException::nonExistingClass('Formazion\\Contr...')
+#1 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php(251): Doctrine\Common\Persistence\Mapping\RuntimeReflectionService->getParentClasses('Formazion\\Contr...')
+#2 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php(284): Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory->getParentClasses('Formazion\\Contr...')
+#3 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(78): Doct in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php on line 93
+[26-Mar-2019 23:10:29 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to undefined method Formazion\Models\Session::getRoom() in /var/www/formazion/cache/fccf8510dc818a7e6c69c279cde52d19595c02e1.bladec:35
+Stack trace:
+#0 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(2150): include()
+#1 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(375): eftec\bladeone\BladeOne->evaluatePath('./cache/fccf851...', Array)
+#2 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(305): eftec\bladeone\BladeOne->runInternal('session.edit', Array, 0, true, 0)
+#3 /var/www/formazion/core/Views.class.php(16): eftec\bladeone\BladeOne->run('session.edit', Array)
+#4 /var/www/formazion/src/controllers/SessionController.class.php(103): Formazion\Core\Views::render('session.edit', Array)
+#5 /var/www/formazion/index.php(66): Formazion\Controller\SessionController->editAction(Array)
+#6 {main}
+  thrown in /var/www/formazion/cache/fccf8510dc818a7e6c69c279cde52d19595c02e1.bladec on line 35
+[26-Mar-2019 23:10:46 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to undefined method Formazion\Models\Session::getRoom() in /var/www/formazion/cache/fccf8510dc818a7e6c69c279cde52d19595c02e1.bladec:35
+Stack trace:
+#0 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(2150): include()
+#1 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(375): eftec\bladeone\BladeOne->evaluatePath('./cache/fccf851...', Array)
+#2 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(305): eftec\bladeone\BladeOne->runInternal('session.edit', Array, 0, true, 0)
+#3 /var/www/formazion/core/Views.class.php(16): eftec\bladeone\BladeOne->run('session.edit', Array)
+#4 /var/www/formazion/src/controllers/SessionController.class.php(103): Formazion\Core\Views::render('session.edit', Array)
+#5 /var/www/formazion/index.php(66): Formazion\Controller\SessionController->editAction(Array)
+#6 {main}
+  thrown in /var/www/formazion/cache/fccf8510dc818a7e6c69c279cde52d19595c02e1.bladec on line 35
+[26-Mar-2019 23:11:23 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to undefined method Formazion\Models\Session::getRoom() in /var/www/formazion/cache/fccf8510dc818a7e6c69c279cde52d19595c02e1.bladec:35
+Stack trace:
+#0 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(2150): include()
+#1 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(375): eftec\bladeone\BladeOne->evaluatePath('./cache/fccf851...', Array)
+#2 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(305): eftec\bladeone\BladeOne->runInternal('session.edit', Array, 0, true, 0)
+#3 /var/www/formazion/core/Views.class.php(16): eftec\bladeone\BladeOne->run('session.edit', Array)
+#4 /var/www/formazion/src/controllers/SessionController.class.php(103): Formazion\Core\Views::render('session.edit', Array)
+#5 /var/www/formazion/index.php(66): Formazion\Controller\SessionController->editAction(Array)
+#6 {main}
+  thrown in /var/www/formazion/cache/fccf8510dc818a7e6c69c279cde52d19595c02e1.bladec on line 35
+[26-Mar-2019 23:23:39 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\ORM\ORMException: The identifier id is missing for a query of Formazion\Models\Session in /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/ORMException.php:309
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php(410): Doctrine\ORM\ORMException::missingIdentifierField('Formazion\\Model...', 'id')
+#1 /var/www/formazion/src/controllers/SessionController.class.php(36): Doctrine\ORM\EntityManager->find('Formazion\\Model...', Array)
+#2 /var/www/formazion/index.php(66): Formazion\Controller\SessionController->createAction(Array)
+#3 {main}
+  thrown in /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/ORMException.php on line 309
+[26-Mar-2019 23:24:15 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\ORM\ORMException: The identifier id is missing for a query of Formazion\Models\Session in /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/ORMException.php:309
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php(410): Doctrine\ORM\ORMException::missingIdentifierField('Formazion\\Model...', 'id')
+#1 /var/www/formazion/src/controllers/SessionController.class.php(36): Doctrine\ORM\EntityManager->find('Formazion\\Model...', Array)
+#2 /var/www/formazion/index.php(66): Formazion\Controller\SessionController->createAction(Array)
+#3 {main}
+  thrown in /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/ORMException.php on line 309
+[26-Mar-2019 23:24:19 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\ORM\ORMException: The identifier id is missing for a query of Formazion\Models\Session in /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/ORMException.php:309
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php(410): Doctrine\ORM\ORMException::missingIdentifierField('Formazion\\Model...', 'id')
+#1 /var/www/formazion/src/controllers/SessionController.class.php(36): Doctrine\ORM\EntityManager->find('Formazion\\Model...', Array)
+#2 /var/www/formazion/index.php(66): Formazion\Controller\SessionController->createAction(Array)
+#3 {main}
+  thrown in /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/ORMException.php on line 309
+[26-Mar-2019 23:26:37 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23502]: Not null violation: 7 ERROR:  null value in column "rooms_id" violates not-null constraint
+DETAIL:  Failing row contains (1, 2019-03-26 22:00:00, 2019-03-26 12:00:00, null, , 136, null, 417). in /var/www/formazion/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOStatement.php:117
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOStatement.php(117): PDOStatement->execute(NULL)
+#1 /var/www/formazion/vendor/doctrine/dbal/lib/Doctrine/DBAL/Statement.php(153): Doctrine\DBAL\Driver\PDOStatement->execute(NULL)
+#2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Persisters/Entity/BasicEntityPersister.php(285): Doctrine\DBAL\Statement->execute()
+#3 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/UnitOfWork.php(1073): Doctrine\ORM\Persisters\Entity\BasicEntityPersister->executeInserts()
+#4 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/UnitOfWork.php(386): Doctrine\ORM\UnitOfWork->executeInserts(Object(Doctrine\ORM\Mapping in /var/www/formazion/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractPostgreSQLDriver.php on line 45
