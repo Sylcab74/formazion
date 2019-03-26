@@ -2710,3 +2710,13 @@ Stack trace:
 #2 /var/www/formazion/index.php(66): Formazion\Controller\RoomController->showAction(Array)
 #3 {main}
   thrown in /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/ORMException.php on line 309
+[26-Mar-2019 09:56:35 Europe/Paris] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /var/www/formazion/src/controllers/RoomController.class.php on line 25
+[26-Mar-2019 09:56:35 Europe/Paris] PHP Stack trace:
+[26-Mar-2019 09:56:35 Europe/Paris] PHP   1. {main}() /var/www/formazion/index.php:0
+[26-Mar-2019 09:56:35 Europe/Paris] PHP   2. Formazion\Controller\RoomController->showAction() /var/www/formazion/index.php:66
+[26-Mar-2019 09:56:35 Europe/Paris] PHP   3. count() /var/www/formazion/src/controllers/RoomController.class.php:25
+[26-Mar-2019 09:57:28 Europe/Paris] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /var/www/formazion/src/controllers/RoomController.class.php on line 25
+[26-Mar-2019 09:57:28 Europe/Paris] PHP Stack trace:
+[26-Mar-2019 09:57:28 Europe/Paris] PHP   1. {main}() /var/www/formazion/index.php:0
+[26-Mar-2019 09:57:28 Europe/Paris] PHP   2. Formazion\Controller\RoomController->showAction() /var/www/formazion/index.php:66
+[26-Mar-2019 09:57:28 Europe/Paris] PHP   3. count() /var/www/formazion/src/controllers/RoomController.class.php:25

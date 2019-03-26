@@ -16,27 +16,12 @@ class RoomController
             'rooms' => $rooms
         ]);
     }
-
+    
     public function showAction($params)
     {
         $id = $params['URL'][0];
+        $post = $params['POST'];
         $room = Manager::$em->find(Room::class, $id);
-        
-        if (count($post) > 0) {
-            $errors = [];
-            if (count( Manager::$em->getRepository(Room::class)->findBy( ['number' => $post['number']] ) ) > 0) {
-                $errors[] = "Désolé ce numéro est déjà utilisé.";
-            } else {
-                $room->setNumber($post['number']);
-                Manager::$em->persist($room);
-                Manager::$em->flush();
-                
-                $rooms = Manager::$em->getRepository(Room::class)->findAll();
-                return Views::render('room.index', [
-                    'rooms' => $rooms
-                ]);
-            }
-        }
 
         return Views::render('room.show', [
             'room' => $room
@@ -72,6 +57,22 @@ class RoomController
         $post = $params['POST'];
         $id = $params['URL'][0];
         $room = Manager::$em->find(Room::class, $id);
+
+        if (count($post) > 0) {
+            $errors = [];
+            if (count( Manager::$em->getRepository(Room::class)->findBy( ['number' => $post['number']] ) ) > 0) {
+                $errors[] = "Désolé ce numéro est déjà utilisé.";
+            } else {
+                $room->setNumber($post['number']);
+                Manager::$em->persist($room);
+                Manager::$em->flush();
+                
+                $rooms = Manager::$em->getRepository(Room::class)->findAll();
+                return Views::render('room.index', [
+                    'rooms' => $rooms
+                ]);
+            }
+        }
 
         return Views::render('room.edit', [
             'room' => $room

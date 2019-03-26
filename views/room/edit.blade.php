@@ -13,7 +13,7 @@
       </ul>
     @endif
 
-    <form action="/room/index" method="POST">
+    <form action="/room/edit/{{$room->getId()}}" method="POST">
       <label for="number">Number</label>
       <input type="text" name="number" id="number" value="{{$room->getNumber()}}"><br>
       <input type="submit" value="Submit">
