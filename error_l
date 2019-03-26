@@ -2999,3 +2999,103 @@ Stack trace:
 #2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Persisters/Entity/BasicEntityPersister.php(285): Doctrine\DBAL\Statement->execute()
 #3 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/UnitOfWork.php(1073): Doctrine\ORM\Persisters\Entity\BasicEntityPersister->executeInserts()
 #4 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/UnitOfWork.php(386): Doctrine\ORM\UnitOfWork->executeInserts(Object(Doctrine\ORM\Mapping in /var/www/formazion/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractPostgreSQLDriver.php on line 45
+[26-Mar-2019 23:49:11 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function getStarting() on null in /var/www/formazion/cache/f1240e17edcf333bb3d4717854092a016f100e3f.bladec:8
+Stack trace:
+#0 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(2150): include()
+#1 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(375): eftec\bladeone\BladeOne->evaluatePath('./cache/f1240e1...', Array)
+#2 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(305): eftec\bladeone\BladeOne->runInternal('session.show', Array, 0, true, 0)
+#3 /var/www/formazion/core/Views.class.php(16): eftec\bladeone\BladeOne->run('session.show', Array)
+#4 /var/www/formazion/src/controllers/StudentssessionController.class.php(16): Formazion\Core\Views::render('session.show', Array)
+#5 /var/www/formazion/index.php(66): Formazion\Controller\StudentsSessionController->showAction(Array)
+#6 {main}
+  thrown in /var/www/formazion/cache/f1240e17edcf333bb3d4717854092a016f100e3f.bladec on line 8
+[26-Mar-2019 23:49:57 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function getStarting() on null in /var/www/formazion/cache/f1240e17edcf333bb3d4717854092a016f100e3f.bladec:8
+Stack trace:
+#0 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(2150): include()
+#1 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(375): eftec\bladeone\BladeOne->evaluatePath('./cache/f1240e1...', Array)
+#2 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(305): eftec\bladeone\BladeOne->runInternal('session.show', Array, 0, true, 0)
+#3 /var/www/formazion/core/Views.class.php(16): eftec\bladeone\BladeOne->run('session.show', Array)
+#4 /var/www/formazion/src/controllers/StudentssessionController.class.php(16): Formazion\Core\Views::render('session.show', Array)
+#5 /var/www/formazion/index.php(66): Formazion\Controller\StudentsSessionController->showAction(Array)
+#6 {main}
+  thrown in /var/www/formazion/cache/f1240e17edcf333bb3d4717854092a016f100e3f.bladec on line 8
+[26-Mar-2019 23:50:16 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function getStarting() on null in /var/www/formazion/cache/f1240e17edcf333bb3d4717854092a016f100e3f.bladec:8
+Stack trace:
+#0 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(2150): include()
+#1 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(375): eftec\bladeone\BladeOne->evaluatePath('./cache/f1240e1...', Array)
+#2 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(305): eftec\bladeone\BladeOne->runInternal('session.show', Array, 0, true, 0)
+#3 /var/www/formazion/core/Views.class.php(16): eftec\bladeone\BladeOne->run('session.show', Array)
+#4 /var/www/formazion/src/controllers/StudentssessionController.class.php(16): Formazion\Core\Views::render('session.show', Array)
+#5 /var/www/formazion/index.php(66): Formazion\Controller\StudentsSessionController->showAction(Array)
+#6 {main}
+  thrown in /var/www/formazion/cache/f1240e17edcf333bb3d4717854092a016f100e3f.bladec on line 8
+[26-Mar-2019 23:50:36 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function getStarting() on null in /var/www/formazion/cache/f1240e17edcf333bb3d4717854092a016f100e3f.bladec:8
+Stack trace:
+#0 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(2150): include()
+#1 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(375): eftec\bladeone\BladeOne->evaluatePath('./cache/f1240e1...', Array)
+#2 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(305): eftec\bladeone\BladeOne->runInternal('session.show', Array, 0, true, 0)
+#3 /var/www/formazion/core/Views.class.php(16): eftec\bladeone\BladeOne->run('session.show', Array)
+#4 /var/www/formazion/src/controllers/StudentssessionController.class.php(16): Formazion\Core\Views::render('session.show', Array)
+#5 /var/www/formazion/index.php(66): Formazion\Controller\StudentsSessionController->showAction(Array)
+#6 {main}
+  thrown in /var/www/formazion/cache/f1240e17edcf333bb3d4717854092a016f100e3f.bladec on line 8
+[26-Mar-2019 23:50:53 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function getStarting() on null in /var/www/formazion/cache/f1240e17edcf333bb3d4717854092a016f100e3f.bladec:8
+Stack trace:
+#0 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(2150): include()
+#1 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(375): eftec\bladeone\BladeOne->evaluatePath('./cache/f1240e1...', Array)
+#2 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(305): eftec\bladeone\BladeOne->runInternal('session.show', Array, 0, true, 0)
+#3 /var/www/formazion/core/Views.class.php(16): eftec\bladeone\BladeOne->run('session.show', Array)
+#4 /var/www/formazion/src/controllers/StudentssessionController.class.php(16): Formazion\Core\Views::render('session.show', Array)
+#5 /var/www/formazion/index.php(66): Formazion\Controller\StudentsSessionController->showAction(Array)
+#6 {main}
+  thrown in /var/www/formazion/cache/f1240e17edcf333bb3d4717854092a016f100e3f.bladec on line 8
+[26-Mar-2019 23:51:08 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function getStarting() on null in /var/www/formazion/cache/f1240e17edcf333bb3d4717854092a016f100e3f.bladec:8
+Stack trace:
+#0 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(2150): include()
+#1 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(375): eftec\bladeone\BladeOne->evaluatePath('./cache/f1240e1...', Array)
+#2 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(305): eftec\bladeone\BladeOne->runInternal('session.show', Array, 0, true, 0)
+#3 /var/www/formazion/core/Views.class.php(16): eftec\bladeone\BladeOne->run('session.show', Array)
+#4 /var/www/formazion/src/controllers/StudentssessionController.class.php(16): Formazion\Core\Views::render('session.show', Array)
+#5 /var/www/formazion/index.php(66): Formazion\Controller\StudentsSessionController->showAction(Array)
+#6 {main}
+  thrown in /var/www/formazion/cache/f1240e17edcf333bb3d4717854092a016f100e3f.bladec on line 8
+[26-Mar-2019 23:51:50 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function getStarting() on null in /var/www/formazion/cache/f1240e17edcf333bb3d4717854092a016f100e3f.bladec:8
+Stack trace:
+#0 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(2150): include()
+#1 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(375): eftec\bladeone\BladeOne->evaluatePath('./cache/f1240e1...', Array)
+#2 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(305): eftec\bladeone\BladeOne->runInternal('session.show', Array, 0, true, 0)
+#3 /var/www/formazion/core/Views.class.php(16): eftec\bladeone\BladeOne->run('session.show', Array)
+#4 /var/www/formazion/src/controllers/StudentssessionController.class.php(16): Formazion\Core\Views::render('session.show', Array)
+#5 /var/www/formazion/index.php(66): Formazion\Controller\StudentsSessionController->showAction(Array)
+#6 {main}
+  thrown in /var/www/formazion/cache/f1240e17edcf333bb3d4717854092a016f100e3f.bladec on line 8
+[26-Mar-2019 23:51:59 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function getStarting() on null in /var/www/formazion/cache/f1240e17edcf333bb3d4717854092a016f100e3f.bladec:8
+Stack trace:
+#0 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(2150): include()
+#1 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(375): eftec\bladeone\BladeOne->evaluatePath('./cache/f1240e1...', Array)
+#2 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(305): eftec\bladeone\BladeOne->runInternal('session.show', Array, 0, true, 0)
+#3 /var/www/formazion/core/Views.class.php(16): eftec\bladeone\BladeOne->run('session.show', Array)
+#4 /var/www/formazion/src/controllers/StudentssessionController.class.php(16): Formazion\Core\Views::render('session.show', Array)
+#5 /var/www/formazion/index.php(66): Formazion\Controller\StudentsSessionController->showAction(Array)
+#6 {main}
+  thrown in /var/www/formazion/cache/f1240e17edcf333bb3d4717854092a016f100e3f.bladec on line 8
+[26-Mar-2019 23:52:11 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function getStarting() on null in /var/www/formazion/cache/f1240e17edcf333bb3d4717854092a016f100e3f.bladec:8
+Stack trace:
+#0 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(2150): include()
+#1 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(375): eftec\bladeone\BladeOne->evaluatePath('./cache/f1240e1...', Array)
+#2 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(305): eftec\bladeone\BladeOne->runInternal('session.show', Array, 0, true, 0)
+#3 /var/www/formazion/core/Views.class.php(16): eftec\bladeone\BladeOne->run('session.show', Array)
+#4 /var/www/formazion/src/controllers/StudentssessionController.class.php(16): Formazion\Core\Views::render('session.show', Array)
+#5 /var/www/formazion/index.php(66): Formazion\Controller\StudentsSessionController->showAction(Array)
+#6 {main}
+  thrown in /var/www/formazion/cache/f1240e17edcf333bb3d4717854092a016f100e3f.bladec on line 8
+[26-Mar-2019 23:52:56 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function getStarting() on null in /var/www/formazion/cache/f1240e17edcf333bb3d4717854092a016f100e3f.bladec:8
+Stack trace:
+#0 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(2150): include()
+#1 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(375): eftec\bladeone\BladeOne->evaluatePath('./cache/f1240e1...', Array)
+#2 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(305): eftec\bladeone\BladeOne->runInternal('session.show', Array, 0, true, 0)
+#3 /var/www/formazion/core/Views.class.php(16): eftec\bladeone\BladeOne->run('session.show', Array)
+#4 /var/www/formazion/src/controllers/StudentssessionController.class.php(16): Formazion\Core\Views::render('session.show', Array)
+#5 /var/www/formazion/index.php(66): Formazion\Controller\StudentsSessionController->showAction(Array)
+#6 {main}
+  thrown in /var/www/formazion/cache/f1240e17edcf333bb3d4717854092a016f100e3f.bladec on line 8

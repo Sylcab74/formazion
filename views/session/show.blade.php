@@ -15,7 +15,7 @@
   <p>Students : </p>
   <ul>
     @foreach($studentsSession as $students)
-      <a href="/person/show/{{$students->getStudents()->getId()}}"><li>{{$students->getStudents()->getFirstname()}} {{$students->getStudents()->getLastname()}}</li></a>
+      <a href="/studentsSession/show/{{$students->getId()}}"><li>{{$students->getStudents()->getFirstname()}} {{$students->getStudents()->getLastname()}}</li></a>
     @endforeach
   </ul>
 
