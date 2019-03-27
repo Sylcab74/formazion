@@ -19,8 +19,7 @@
   @endif
 
   <a href="/person/edit/{{$person->getId()}}"><button class="btn btn-success">Edit</button></a>
-  <a href="/person/assignSession/{{$person->getId()}}"><button class="btn btn-success">Assign to session</button></a>
-  @if ($person->getRole() === 'ROLE_TEACHER')
-    <a href="/person/assignFormation/{{$person->getId()}}"><button class="btn btn-success">Assign to formation</button></a>
+  @if ($person->getRole() === 'ROLE_EMPLOYEE')
+    <a href="/person/assignSession/{{$person->getId()}}"><button class="btn btn-success">Assign to session</button></a>
   @endif
 @endsection

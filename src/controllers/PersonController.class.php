@@ -37,10 +37,12 @@ class PersonController
             Manager::$em->persist($studentsSession);
             Manager::$em->flush();
 
-            $persons = Manager::$em->getRepository(Person::class)->findAll();
+            $employees = Manager::$em->getRepository(Person::class)->findBy(['role' => 'ROLE_EMPLOYEE']);
+            $teachers = Manager::$em->getRepository(Person::class)->findBy(['role' => 'ROLE_TEACHER']);
 
             return Views::render('person.index', [
-                'persons' => $persons
+                'teachers' => $teachers,
+                'employees' => $employees
             ]);
         }
         
