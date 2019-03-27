@@ -16,6 +16,7 @@
     <form action="/room/create" method="POST">
       <label for="number">Number</label>
       <input type="text" name="number" id="number"><br>
+
       <input type="submit" value="Submit">
     </form>
 @endsection
