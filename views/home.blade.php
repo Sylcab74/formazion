@@ -11,7 +11,7 @@
             <h2>Employees</h2>
             <ul>
             @foreach($employees as $employee)
-                <li>{{ $employee->getFirstname() }}</li>
+                <a href="/person/show/{{$employee->getId()}}"><li>{{ $employee->getFirstname() }}</li></a>
             @endforeach
             </ul>
         </div>
@@ -19,7 +19,7 @@
             <h2>Teachers</h2>
             <ul>
             @foreach($teachers as $teacher)
-                <li>{{ $teacher->getFirstname() }}</li>
+                <a href="/person/show/{{$teacher->getId()}}"><li>{{ $teacher->getFirstname() }}</li></a>
             @endforeach
             </ul>
         </div>
@@ -27,7 +27,7 @@
             <h2>Companies</h2>
             <ul>
             @foreach($companies as $company)
-                <li>{{ $company->getName() }}</li>
+                <a href="/company/show/{{$company->getId()}}"><li>{{ $company->getName() }}</li></a>
             @endforeach
             </ul>
         </div>
@@ -35,7 +35,7 @@
             <h2>Formations</h2>
             <ul>
             @foreach($formations as $formation)
-                <li>{{ $formation->getName() }}</li>
+                <a href="/formation/show/{{$formation->getId()}}"><li>{{ $formation->getName() }}</li></a>
             @endforeach
             </ul>
         </div>

@@ -3620,3 +3620,40 @@ Stack trace:
 #5 /var/www/formazion/index.php(66): Formazion\Controller\PersonController->editAction(Array)
 #6 {main}
   thrown in /var/www/formazion/cache/43575dcdacb94b47a6f8fb85b83ddf9de008b23e.bladec on line 35
+[27-Mar-2019 19:36:44 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function getName() on null in /var/www/formazion/cache/0afe794421185811f63b3b643589305b99eec565.bladec:13
+Stack trace:
+#0 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(2150): include()
+#1 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(375): eftec\bladeone\BladeOne->evaluatePath('./cache/0afe794...', Array)
+#2 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(305): eftec\bladeone\BladeOne->runInternal('person.show', Array, 0, true, 0)
+#3 /var/www/formazion/core/Views.class.php(16): eftec\bladeone\BladeOne->run('person.show', Array)
+#4 /var/www/formazion/src/controllers/PersonController.class.php(37): Formazion\Core\Views::render('person.show', Array)
+#5 /var/www/formazion/index.php(66): Formazion\Controller\PersonController->showAction(Array)
+#6 {main}
+  thrown in /var/www/formazion/cache/0afe794421185811f63b3b643589305b99eec565.bladec on line 13
+[27-Mar-2019 19:56:01 Europe/Paris] PHP Warning:  Invalid argument supplied for foreach() in /var/www/formazion/cache/88edaad058fa7cf72a4f906a4e13a1f1d7de2df3.bladec on line 18
+[27-Mar-2019 19:56:01 Europe/Paris] PHP Stack trace:
+[27-Mar-2019 19:56:01 Europe/Paris] PHP   1. {main}() /var/www/formazion/index.php:0
+[27-Mar-2019 19:56:01 Europe/Paris] PHP   2. Formazion\Controller\PersonController->assignSessionAction() /var/www/formazion/index.php:66
+[27-Mar-2019 19:56:01 Europe/Paris] PHP   3. Formazion\Core\Views::render() /var/www/formazion/src/controllers/PersonController.class.php:27
+[27-Mar-2019 19:56:01 Europe/Paris] PHP   4. eftec\bladeone\BladeOne->run() /var/www/formazion/core/Views.class.php:16
+[27-Mar-2019 19:56:01 Europe/Paris] PHP   5. eftec\bladeone\BladeOne->runInternal() /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php:305
+[27-Mar-2019 19:56:01 Europe/Paris] PHP   6. eftec\bladeone\BladeOne->evaluatePath() /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php:375
+[27-Mar-2019 19:56:01 Europe/Paris] PHP   7. include() /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php:2150
+[27-Mar-2019 19:56:11 Europe/Paris] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 132124672 bytes) in /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php on line 2338
+[27-Mar-2019 19:56:11 Europe/Paris] PHP Stack trace:
+[27-Mar-2019 19:56:11 Europe/Paris] PHP   1. {main}() /var/www/formazion/index.php:0
+[27-Mar-2019 19:56:11 Europe/Paris] PHP   2. Formazion\Controller\PersonController->assignSessionAction() /var/www/formazion/index.php:66
+[27-Mar-2019 19:56:11 Europe/Paris] PHP   3. Formazion\Core\Views::render() /var/www/formazion/src/controllers/PersonController.class.php:27
+[27-Mar-2019 19:56:11 Europe/Paris] PHP   4. eftec\bladeone\BladeOne->run() /var/www/formazion/core/Views.class.php:16
+[27-Mar-2019 19:56:11 Europe/Paris] PHP   5. eftec\bladeone\BladeOne->runInternal() /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php:305
+[27-Mar-2019 19:56:11 Europe/Paris] PHP   6. eftec\bladeone\BladeOne->evaluatePath() /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php:375
+[27-Mar-2019 19:56:11 Europe/Paris] PHP   7. include() /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php:2150
+[27-Mar-2019 19:56:11 Europe/Paris] PHP   8. eftec\bladeone\BladeOne::e() /var/www/formazion/cache/88edaad058fa7cf72a4f906a4e13a1f1d7de2df3.bladec:19
+[27-Mar-2019 19:56:11 Europe/Paris] PHP   9. print_r() /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php:2338
+[27-Mar-2019 20:04:53 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\ORM\ORMException: Unrecognized field: formations_id in /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/ORMException.php:101
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Persisters/Entity/BasicEntityPersister.php(1730): Doctrine\ORM\ORMException::unrecognizedField('formations_id')
+#1 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Persisters/Entity/BasicEntityPersister.php(1602): Doctrine\ORM\Persisters\Entity\BasicEntityPersister->getSelectConditionStatementColumnSQL('formations_id', NULL)
+#2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Persisters/Entity/BasicEntityPersister.php(1750): Doctrine\ORM\Persisters\Entity\BasicEntityPersister->getSelectConditionStatementSQL('formations_id', Array, NULL)
+#3 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Persisters/Entity/BasicEntityPersister.php(1078): Doctrine\ORM\Persisters\Entity\BasicEntityPersister->getSelectConditionSQL(Array, NULL)
+#4 /var/www/formazion/vendor/doctrine/orm/lib/Do in /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/ORMException.php on line 101

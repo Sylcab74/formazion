@@ -49,13 +49,13 @@
   const role = document.querySelector('#role');
   const company = document.querySelector('#company');
   
-  if (role.value === "ROLE_EMPLOYEE" && company !== null) {
+  if (role.value === "ROLE_TEACHER" && company !== null) {
     company.style.display = "none";
   }
   
   const changeRole = e => {
     const company = document.querySelector('#company');
-    if (e.target.value == "ROLE_EMPLOYEE") {
+    if (e.target.value == "ROLE_TEACHER") {
       company.style.display = "none";
     } else {
       company.style.display = "block";

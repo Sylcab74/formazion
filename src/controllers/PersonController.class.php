@@ -3,7 +3,7 @@
 namespace Formazion\Controller;
 
 use Formazion\Core\{Manager, Views};
-use Formazion\Models\{ Formation, Person, Company };
+use Formazion\Models\{ Formation, Person, Company, Session };
 
 class PersonController
 {
@@ -19,9 +19,31 @@ class PersonController
         ]);
     }
     
-    public function assignAction($params)
+    public function assignSessionAction($params)
+    {
+        $formations = Manager::$em->getRepository(Formation::class)->findAll();
+
+        Views::render('person.assignSession', [
+            'formations' => $formations
+        ]);
+    }
+
+    public function assignFormationAction($params)
     {
         // SHOW ALL FORMATIONS, CREATES SESSION AND SET THE CUSTOMER ID
+    }
+
+    public function getSessionAction($params)
+    {
+        $response = [];
+        $post = $params['POST'];
+
+        $sessions = Manager::$em->getRepository(Session::class)->findBy(['formations' => $params['POST']]);
+        
+        $response['status'] = 'success';
+        $response['response'] = $sessions;
+
+        echo json_encode($response);
     }
 
 

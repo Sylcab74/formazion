@@ -9,7 +9,7 @@
   <p>Prénom : <b>{{$person->getFirstname()}}</b></p>
   <p>Role : <b>{{$person->getRole()}}</b></p>
 
-  @if ($person->getRole() === 'ROLE_TEACHER')
+  @if ($person->getRole() === 'ROLE_EMPLOYEE')
     <p>Company : <b>{{$person->getCompanies()->getName()}}</b></p>
     <ul>
       @foreach($formations as $formation)
@@ -19,5 +19,8 @@
   @endif
 
   <a href="/person/edit/{{$person->getId()}}"><button class="btn btn-success">Edit</button></a>
-  <a href="/person/assign/{{$person->getId()}}"><button class="btn btn-success">Assign to session</button></a>
+  <a href="/person/assignSession/{{$person->getId()}}"><button class="btn btn-success">Assign to session</button></a>
+  @if ($person->getRole() === 'ROLE_TEACHER')
+    <a href="/person/assignFormation/{{$person->getId()}}"><button class="btn btn-success">Assign to formation</button></a>
+  @endif
 @endsection
