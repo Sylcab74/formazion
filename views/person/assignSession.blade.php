@@ -13,7 +13,7 @@
       </ul>
     @endif
 
-    <form action="/person/assignSession" method="POST">
+    <form action="/person/assignSession/{{$student->getId()}}" method="POST">
       <select name="formation" id="formation">
         @foreach($formations as $formation)
           <option value="{{$formation->getId()}}">{{$formation->getName()}}</option>
@@ -52,10 +52,10 @@ document.addEventListener('DOMContentLoaded', () => {
       if (response.ok) {
           const data = await response.json();
           session.style.display = "block";
-          console.log('proute');
-          list.innerHTML = '';
-          data.response.forEach(game => {
-              session.innerHTML += ` <option value="${data.id}">${data.starting} - ${data.ending}</option>`;
+          console.log(data);
+          
+          data.response.forEach(item => {
+              session.innerHTML += ` <option value="${item.id}">${item.starting} - ${item.ending}</option>`;
           })
 
       } else {

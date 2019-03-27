@@ -102,7 +102,7 @@ CREATE TABLE  "formazion"."students_sessions" (
   "id" SERIAL PRIMARY KEY ,
   "students_id" INT NOT NULL,
   "sessions_id" INT NOT NULL,
-  "note" int NOT NULL,
+  "note" int NULL,
   CONSTRAINT "fk_customers_formations_customers1"
     FOREIGN KEY ("students_id")
     REFERENCES "formazion"."persons" ("id")

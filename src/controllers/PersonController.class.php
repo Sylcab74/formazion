@@ -3,7 +3,7 @@
 namespace Formazion\Controller;
 
 use Formazion\Core\{Manager, Views};
-use Formazion\Models\{ Formation, Person, Company, Session };
+use Formazion\Models\{ Formation, Person, Company, Session, StudentsSession };
 
 class PersonController
 {
@@ -21,27 +21,50 @@ class PersonController
     
     public function assignSessionAction($params)
     {
+        $id = $params['URL'][0];
+        $post = $params['POST'];
+
+        $student = Manager::$em->find(Person::class, $id);
         $formations = Manager::$em->getRepository(Formation::class)->findAll();
 
-        Views::render('person.assignSession', [
-            'formations' => $formations
-        ]);
-    }
+        if (count($post) > 0) {
+            $session = Manager::$em->find(Session::class, $post['session']);
 
-    public function assignFormationAction($params)
-    {
-        // SHOW ALL FORMATIONS, CREATES SESSION AND SET THE CUSTOMER ID
+            $studentsSession = new StudentsSession();
+            $studentsSession->setStudents($student);
+            $studentsSession->setSessions($session);
+
+            Manager::$em->persist($studentsSession);
+            Manager::$em->flush();
+
+            $persons = Manager::$em->getRepository(Person::class)->findAll();
+
+            return Views::render('person.index', [
+                'persons' => $persons
+            ]);
+        }
+        
+        Views::render('person.assignSession', [
+            'formations' => $formations,
+            'student' => $student
+        ]);
     }
 
     public function getSessionAction($params)
     {
         $response = [];
+        $data = [];
         $post = $params['POST'];
-
         $sessions = Manager::$em->getRepository(Session::class)->findBy(['formations' => $params['POST']]);
+
+        foreach($sessions as $key => $session) {
+            $data[$key]['id'] = $session->getId();
+            $data[$key]['starting'] = $session->getStarting()->format('Y-m-d H:i');
+            $data[$key]['ending'] = $session->getEnding()->format('Y-m-d H:i');
+        }
         
         $response['status'] = 'success';
-        $response['response'] = $sessions;
+        $response['response'] = $data;
 
         echo json_encode($response);
     }
@@ -51,7 +74,6 @@ class PersonController
     {
         $id = $params['URL'][0];
         $person = Manager::$em->find(Person::class, $id);
-
         $formations = $person->getFormations();
 
         return Views::render('person.show', [

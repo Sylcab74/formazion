@@ -45,7 +45,7 @@ class StudentsSession
      *
      * @return StudentsSession
      */
-    public function setNote($note)
+    public function setNote($note = null)
     {
         $this->note = $note;
 
@@ -55,7 +55,7 @@ class StudentsSession
     /**
      * Get note.
      *
-     * @return int
+     * @return int|null
      */
     public function getNote()
     {
