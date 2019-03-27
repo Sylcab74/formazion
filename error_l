@@ -3099,3 +3099,13 @@ Stack trace:
 #5 /var/www/formazion/index.php(66): Formazion\Controller\StudentsSessionController->showAction(Array)
 #6 {main}
   thrown in /var/www/formazion/cache/f1240e17edcf333bb3d4717854092a016f100e3f.bladec on line 8
+[27-Mar-2019 08:51:40 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function getNote() on null in /var/www/formazion/cache/2d0b7437a3d349b2413fea31fe5bb71f90f3b2fc.bladec:18
+Stack trace:
+#0 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(2150): include()
+#1 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(375): eftec\bladeone\BladeOne->evaluatePath('./cache/2d0b743...', Array)
+#2 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(305): eftec\bladeone\BladeOne->runInternal('studentsSession...', Array, 0, true, 0)
+#3 /var/www/formazion/core/Views.class.php(16): eftec\bladeone\BladeOne->run('studentsSession...', Array)
+#4 /var/www/formazion/src/controllers/StudentssessionController.class.php(77): Formazion\Core\Views::render('studentsSession...', Array)
+#5 /var/www/formazion/index.php(66): Formazion\Controller\StudentsSessionController->editAction(Array)
+#6 {main}
+  thrown in /var/www/formazion/cache/2d0b7437a3d349b2413fea31fe5bb71f90f3b2fc.bladec on line 18
