@@ -11,11 +11,11 @@
 
   @if ($person->getRole() === 'ROLE_TEACHER')
     <ul>
-      @foreach($person->getFormations() as $formation)
+      @foreach($formations as $formation)
         <a href="/formation/show/{{$formation->getId()}}"><li>{{$formation->getName()}}</li></a>
       @endforeach
     </ul>
   @endif
 
-  <a href="/room/edit/{{$room->getId()}}"><button class="btn btn-success">Edit</button></a>
+  <a href="/person/edit/{{$person->getId()}}"><button class="btn btn-success">Edit</button></a>
 @endsection

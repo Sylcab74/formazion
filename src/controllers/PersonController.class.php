@@ -14,7 +14,8 @@ class PersonController
         $teachers = Manager::$em->getRepository(Person::class)->findBy(['role' => 'ROLE_TEACHER']);
 
         Views::render('person.index', [
-            'teachers' => $teachers
+            'teachers' => $teachers,
+            'employees' => $employees
         ]);
     }
     
@@ -23,8 +24,11 @@ class PersonController
         $id = $params['URL'][0];
         $person = Manager::$em->find(Person::class, $id);
 
+        $formations = $person->getFormations();
+
         return Views::render('person.show', [
-            'person' => $person
+            'person' => $person,
+            'formations' => $formations
         ]);
     }
 
@@ -55,8 +59,9 @@ class PersonController
                 Manager::$em->flush();
                 
                 $formations = Manager::$em->getRepository(Formation::class)->findAll();
-                return Views::render('formation.index', [
-                    'formations' => $formations,
+                return Views::render('person.index', [
+                    'teachers' => $teachers,
+                    'employees' => $employees
                 ]);
             }
         }
@@ -70,39 +75,29 @@ class PersonController
     {
         $post = $params['POST'];
         $id = $params['URL'][0];
-        $formation = Manager::$em->find(Formation::class, $id);
-        $teachers = Manager::$em->getRepository(Person::class)->findBy(['role' => 'ROLE_TEACHER']);
+        $person = Manager::$em->find(Person::class, $id);
+        $roles = ['ROLE_EMPLOYEE', 'ROLE_TEACHER'];
 
         if (count($post) > 0) {
-            $errors = [];
-            if (count( Manager::$em->getRepository(Formation::class)->findBy( ['name' => $post['name']] ) ) > 0) {
-                $errors[] = "Désolé ce nom est déjà utilisé.";
-            }
-            if (count($errors)) {
-                return Views::render('formation.edit', [
-                    'errors' => $errors,
-                    'formation' => $formation,
-                    'teachers' => $teachers
-                ]);
-            } else {
-                $teacher = Manager::$em->find(Person::class, $post['teacher']);
-                $formation->setName($post['name']);
-                $formation->setResponsibleProfessor($teacher);
-                
-                Manager::$em->persist($formation);
-                Manager::$em->flush();
-                
-                $formations = Manager::$em->getRepository(Formation::class)->findAll();
-                
-                return Views::render('formation.index', [
-                    'formations' => $formations
-                ]);
-            }
+            $person->setFirstname($post['firstname']);
+            $person->setLastname($post['lastname']);
+            $person->setRole($post['role']);
+            
+            Manager::$em->persist($person);
+            Manager::$em->flush();
+            
+            $employees = Manager::$em->getRepository(Person::class)->findBy(['role' => 'ROLE_EMPLOYEE']);
+            $teachers = Manager::$em->getRepository(Person::class)->findBy(['role' => 'ROLE_TEACHER']);
+            
+            return Views::render('person.index', [
+                'teachers' => $teachers,
+                'employees' => $employees
+            ]);
         }
 
-        return Views::render('formation.edit', [
-            'formation' => $formation,
-            'teachers' => $teachers
+        return Views::render('person.edit', [
+            'person' => $person,
+            'roles' => $roles
         ]);
     }
 

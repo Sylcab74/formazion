@@ -48,7 +48,7 @@ Formazion\Models\Person:
     oneToMany:
         formations:
             targetEntity: Formation
-            mappedBy: Person
+            mappedBy: responsibleProfessor
         sessions:
             targetEntity: Session
             mappedBy: Person
