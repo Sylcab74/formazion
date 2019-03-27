@@ -17,43 +17,6 @@ class StudentsSessionController
         ]);
     }
 
-    public function createAction($params)
-    {
-        $post = $params['POST'];
-        $formations = Manager::$em->getRepository(Formation::class)->findAll();
-        $rooms = Manager::$em->getRepository(Room::class)->findAll();
-        $teachers = Manager::$em->getRepository(Person::class)->findBy(['role' => 'ROLE_TEACHER']);
-
-        if (count($post) > 0) {
-			$formation = Manager::$em->find(Formation::class, $post['formation']);
-			$teacher = Manager::$em->find(Person::class, $post['teacher']);
-			$room = Manager::$em->find(Room::class, $post['room']);
-			
-			$session = new Session();
-			$session->setStarting(new \Datetime($post['date'] . $post['startHour']));
-			$session->setEnding(new \Datetime($post['date'] . $post['endHour']));
-			$session->setReport($post['report']);
-			$session->setFormations($formation);
-			$session->setTeacher($teacher);
-			$session->setRooms($room);
-			
-			Manager::$em->persist($session);
-			Manager::$em->flush();
-			
-			$sessions = Manager::$em->getRepository(Session::class)->findAll();
-
-			return Views::render('session.index', [
-				'sessions' => $sessions,
-			]);
-        }
-
-        return Views::render('session.create', [
-            'teachers' => $teachers,
-            'formations' => $formations,
-            'rooms' => $rooms
-        ]);
-    }
-
     public function editAction($params)
     {
         $post = $params['POST'];

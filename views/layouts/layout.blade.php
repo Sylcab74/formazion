@@ -21,6 +21,9 @@
                     <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="/person">Persons</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="/session">Sessions</a>
                 </li>
                 <li class="nav-item">
