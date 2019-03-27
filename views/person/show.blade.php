@@ -10,6 +10,7 @@
   <p>Role : <b>{{$person->getRole()}}</b></p>
 
   @if ($person->getRole() === 'ROLE_TEACHER')
+    <p>Company : <b>{{$person->getCompanies()->getName()}}</b></p>
     <ul>
       @foreach($formations as $formation)
         <a href="/formation/show/{{$formation->getId()}}"><li>{{$formation->getName()}}</li></a>

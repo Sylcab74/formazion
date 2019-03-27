@@ -24,6 +24,17 @@
           <option value="{{$role}}">{{$role}}</option>
         @endforeach
       </select>
+      
+      <select name="company" id="company">
+        @foreach($companies as $company)
+          @if($person->getCompanies()->getId() === $company->getId())
+            <option value="{{$company->getId()}}" selected>{{$company->getName()}}</option>
+          @else
+            <option value="{{$company->getId()}}">{{$company->getName()}}</option>
+          @endif
+        @endforeach
+      </select>
+
       <input type="submit" value="Submit">
     </form>
 @endsection

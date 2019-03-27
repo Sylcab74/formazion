@@ -3,7 +3,7 @@
 namespace Formazion\Controller;
 
 use Formazion\Core\{Manager, Views};
-use Formazion\Models\{ Formation, Person };
+use Formazion\Models\{ Formation, Person, Company };
 
 class PersonController
 {
@@ -42,12 +42,20 @@ class PersonController
     {
         $post = $params['POST'];
         $roles = ['ROLE_EMPLOYEE', 'ROLE_TEACHER'];
+        $companies = Manager::$em->getRepository(Company::class)->findAll();
 
         if (count($post) > 0) {
             $person = new Person();
             $person->setFirstname($post['firstname']);
             $person->setLastname($post['lastname']);
             $person->setRole($post['role']);
+            
+            if ($person->getRole() === "ROLE_TEACHER" ) {
+                $company = Manager::$em->find(Company::class, $post['company']);
+                $person->setCompanies($company);
+            } else {
+                $person->setCompanies(null);
+            }
             
             Manager::$em->persist($person);
             Manager::$em->flush();
@@ -62,7 +70,8 @@ class PersonController
         }
 
         return Views::render('person.create', [
-            'roles' => $roles
+            'roles' => $roles,
+            'companies' => $companies
         ]);
     }
 
@@ -71,12 +80,20 @@ class PersonController
         $post = $params['POST'];
         $id = $params['URL'][0];
         $person = Manager::$em->find(Person::class, $id);
+        $companies = Manager::$em->getRepository(Company::class)->findAll();
         $roles = ['ROLE_EMPLOYEE', 'ROLE_TEACHER'];
 
         if (count($post) > 0) {
             $person->setFirstname($post['firstname']);
             $person->setLastname($post['lastname']);
             $person->setRole($post['role']);
+            
+            if ($person->getRole() === "ROLE_TEACHER" ) {
+                $company = Manager::$em->find(Company::class, $post['company']);
+                $person->setCompanies($company);
+            } else {
+                $person->setCompanies(null);
+            }
             
             Manager::$em->persist($person);
             Manager::$em->flush();
@@ -92,7 +109,8 @@ class PersonController
 
         return Views::render('person.edit', [
             'person' => $person,
-            'roles' => $roles
+            'roles' => $roles,
+            'companies' => $companies
         ]);
     }
 

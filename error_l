@@ -3483,3 +3483,140 @@ Stack trace:
 #5 /var/www/formazion/index.php(66): Formazion\Controller\PersonController->createAction(Array)
 #6 {main}
   thrown in /var/www/formazion/cache/d51ce76114180db412e3b52522772065e5ba6e90.bladec on line 16
+[27-Mar-2019 18:11:36 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\Common\Persistence\Mapping\MappingException: Class 'Formazion\Controller\Company' does not exist in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php:93
+Stack trace:
+#0 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php(24): Doctrine\Common\Persistence\Mapping\MappingException::nonExistingClass('Formazion\\Contr...')
+#1 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php(251): Doctrine\Common\Persistence\Mapping\RuntimeReflectionService->getParentClasses('Formazion\\Contr...')
+#2 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php(284): Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory->getParentClasses('Formazion\\Contr...')
+#3 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(78): D in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/MappingException.php on line 93
+[27-Mar-2019 18:11:48 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function getId() on null in /var/www/formazion/cache/43575dcdacb94b47a6f8fb85b83ddf9de008b23e.bladec:34
+Stack trace:
+#0 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(2150): include()
+#1 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(375): eftec\bladeone\BladeOne->evaluatePath('./cache/43575dc...', Array)
+#2 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(305): eftec\bladeone\BladeOne->runInternal('person.edit', Array, 0, true, 0)
+#3 /var/www/formazion/core/Views.class.php(16): eftec\bladeone\BladeOne->run('person.edit', Array)
+#4 /var/www/formazion/src/controllers/PersonController.class.php(102): Formazion\Core\Views::render('person.edit', Array)
+#5 /var/www/formazion/index.php(66): Formazion\Controller\PersonController->editAction(Array)
+#6 {main}
+  thrown in /var/www/formazion/cache/43575dcdacb94b47a6f8fb85b83ddf9de008b23e.bladec on line 34
+[27-Mar-2019 18:11:51 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function getId() on null in /var/www/formazion/cache/43575dcdacb94b47a6f8fb85b83ddf9de008b23e.bladec:34
+Stack trace:
+#0 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(2150): include()
+#1 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(375): eftec\bladeone\BladeOne->evaluatePath('./cache/43575dc...', Array)
+#2 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(305): eftec\bladeone\BladeOne->runInternal('person.edit', Array, 0, true, 0)
+#3 /var/www/formazion/core/Views.class.php(16): eftec\bladeone\BladeOne->run('person.edit', Array)
+#4 /var/www/formazion/src/controllers/PersonController.class.php(102): Formazion\Core\Views::render('person.edit', Array)
+#5 /var/www/formazion/index.php(66): Formazion\Controller\PersonController->editAction(Array)
+#6 {main}
+  thrown in /var/www/formazion/cache/43575dcdacb94b47a6f8fb85b83ddf9de008b23e.bladec on line 34
+[27-Mar-2019 18:13:34 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function getId() on null in /var/www/formazion/cache/43575dcdacb94b47a6f8fb85b83ddf9de008b23e.bladec:34
+Stack trace:
+#0 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(2150): include()
+#1 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(375): eftec\bladeone\BladeOne->evaluatePath('./cache/43575dc...', Array)
+#2 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(305): eftec\bladeone\BladeOne->runInternal('person.edit', Array, 0, true, 0)
+#3 /var/www/formazion/core/Views.class.php(16): eftec\bladeone\BladeOne->run('person.edit', Array)
+#4 /var/www/formazion/src/controllers/PersonController.class.php(102): Formazion\Core\Views::render('person.edit', Array)
+#5 /var/www/formazion/index.php(66): Formazion\Controller\PersonController->editAction(Array)
+#6 {main}
+  thrown in /var/www/formazion/cache/43575dcdacb94b47a6f8fb85b83ddf9de008b23e.bladec on line 34
+[27-Mar-2019 18:14:35 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function getId() on null in /var/www/formazion/cache/43575dcdacb94b47a6f8fb85b83ddf9de008b23e.bladec:34
+Stack trace:
+#0 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(2150): include()
+#1 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(375): eftec\bladeone\BladeOne->evaluatePath('./cache/43575dc...', Array)
+#2 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(305): eftec\bladeone\BladeOne->runInternal('person.edit', Array, 0, true, 0)
+#3 /var/www/formazion/core/Views.class.php(16): eftec\bladeone\BladeOne->run('person.edit', Array)
+#4 /var/www/formazion/src/controllers/PersonController.class.php(102): Formazion\Core\Views::render('person.edit', Array)
+#5 /var/www/formazion/index.php(66): Formazion\Controller\PersonController->editAction(Array)
+#6 {main}
+  thrown in /var/www/formazion/cache/43575dcdacb94b47a6f8fb85b83ddf9de008b23e.bladec on line 34
+[27-Mar-2019 18:59:14 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function getId() on null in /var/www/formazion/cache/43575dcdacb94b47a6f8fb85b83ddf9de008b23e.bladec:34
+Stack trace:
+#0 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(2150): include()
+#1 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(375): eftec\bladeone\BladeOne->evaluatePath('./cache/43575dc...', Array)
+#2 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(305): eftec\bladeone\BladeOne->runInternal('person.edit', Array, 0, true, 0)
+#3 /var/www/formazion/core/Views.class.php(16): eftec\bladeone\BladeOne->run('person.edit', Array)
+#4 /var/www/formazion/src/controllers/PersonController.class.php(102): Formazion\Core\Views::render('person.edit', Array)
+#5 /var/www/formazion/index.php(66): Formazion\Controller\PersonController->editAction(Array)
+#6 {main}
+  thrown in /var/www/formazion/cache/43575dcdacb94b47a6f8fb85b83ddf9de008b23e.bladec on line 34
+[27-Mar-2019 18:59:48 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function getId() on null in /var/www/formazion/cache/43575dcdacb94b47a6f8fb85b83ddf9de008b23e.bladec:34
+Stack trace:
+#0 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(2150): include()
+#1 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(375): eftec\bladeone\BladeOne->evaluatePath('./cache/43575dc...', Array)
+#2 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(305): eftec\bladeone\BladeOne->runInternal('person.edit', Array, 0, true, 0)
+#3 /var/www/formazion/core/Views.class.php(16): eftec\bladeone\BladeOne->run('person.edit', Array)
+#4 /var/www/formazion/src/controllers/PersonController.class.php(102): Formazion\Core\Views::render('person.edit', Array)
+#5 /var/www/formazion/index.php(66): Formazion\Controller\PersonController->editAction(Array)
+#6 {main}
+  thrown in /var/www/formazion/cache/43575dcdacb94b47a6f8fb85b83ddf9de008b23e.bladec on line 34
+[27-Mar-2019 19:00:14 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function getId() on null in /var/www/formazion/cache/43575dcdacb94b47a6f8fb85b83ddf9de008b23e.bladec:34
+Stack trace:
+#0 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(2150): include()
+#1 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(375): eftec\bladeone\BladeOne->evaluatePath('./cache/43575dc...', Array)
+#2 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(305): eftec\bladeone\BladeOne->runInternal('person.edit', Array, 0, true, 0)
+#3 /var/www/formazion/core/Views.class.php(16): eftec\bladeone\BladeOne->run('person.edit', Array)
+#4 /var/www/formazion/src/controllers/PersonController.class.php(102): Formazion\Core\Views::render('person.edit', Array)
+#5 /var/www/formazion/index.php(66): Formazion\Controller\PersonController->editAction(Array)
+#6 {main}
+  thrown in /var/www/formazion/cache/43575dcdacb94b47a6f8fb85b83ddf9de008b23e.bladec on line 34
+[27-Mar-2019 19:00:32 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function getId() on null in /var/www/formazion/cache/43575dcdacb94b47a6f8fb85b83ddf9de008b23e.bladec:34
+Stack trace:
+#0 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(2150): include()
+#1 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(375): eftec\bladeone\BladeOne->evaluatePath('./cache/43575dc...', Array)
+#2 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(305): eftec\bladeone\BladeOne->runInternal('person.edit', Array, 0, true, 0)
+#3 /var/www/formazion/core/Views.class.php(16): eftec\bladeone\BladeOne->run('person.edit', Array)
+#4 /var/www/formazion/src/controllers/PersonController.class.php(102): Formazion\Core\Views::render('person.edit', Array)
+#5 /var/www/formazion/index.php(66): Formazion\Controller\PersonController->editAction(Array)
+#6 {main}
+  thrown in /var/www/formazion/cache/43575dcdacb94b47a6f8fb85b83ddf9de008b23e.bladec on line 34
+[27-Mar-2019 19:02:21 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function getId() on null in /var/www/formazion/src/controllers/PersonController.class.php:99
+Stack trace:
+#0 /var/www/formazion/index.php(66): Formazion\Controller\PersonController->editAction(Array)
+#1 {main}
+  thrown in /var/www/formazion/src/controllers/PersonController.class.php on line 99
+[27-Mar-2019 19:02:28 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function getId() on null in /var/www/formazion/cache/43575dcdacb94b47a6f8fb85b83ddf9de008b23e.bladec:34
+Stack trace:
+#0 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(2150): include()
+#1 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(375): eftec\bladeone\BladeOne->evaluatePath('./cache/43575dc...', Array)
+#2 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(305): eftec\bladeone\BladeOne->runInternal('person.edit', Array, 0, true, 0)
+#3 /var/www/formazion/core/Views.class.php(16): eftec\bladeone\BladeOne->run('person.edit', Array)
+#4 /var/www/formazion/src/controllers/PersonController.class.php(104): Formazion\Core\Views::render('person.edit', Array)
+#5 /var/www/formazion/index.php(66): Formazion\Controller\PersonController->editAction(Array)
+#6 {main}
+  thrown in /var/www/formazion/cache/43575dcdacb94b47a6f8fb85b83ddf9de008b23e.bladec on line 34
+[27-Mar-2019 19:02:47 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function getId() on null in /var/www/formazion/cache/43575dcdacb94b47a6f8fb85b83ddf9de008b23e.bladec:34
+Stack trace:
+#0 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(2150): include()
+#1 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(375): eftec\bladeone\BladeOne->evaluatePath('./cache/43575dc...', Array)
+#2 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(305): eftec\bladeone\BladeOne->runInternal('person.edit', Array, 0, true, 0)
+#3 /var/www/formazion/core/Views.class.php(16): eftec\bladeone\BladeOne->run('person.edit', Array)
+#4 /var/www/formazion/src/controllers/PersonController.class.php(104): Formazion\Core\Views::render('person.edit', Array)
+#5 /var/www/formazion/index.php(66): Formazion\Controller\PersonController->editAction(Array)
+#6 {main}
+  thrown in /var/www/formazion/cache/43575dcdacb94b47a6f8fb85b83ddf9de008b23e.bladec on line 34
+[27-Mar-2019 19:09:09 Europe/Paris] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Formazion\Models\Person::setCompanies() must be an instance of Formazion\Models\Company or null, string given, called in /var/www/formazion/src/controllers/PersonController.class.php on line 88 and defined in /var/www/formazion/src/models/Person.php:257
+Stack trace:
+#0 /var/www/formazion/src/controllers/PersonController.class.php(88): Formazion\Models\Person->setCompanies('28')
+#1 /var/www/formazion/index.php(66): Formazion\Controller\PersonController->editAction(Array)
+#2 {main}
+  thrown in /var/www/formazion/src/models/Person.php on line 257
+[27-Mar-2019 19:12:50 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function getId() on null in /var/www/formazion/cache/43575dcdacb94b47a6f8fb85b83ddf9de008b23e.bladec:35
+Stack trace:
+#0 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(2150): include()
+#1 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(375): eftec\bladeone\BladeOne->evaluatePath('./cache/43575dc...', Array)
+#2 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(305): eftec\bladeone\BladeOne->runInternal('person.edit', Array, 0, true, 0)
+#3 /var/www/formazion/core/Views.class.php(16): eftec\bladeone\BladeOne->run('person.edit', Array)
+#4 /var/www/formazion/src/controllers/PersonController.class.php(111): Formazion\Core\Views::render('person.edit', Array)
+#5 /var/www/formazion/index.php(66): Formazion\Controller\PersonController->editAction(Array)
+#6 {main}
+  thrown in /var/www/formazion/cache/43575dcdacb94b47a6f8fb85b83ddf9de008b23e.bladec on line 35
+[27-Mar-2019 19:14:10 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function getId() on null in /var/www/formazion/cache/43575dcdacb94b47a6f8fb85b83ddf9de008b23e.bladec:35
+Stack trace:
+#0 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(2150): include()
+#1 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(375): eftec\bladeone\BladeOne->evaluatePath('./cache/43575dc...', Array)
+#2 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(305): eftec\bladeone\BladeOne->runInternal('person.edit', Array, 0, true, 0)
+#3 /var/www/formazion/core/Views.class.php(16): eftec\bladeone\BladeOne->run('person.edit', Array)
+#4 /var/www/formazion/src/controllers/PersonController.class.php(113): Formazion\Core\Views::render('person.edit', Array)
+#5 /var/www/formazion/index.php(66): Formazion\Controller\PersonController->editAction(Array)
+#6 {main}
+  thrown in /var/www/formazion/cache/43575dcdacb94b47a6f8fb85b83ddf9de008b23e.bladec on line 35

@@ -19,6 +19,7 @@
       <label for="lastname">Lastname</label>
       <input type="text" name="lastname" id="lastname" value="{{$person->getLastname()}}"><br>
       <label for="firstname">Role</label>
+      
       <select name="role" id="role">
         @foreach($roles as $role)
           @if($person->getRole() === $role)
@@ -28,6 +29,39 @@
           @endif
         @endforeach
       </select>
+      
+      <select name="company" id="company">
+        @foreach($companies as $company)
+          @if ($person->getCompanies() && $person->getCompanies()->getId() === $company->getId())
+            <option value="{{$company->getId()}}" selected> {{ $company->getName() }} </option>
+          @else
+            <option value="{{$company->getId()}}"> {{ $company->getName() }} </option>
+          @endif
+        @endforeach
+      </select>
+
       <input type="submit" value="Submit">
     </form>
+@endsection
+
+@section('javascript')
+<script>
+  const role = document.querySelector('#role');
+  const company = document.querySelector('#company');
+  
+  if (role.value === "ROLE_EMPLOYEE" && company !== null) {
+    company.style.display = "none";
+  }
+  
+  const changeRole = e => {
+    const company = document.querySelector('#company');
+    if (e.target.value == "ROLE_EMPLOYEE") {
+      company.style.display = "none";
+    } else {
+      company.style.display = "block";
+    }
+  };
+  
+  role.addEventListener('change', e => changeRole(e));
+</script>
 @endsection
