@@ -139,7 +139,6 @@ class Session
      */
     public function getHoursPerformed()
     {
-        var_dump('nique ta putain de mere la pute');
         return $this->hoursPerformed;
     }
 

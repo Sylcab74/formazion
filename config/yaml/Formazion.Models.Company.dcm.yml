@@ -51,4 +51,4 @@ Formazion\Models\Company:
     oneToMany:
         persons:
             targetEntity: Person
-            mappedBy: company
+            mappedBy: companies

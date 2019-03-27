@@ -20,7 +20,6 @@ class RoomController
     public function showAction($params)
     {
         $id = $params['URL'][0];
-        $post = $params['POST'];
         $room = Manager::$em->find(Room::class, $id);
 
         return Views::render('room.show', [

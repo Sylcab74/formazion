@@ -1,73 +1,9 @@
--- Adminer 4.7.1 PostgreSQL dump
-
-DROP TABLE IF EXISTS "companies";
-DROP SEQUENCE IF EXISTS formazion.companies_id_sequence;
-CREATE SEQUENCE formazion.companies_id_sequence INCREMENT  MINVALUE  MAXVALUE  START 1 CACHE ;
-
-CREATE TABLE "formazion"."companies" (
-    "id" integer DEFAULT nextval('formazion.companies_id_sequence') NOT NULL,
-    "name" character varying(45) NOT NULL,
-    "number_address" integer NOT NULL,
-    "street" character varying(125) NOT NULL,
-    "postal_code" integer NOT NULL,
-    "city" character varying(125) NOT NULL,
-    "country" character varying(60) NOT NULL,
-    CONSTRAINT "companies_pkey" PRIMARY KEY ("id")
-) WITH (oids = false);
 
 INSERT INTO "companies" ("id", "name", "number_address", "street", "postal_code", "city", "country") VALUES
 (27,	'Armstrong and Sons',	8058,	'Patience Via',	17767,	'Lake Antonettafort',	'United Arab Emirates'),
 (28,	'Langosh Group',	7262,	'Cremin View',	4569,	'Gilbertville',	'Suriname'),
 (60,	'Klein Group',	973,	'Metz Dam',	123,	'West Caden',	'Andorra'),
 (61,	'Armstrong-Huel',	44540,	'Heller Hill',	87345,	'Kemmerchester',	'Maldives');
-
-DROP TABLE IF EXISTS "formations";
-DROP SEQUENCE IF EXISTS formazion.formations_id_sequence;
-CREATE SEQUENCE formazion.formations_id_sequence INCREMENT  MINVALUE  MAXVALUE  START 1 CACHE ;
-
-CREATE TABLE "formazion"."formations" (
-    "id" integer DEFAULT nextval('formazion.formations_id_sequence') NOT NULL,
-    "name" character varying(45) NOT NULL,
-    "responsible_professor_id" integer NOT NULL,
-    CONSTRAINT "formations_pkey" PRIMARY KEY ("id"),
-    CONSTRAINT "fk_formations_persons1" FOREIGN KEY (responsible_professor_id) REFERENCES persons(id) NOT DEFERRABLE
-) WITH (oids = false);
-
-INSERT INTO "formations" ("id", "name", "responsible_professor_id") VALUES
-(131,	'Pacocha, Dooley and Wunsch',	411),
-(132,	'Cassin, Schmidt and Hegmann',	412),
-(133,	'Blick, Mante and O''Conner',	413),
-(134,	'Smitham, Collins and Daugherty',	414),
-(135,	'Cronin-Carroll',	415),
-(136,	'Kozey and Sons',	416),
-(137,	'Hirthe-Heaney',	417),
-(138,	'Koch, Abshire and Langosh',	418),
-(139,	'Casper-Gerhold',	419),
-(140,	'Rogahn-Mitchell',	420),
-(164,	'Gerlach and Sons',	444),
-(165,	'Hudson, Sawayn and Kling',	445),
-(166,	'Fadel, Klein and Kuhlman',	446),
-(167,	'Steuber-VonRueden',	447),
-(168,	'Goodwin Group',	448),
-(169,	'Hahn PLC',	449),
-(170,	'Wiegand, Rohan and Metz',	450),
-(171,	'Hane, Thompson and Mayer',	451),
-(172,	'Swaniawski, Dietrich and Considine',	452),
-(173,	'Harris, Steuber and Sporer',	453);
-
-DROP TABLE IF EXISTS "persons";
-DROP SEQUENCE IF EXISTS formazion.persons_id_sequence;
-CREATE SEQUENCE formazion.persons_id_sequence INCREMENT  MINVALUE  MAXVALUE  START 1 CACHE ;
-
-CREATE TABLE "formazion"."persons" (
-    "id" integer DEFAULT nextval('formazion.persons_id_sequence') NOT NULL,
-    "firstname" character varying(45) NOT NULL,
-    "lastname" character varying(45) NOT NULL,
-    "role" character varying(45) NOT NULL,
-    "companies_id" integer,
-    CONSTRAINT "persons_pkey" PRIMARY KEY ("id"),
-    CONSTRAINT "fk_customers_companies1" FOREIGN KEY (companies_id) REFERENCES companies(id) NOT DEFERRABLE
-) WITH (oids = false);
 
 INSERT INTO "persons" ("id", "firstname", "lastname", "role", "companies_id") VALUES
 (391,	'Camilla',	'Gleason',	'ROLE_EMPLOYEE',	27),
@@ -131,15 +67,28 @@ INSERT INTO "persons" ("id", "firstname", "lastname", "role", "companies_id") VA
 (452,	'Violet',	'Swaniawski',	'ROLE_TEACHER',	NULL),
 (453,	'Torey',	'Jacobi',	'ROLE_TEACHER',	NULL);
 
-DROP TABLE IF EXISTS "rooms";
-DROP SEQUENCE IF EXISTS formazion.rooms_id_sequence;
-CREATE SEQUENCE formazion.rooms_id_sequence INCREMENT  MINVALUE  MAXVALUE  START 1 CACHE ;
 
-CREATE TABLE "formazion"."rooms" (
-    "id" integer DEFAULT nextval('formazion.rooms_id_sequence') NOT NULL,
-    "number" integer NOT NULL,
-    CONSTRAINT "rooms_pkey" PRIMARY KEY ("id")
-) WITH (oids = false);
+INSERT INTO "formations" ("id", "name", "responsible_professor_id") VALUES
+(131,	'Pacocha, Dooley and Wunsch',	411),
+(132,	'Cassin, Schmidt and Hegmann',	412),
+(133,	'Blick, Mante and O''Conner',	413),
+(134,	'Smitham, Collins and Daugherty',	414),
+(135,	'Cronin-Carroll',	415),
+(136,	'Kozey and Sons',	416),
+(137,	'Hirthe-Heaney',	417),
+(138,	'Koch, Abshire and Langosh',	418),
+(139,	'Casper-Gerhold',	419),
+(140,	'Rogahn-Mitchell',	420),
+(164,	'Gerlach and Sons',	444),
+(165,	'Hudson, Sawayn and Kling',	445),
+(166,	'Fadel, Klein and Kuhlman',	446),
+(167,	'Steuber-VonRueden',	447),
+(168,	'Goodwin Group',	448),
+(169,	'Hahn PLC',	449),
+(170,	'Wiegand, Rohan and Metz',	450),
+(171,	'Hane, Thompson and Mayer',	451),
+(172,	'Swaniawski, Dietrich and Considine',	452),
+(173,	'Harris, Steuber and Sporer',	453);
 
 INSERT INTO "rooms" ("id", "number") VALUES
 (131,	7),
@@ -162,25 +111,6 @@ INSERT INTO "rooms" ("id", "number") VALUES
 (171,	7),
 (172,	6),
 (173,	4);
-
-DROP TABLE IF EXISTS "sessions";
-DROP SEQUENCE IF EXISTS formazion.sessions_id_sequence;
-CREATE SEQUENCE formazion.sessions_id_sequence INCREMENT  MINVALUE  MAXVALUE  START 1 CACHE ;
-
-CREATE TABLE "formazion"."sessions" (
-    "id" integer DEFAULT nextval('formazion.sessions_id_sequence') NOT NULL,
-    "starting" timestamp NOT NULL,
-    "ending" timestamp NOT NULL,
-    "hours_performed" integer,
-    "report" character varying(255),
-    "formations_id" integer NOT NULL,
-    "rooms_id" integer NOT NULL,
-    "teacher_id" integer NOT NULL,
-    CONSTRAINT "sessions_pkey" PRIMARY KEY ("id"),
-    CONSTRAINT "fk_sessions_customers1" FOREIGN KEY (teacher_id) REFERENCES persons(id) NOT DEFERRABLE,
-    CONSTRAINT "fk_sessions_formations1" FOREIGN KEY (formations_id) REFERENCES formations(id) NOT DEFERRABLE,
-    CONSTRAINT "fk_sessions_rooms1" FOREIGN KEY (rooms_id) REFERENCES rooms(id) NOT DEFERRABLE
-) WITH (oids = false);
 
 INSERT INTO "sessions" ("id", "starting", "ending", "hours_performed", "report", "formations_id", "rooms_id", "teacher_id") VALUES
 (241,	'2018-08-22 11:45:00',	'2018-07-24 03:17:37',	2,	'Unde quia dolorem suscipit maxime sequi sint est voluptatem. Sint rem omnis nobis facilis non. Officiis error architecto sequi quas.',	133,	132,	416),
@@ -223,20 +153,6 @@ INSERT INTO "sessions" ("id", "starting", "ending", "hours_performed", "report",
 (291,	'2018-04-10 23:41:01',	'2019-02-13 06:46:04',	NULL,	NULL,	164,	164,	450),
 (292,	'2019-02-03 21:45:34',	'2018-06-13 05:57:36',	2,	'Inventore nihil voluptates beatae enim ut eum deleniti. Provident consequatur libero maiores aliquam aliquid. Enim nostrum nemo sint consequuntur omnis eius porro. Nisi debitis officia et quis.',	168,	169,	450),
 (293,	'2018-05-24 02:31:09',	'2019-01-30 03:23:30',	NULL,	NULL,	170,	164,	451);
-
-DROP TABLE IF EXISTS "students_sessions";
-DROP SEQUENCE IF EXISTS formazion.students_sessions_id_sequence;
-CREATE SEQUENCE formazion.students_sessions_id_sequence INCREMENT  MINVALUE  MAXVALUE  START 1 CACHE ;
-
-CREATE TABLE "formazion"."students_sessions" (
-    "id" integer DEFAULT nextval('formazion.students_sessions_id_sequence') NOT NULL,
-    "students_id" integer NOT NULL,
-    "sessions_id" integer NOT NULL,
-    "note" integer NOT NULL,
-    CONSTRAINT "students_sessions_pkey" PRIMARY KEY ("id"),
-    CONSTRAINT "fk_customers_formations_customers1" FOREIGN KEY (students_id) REFERENCES persons(id) NOT DEFERRABLE,
-    CONSTRAINT "fk_students_sessions_sessions1" FOREIGN KEY (sessions_id) REFERENCES sessions(id) NOT DEFERRABLE
-) WITH (oids = false);
 
 INSERT INTO "students_sessions" ("id", "students_id", "sessions_id", "note") VALUES
 (481,	393,	251,	7),
@@ -319,5 +235,3 @@ INSERT INTO "students_sessions" ("id", "students_id", "sessions_id", "note") VAL
 (584,	443,	274,	7),
 (585,	432,	282,	13),
 (586,	426,	293,	8);
-
--- 2019-03-25 19:45:09.244461+00
