@@ -28,7 +28,6 @@
           @endif
         @endforeach
       </select>
-      <input type="text" name="firstname" id="firstname" value="{{$person->getFirstname()}}"><br>
       <input type="submit" value="Submit">
     </form>
 @endsection

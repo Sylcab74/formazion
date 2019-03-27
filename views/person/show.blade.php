@@ -18,4 +18,5 @@
   @endif
 
   <a href="/person/edit/{{$person->getId()}}"><button class="btn btn-success">Edit</button></a>
+  <a href="/person/assign/{{$person->getId()}}"><button class="btn btn-success">Assign to session</button></a>
 @endsection

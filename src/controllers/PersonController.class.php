@@ -19,6 +19,12 @@ class PersonController
         ]);
     }
     
+    public function assignAction($params)
+    {
+        // SHOW ALL FORMATIONS, CREATES SESSION AND SET THE CUSTOMER ID
+    }
+
+
     public function showAction($params)
     {
         $id = $params['URL'][0];
@@ -35,39 +41,28 @@ class PersonController
     public function createAction($params)
     {
         $post = $params['POST'];
-        $teachers = Manager::$em->getRepository(Person::class)->findBy(['role' => 'ROLE_TEACHER']);
+        $roles = ['ROLE_EMPLOYEE', 'ROLE_TEACHER'];
 
         if (count($post) > 0) {
-            $errors = [];
-            $room = new Formation();
+            $person = new Person();
+            $person->setFirstname($post['firstname']);
+            $person->setLastname($post['lastname']);
+            $person->setRole($post['role']);
             
-            if (count( Manager::$em->getRepository(Formation::class)->findBy( ['name' => $post['name']] ) ) > 0) {
-                $errors[] = "Désolé ce nom est déjà utilisé.";
-            } 
-            if (count($errors)) {
-                return Views::render('formation.create', [
-                    'errors' => $errors,
-                    'teachers' => $teachers
-                ]);
-            } else {
-                $formation = new Formation();
-                $teacher = Manager::$em->find(Person::class, $post['teacher']);
-                $formation->setName($post['name']);
-                $formation->setResponsibleProfessor($teacher);
-                
-                Manager::$em->persist($formation);
-                Manager::$em->flush();
-                
-                $formations = Manager::$em->getRepository(Formation::class)->findAll();
-                return Views::render('person.index', [
-                    'teachers' => $teachers,
-                    'employees' => $employees
-                ]);
-            }
+            Manager::$em->persist($person);
+            Manager::$em->flush();
+            
+            $employees = Manager::$em->getRepository(Person::class)->findBy(['role' => 'ROLE_EMPLOYEE']);
+            $teachers = Manager::$em->getRepository(Person::class)->findBy(['role' => 'ROLE_TEACHER']);
+            
+            return Views::render('person.index', [
+                'teachers' => $teachers,
+                'employees' => $employees
+            ]);
         }
 
-        return Views::render('formation.create', [
-            'teachers' => $teachers
+        return Views::render('person.create', [
+            'roles' => $roles
         ]);
     }
 

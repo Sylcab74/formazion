@@ -3473,3 +3473,13 @@ Stack trace:
 #1 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataInfo.php(970): Doctrine\Common\Persistence\Mapping\RuntimeReflectionService->getAccessibleProperty('Formazion\\Model...', 'formation')
 #2 /var/www/formazion/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(747): Doctrine\ORM\Mapping\ClassMetadataInfo->wakeupReflection(Object(Doctrine\Common\Persistence\Mapping\RuntimeReflectionService))
 #3 /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php(316): Doctrine\ORM\Mapping\ClassMetadataFact in /var/www/formazion/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php on line 63
+[27-Mar-2019 17:57:18 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function getId() on null in /var/www/formazion/cache/d51ce76114180db412e3b52522772065e5ba6e90.bladec:16
+Stack trace:
+#0 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(2150): include()
+#1 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(375): eftec\bladeone\BladeOne->evaluatePath('./cache/d51ce76...', Array)
+#2 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(305): eftec\bladeone\BladeOne->runInternal('person.create', Array, 0, true, 0)
+#3 /var/www/formazion/core/Views.class.php(16): eftec\bladeone\BladeOne->run('person.create', Array)
+#4 /var/www/formazion/src/controllers/PersonController.class.php(65): Formazion\Core\Views::render('person.create', Array)
+#5 /var/www/formazion/index.php(66): Formazion\Controller\PersonController->createAction(Array)
+#6 {main}
+  thrown in /var/www/formazion/cache/d51ce76114180db412e3b52522772065e5ba6e90.bladec on line 16
