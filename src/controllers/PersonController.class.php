@@ -4,6 +4,9 @@ namespace Formazion\Controller;
 
 use Formazion\Core\{Manager, Views};
 use Formazion\Models\{ Formation, Person, Company, Session, StudentsSession };
+use Formazion\Repository\SessionRepository;
+
+require_once 'src/repository/SessionRepository.php';
 
 class PersonController
 {

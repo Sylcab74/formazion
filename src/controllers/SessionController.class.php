@@ -47,7 +47,7 @@ class SessionController
 			$session = new Session();
 			$session->setStarting(new \Datetime($post['date'] . $post['startHour']));
 			$session->setEnding(new \Datetime($post['date'] . $post['endHour']));
-			$session->setReport($post['report']);
+            $session->setReport($post['report']);
 			$session->setFormations($formation);
 			$session->setTeacher($teacher);
 			$session->setRooms($room);
@@ -87,6 +87,7 @@ class SessionController
           $session->setEnding(new \Datetime($post['date'] . $post['endHour']));
           $session->setReport($post['report']);
           $session->setFormations($formation);
+          $session->setHoursPerformed($post['hours']);
 		  $session->setTeacher($teacher);
 		  $session->setRooms($room);
 

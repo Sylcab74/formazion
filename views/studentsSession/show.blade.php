@@ -8,5 +8,4 @@
   <p>Note : <b>{{$studentsSession->getNote()}}</b></p>
 
   <a href="/studentsSession/edit/{{$studentsSession->getId()}}"><button class="btn btn-success">Edit</button></a>
-  <a href="/studentsSession/delete/{{$studentsSession->getId()}}"><button class="btn btn-danger">Delete</button></a>
 @endsection
