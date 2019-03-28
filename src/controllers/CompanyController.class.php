@@ -36,10 +36,13 @@ class CompanyController
 
         if (count($post) > 0) {
             $errors = [];
-            if (count( Manager::$em->getRepository(Company::class)->findBy( ['name' => $post['name']] ) ) > 0) {
-                $errors[] = "Désolé ce nom est déjà utilisé.";
-            } else {
+
                 $company->setName($post['name']);
+                $company->setNumberAddress($post['numberAddress']);
+                $company->setStreet($post['street']);
+                $company->setPostalCode($post['postalcode']);
+                $company->setCity($post['city']);
+                $company->setCountry($post['country']);
                 Manager::$em->persist($company);
                 Manager::$em->flush();
 
@@ -48,7 +51,7 @@ class CompanyController
                     'companies' => $companies
                 ]);
             }
-        }
+
 
         return Views::render('company.edit', [
             'company' => $company
@@ -65,13 +68,13 @@ class CompanyController
             if (count( Manager::$em->getRepository(Company::class)->findBy( ['name' => $post['name']] ) ) > 0) {
                 $errors[] = "Désolé ce nom est déjà utilisé.";
             } else {
-                $company->setName($post['id']);
+
                 $company->setName($post['name']);
-                $company->setName($post['numberAddress']);
-                $company->setName($post['street']);
-                $company->setName($post['postalcode']);
-                $company->setName($post['city']);
-                $company->setName($post['country']);
+                $company->setNumberAddress($post['numberAddress']);
+                $company->setStreet($post['street']);
+                $company->setPostalCode($post['postalcode']);
+                $company->setCity($post['city']);
+                $company->setCountry($post['country']);
                 Manager::$em->persist($company);
                 Manager::$em->flush();
 
