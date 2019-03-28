@@ -41,7 +41,7 @@ Formazion\Models\Session:
                 fixed: false
     manyToOne:
         formations:
-            targetEntity: formation
+            targetEntity: Formation
             cascade: {  }
             fetch: LAZY
             mappedBy: null
@@ -61,7 +61,7 @@ Formazion\Models\Session:
                     referencedColumnName: id
             orphanRemoval: false
         teacher:
-            targetEntity: person
+            targetEntity: Person
             cascade: {  }
             fetch: LAZY
             mappedBy: null
@@ -73,5 +73,5 @@ Formazion\Models\Session:
     lifecycleCallbacks: {  }
     oneToMany:
         studentsSession:
-            targetEntity: studentsSession
+            targetEntity: StudentsSession
             mappedBy: session

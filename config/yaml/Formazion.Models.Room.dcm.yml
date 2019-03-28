@@ -19,5 +19,5 @@ Formazion\Models\Room:
     lifecycleCallbacks: {  }
     oneToMany:
         session:
-            targetEntity: session
+            targetEntity: Session
             mappedBy: rooms

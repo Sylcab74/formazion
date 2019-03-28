@@ -25,7 +25,7 @@ Formazion\Models\StudentsSession:
                 unsigned: false
     manyToOne:
         students:
-            targetEntity: person
+            targetEntity: Person
             cascade: {  }
             fetch: LAZY
             mappedBy: null
@@ -35,7 +35,7 @@ Formazion\Models\StudentsSession:
                     referencedColumnName: id
             orphanRemoval: false
         sessions:
-            targetEntity: session
+            targetEntity: Session
             cascade: {  }
             fetch: LAZY
             mappedBy: null
