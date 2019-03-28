@@ -18,7 +18,7 @@ class PersonController
             'employees' => $employees
         ]);
     }
-    
+
     public function assignSessionAction($params)
     {
         $id = $params['URL'][0];
@@ -45,7 +45,7 @@ class PersonController
                 'employees' => $employees
             ]);
         }
-        
+
         Views::render('person.assignSession', [
             'formations' => $formations,
             'student' => $student
@@ -64,7 +64,7 @@ class PersonController
             $data[$key]['starting'] = $session->getStarting()->format('Y-m-d H:i');
             $data[$key]['ending'] = $session->getEnding()->format('Y-m-d H:i');
         }
-        
+
         $response['status'] = 'success';
         $response['response'] = $data;
 
@@ -96,20 +96,20 @@ class PersonController
             $person->setFirstname($post['firstname']);
             $person->setLastname($post['lastname']);
             $person->setRole($post['role']);
-            
+
             if ($person->getRole() === "ROLE_TEACHER" ) {
                 $company = Manager::$em->find(Company::class, $post['company']);
                 $person->setCompanies($company);
             } else {
                 $person->setCompanies(null);
             }
-            
+
             Manager::$em->persist($person);
             Manager::$em->flush();
-            
+
             $employees = Manager::$em->getRepository(Person::class)->findBy(['role' => 'ROLE_EMPLOYEE']);
             $teachers = Manager::$em->getRepository(Person::class)->findBy(['role' => 'ROLE_TEACHER']);
-            
+
             return Views::render('person.index', [
                 'teachers' => $teachers,
                 'employees' => $employees
@@ -134,20 +134,20 @@ class PersonController
             $person->setFirstname($post['firstname']);
             $person->setLastname($post['lastname']);
             $person->setRole($post['role']);
-            
+
             if ($person->getRole() === "ROLE_TEACHER" ) {
                 $company = Manager::$em->find(Company::class, $post['company']);
                 $person->setCompanies($company);
             } else {
                 $person->setCompanies(null);
             }
-            
+
             Manager::$em->persist($person);
             Manager::$em->flush();
-            
+
             $employees = Manager::$em->getRepository(Person::class)->findBy(['role' => 'ROLE_EMPLOYEE']);
             $teachers = Manager::$em->getRepository(Person::class)->findBy(['role' => 'ROLE_TEACHER']);
-            
+
             return Views::render('person.index', [
                 'teachers' => $teachers,
                 'employees' => $employees
@@ -159,5 +159,29 @@ class PersonController
             'roles' => $roles,
             'companies' => $companies
         ]);
+    }
+
+    public function searchAction($params)
+    {
+        $post = $params["POST"];
+
+        if(isset($post['search']))
+        {
+            $qb = Manager::$em->createQueryBuilder();
+            $persons = $qb->select('p')
+                ->from('Formazion\Models\Person', 'p')
+                ->where($qb->expr()->like('p.firstname', ':firstname'))
+                ->setParameter(':firstname', '%'.$post['search'].'%')
+                ->orderBy('p.firstname', 'ASC')
+                ->getQuery()
+                ->getResult();
+
+            return Views::render('person.search',[
+                'persons' => $persons
+            ]);
+        }
+
+        return Views::render('person.search');
+
     }
 }
