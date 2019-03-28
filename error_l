@@ -185,3 +185,13 @@ Stack trace:
 [28-Mar-2019 09:05:34 Europe/Paris] PHP   5. eftec\bladeone\BladeOne->runInternal() /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php:305
 [28-Mar-2019 09:05:34 Europe/Paris] PHP   6. eftec\bladeone\BladeOne->evaluatePath() /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php:375
 [28-Mar-2019 09:05:34 Europe/Paris] PHP   7. include() /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php:2150
+[28-Mar-2019 09:23:34 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to undefined method Formazion\Models\Room::getSessions() in /var/www/formazion/cache/a2f150fa2931df429a9cba5d999ba4eb6fdd4426.bladec:11
+Stack trace:
+#0 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(2150): include()
+#1 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(375): eftec\bladeone\BladeOne->evaluatePath('./cache/a2f150f...', Array)
+#2 /var/www/formazion/vendor/eftec/bladeone/lib/BladeOne.php(305): eftec\bladeone\BladeOne->runInternal('room.show', Array, 0, true, 0)
+#3 /var/www/formazion/core/Views.class.php(16): eftec\bladeone\BladeOne->run('room.show', Array)
+#4 /var/www/formazion/src/controllers/RoomController.class.php(26): Formazion\Core\Views::render('room.show', Array)
+#5 /var/www/formazion/index.php(66): Formazion\Controller\RoomController->showAction(Array)
+#6 {main}
+  thrown in /var/www/formazion/cache/a2f150fa2931df429a9cba5d999ba4eb6fdd4426.bladec on line 11
