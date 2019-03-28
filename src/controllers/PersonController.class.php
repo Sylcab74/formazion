@@ -76,11 +76,12 @@ class PersonController
     {
         $id = $params['URL'][0];
         $person = Manager::$em->find(Person::class, $id);
-        $formations = $person->getFormations();
+        $sessionsStundents = Manager::$em->getRepository(StudentsSession::class)->findBy(['students' => $id]);
 
         return Views::render('person.show', [
             'person' => $person,
-            'formations' => $formations
+            'formations' => $formations,
+            'sessionsStundents' => $sessionsStundents
         ]);
     }
 
@@ -159,19 +160,4 @@ class PersonController
             'companies' => $companies
         ]);
     }
-
-    public function deleteAction($params)
-    {
-        $id = $params['URL'][0];
-        $formation = Manager::$em->find(Formation::class, $id);
-        Manager::$em->remove($formation);
-        Manager::$em->flush();
-
-        $formations = Manager::$em->getRepository(Formation::class)->findAll();
-
-        Views::render('formation.index', [
-            'formations' => $formations
-        ]);
-    }
-
 }

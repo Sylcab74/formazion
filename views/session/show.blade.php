@@ -20,5 +20,4 @@
   </ul>
 
   <a href="/session/edit/{{$session->getId()}}"><button class="btn btn-success">Edit</button></a>
-  <a href="/session/delete/{{$session->getId()}}"><button class="btn btn-danger">Delete</button></a>
 @endsection

@@ -11,8 +11,23 @@
 
   @if ($person->getRole() === 'ROLE_EMPLOYEE')
     <p>Company : <b>{{$person->getCompanies()->getName()}}</b></p>
+    
+    <h2>Sessions</h2>
     <ul>
-      @foreach($formations as $formation)
+      @foreach($person->getStudents() as $session)
+        <a href="/studentsSession/show/{{$session->getId()}}"><li>{{$session->getSessions()->getStarting()->format('Y-m-d H:i')}} – {{$session->getSessions()->getEnding()->format('Y-m-d H:i')}}</li></a>
+      @endforeach
+    </ul>
+  @else 
+    <h2>Sessions</h2>
+    <ul>
+      @foreach($person->getSessions() as $session)
+        <a href="/session/show/{{$session->getId()}}"><li>{{$session->getStarting()->format('Y-m-d H:i')}} – {{$session->getEnding()->format('Y-m-d H:i')}}</li></a>
+      @endforeach
+    </ul>
+    <h2>Formations</h2>
+    <ul>
+      @foreach($person->getFormations() as $formation)
         <a href="/formation/show/{{$formation->getId()}}"><li>{{$formation->getName()}}</li></a>
       @endforeach
     </ul>
