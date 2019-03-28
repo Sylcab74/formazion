@@ -19,10 +19,6 @@ class IndexController
         $sessions = Manager::$em->getRepository(Session::class)->findAll();
         $formations = Manager::$em->getRepository(Formation::class)->findAll();
 
-        $sessions = Manager::$em->getRepository(Session::class)->getNextWeekSessions();
-        
-
-
         Views::render('home', [
             'employees' => $employees,
             'teachers' => $teachers,
