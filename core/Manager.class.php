@@ -23,6 +23,7 @@ class Manager
     private function __construct()
     {
         $this->config = Setup::createYAMLMetadataConfiguration(array("/var/www/formazion/config/yaml"), true);
+        $this->config->addCustomStringFunction('DATEDIFF', 'DoctrineExtensions\Query\MySql\DateDiff');
         self::$em = EntityManager::create($this->conn, $this->config);
     }
 

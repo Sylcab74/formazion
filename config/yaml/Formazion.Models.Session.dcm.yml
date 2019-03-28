@@ -1,4 +1,5 @@
 Formazion\Models\Session:
+    repositoryClass: Formazion\Repository\SessionRepository
     type: entity
     table: formazion.sessions
     indexes:

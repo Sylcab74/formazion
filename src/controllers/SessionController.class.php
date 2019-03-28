@@ -4,6 +4,9 @@ namespace Formazion\Controller;
 
 use Formazion\Core\{Manager, Views};
 use Formazion\Models\{ Formation, Session, StudentsSession, Person, Room };
+use Formazion\Repository\SessionRepository;
+
+require_once 'src/repository/SessionRepository.php';
 
 class SessionController
 {
@@ -16,7 +19,7 @@ class SessionController
             'sessions' => $sessions
         ]);
     }
-    
+
     public function showAction($params)
     {
         $id = $params['URL'][0];
@@ -40,7 +43,7 @@ class SessionController
 			$formation = Manager::$em->find(Formation::class, $post['formation']);
 			$teacher = Manager::$em->find(Person::class, $post['teacher']);
 			$room = Manager::$em->find(Room::class, $post['room']);
-			
+
 			$session = new Session();
 			$session->setStarting(new \Datetime($post['date'] . $post['startHour']));
 			$session->setEnding(new \Datetime($post['date'] . $post['endHour']));
@@ -48,10 +51,10 @@ class SessionController
 			$session->setFormations($formation);
 			$session->setTeacher($teacher);
 			$session->setRooms($room);
-			
+
 			Manager::$em->persist($session);
 			Manager::$em->flush();
-			
+
 			$sessions = Manager::$em->getRepository(Session::class)->findAll();
 
 			return Views::render('session.index', [
@@ -79,19 +82,19 @@ class SessionController
           $formation = Manager::$em->find(Formation::class, $post['formation']);
 		  $teacher = Manager::$em->find(Person::class, $post['teacher']);
 		  $room = Manager::$em->find(Room::class, $post['room']);
-		  
+
           $session->setStarting(new \Datetime($post['date'] . $post['startHour']));
           $session->setEnding(new \Datetime($post['date'] . $post['endHour']));
           $session->setReport($post['report']);
           $session->setFormations($formation);
 		  $session->setTeacher($teacher);
 		  $session->setRooms($room);
-          
+
           Manager::$em->persist($session);
           Manager::$em->flush();
-          
+
           $sessions = Manager::$em->getRepository(Session::class)->findAll();
-          
+
           return Views::render('session.index', [
               'sessions' => $sessions
           ]);
@@ -104,7 +107,7 @@ class SessionController
             'rooms' => $rooms
         ]);
 	}
-	
+
 	public function noteAction($params)
 	{
 		$id = $params['URL'][0];
@@ -128,4 +131,13 @@ class SessionController
             'studentSession' => $studentSession
         ]);
 	}
+
+	public function previousAction()
+    {
+        $sessions = Manager::$em->getRepository(Session::class)->findPreviousWeekSessions();
+
+        return Views::render('session.previous', [
+            'sessions' => $sessions
+        ]);
+    }
 }
