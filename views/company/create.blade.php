@@ -15,8 +15,6 @@
 
     <form action="/company/create" method="POST">
 
-        <label for="id">id</label>
-        <input type="text" name="id" id="id"><br>
 
         <label for="name">Name</label>
         <input type="text" name="name" id="name"><br>

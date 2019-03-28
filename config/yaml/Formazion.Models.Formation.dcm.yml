@@ -23,7 +23,7 @@ Formazion\Models\Formation:
                 fixed: false
     manyToOne:
         responsibleProfessor:
-            targetEntity: person
+            targetEntity: Person
             cascade: {  }
             fetch: LAZY
             mappedBy: null

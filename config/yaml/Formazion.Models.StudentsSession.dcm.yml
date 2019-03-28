@@ -35,7 +35,7 @@ Formazion\Models\StudentsSession:
                     referencedColumnName: id
             orphanRemoval: false
         sessions:
-            targetEntity: session
+            targetEntity: Session
             cascade: {  }
             fetch: LAZY
             mappedBy: null

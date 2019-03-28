@@ -35,7 +35,7 @@ Formazion\Models\Person:
                 fixed: false
     manyToOne:
         companies:
-            targetEntity: company
+            targetEntity: Company
             cascade: {  }
             fetch: LAZY
             mappedBy: null

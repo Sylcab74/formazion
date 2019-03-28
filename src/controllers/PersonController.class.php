@@ -160,19 +160,4 @@ class PersonController
             'companies' => $companies
         ]);
     }
-
-    public function deleteAction($params)
-    {
-        $id = $params['URL'][0];
-        $formation = Manager::$em->find(Formation::class, $id);
-        Manager::$em->remove($formation);
-        Manager::$em->flush();
-
-        $formations = Manager::$em->getRepository(Formation::class)->findAll();
-
-        Views::render('formation.index', [
-            'formations' => $formations
-        ]);
-    }
-
 }

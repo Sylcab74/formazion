@@ -38,20 +38,4 @@ class StudentsSessionController
             'studentsSession' => $studentsSession
         ]);
 	}
-
-    public function deleteAction($params)
-    {
-        $id = $params['URL'][0];
-		$session = Manager::$em->find(Session::class, $id);
-		
-        Manager::$em->remove($session);
-        Manager::$em->flush();
-
-        $session = Manager::$em->getRepository(Session::class)->findAll();
-
-        Views::render('session.index', [
-            'session' => $session
-        ]);
-    }
-
 }
