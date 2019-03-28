@@ -15,5 +15,5 @@
   </ul>
 
   <a href="/formation/edit/{{$formation->getId()}}"><button class="btn btn-success">Edit</button></a>
-  <a href="/formation/delete/{{$formation->getId()}}"><button class="btn btn-danger">Delete</button></a>
+
 @endsection
