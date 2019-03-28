@@ -25,7 +25,7 @@ Formazion\Models\StudentsSession:
                 unsigned: false
     manyToOne:
         students:
-            targetEntity: person
+            targetEntity: Person
             cascade: {  }
             fetch: LAZY
             mappedBy: null

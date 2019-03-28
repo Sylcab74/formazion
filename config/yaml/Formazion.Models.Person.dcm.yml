@@ -51,7 +51,7 @@ Formazion\Models\Person:
             mappedBy: responsibleProfessor
         sessions:
             targetEntity: Session
-            mappedBy: Person
+            mappedBy: teacher
         students:
             targetEntity: StudentsSession
-            mappedBy: Person
+            mappedBy: students
