@@ -14,8 +14,8 @@
     
     <h2>Sessions</h2>
     <ul>
-      @foreach($person->getStudents() as $session)
-        <a href="/studentsSession/show/{{$session->getId()}}"><li>{{$session->getSessions()->getStarting()->format('Y-m-d H:i')}} – {{$session->getSessions()->getEnding()->format('Y-m-d H:i')}}</li></a>
+      @foreach($person->getSessionStudents() as $session)
+        <a href="/studentsSession/show/{{$session->getId()}}"><li>{{$session->getStarting()->format('Y-m-d H:i')}} – {{$session->getEnding()->format('Y-m-d H:i')}}</li></a>
       @endforeach
     </ul>
   @else 

@@ -71,8 +71,7 @@ Formazion\Models\Session:
                 teacher_id:
                     referencedColumnName: id
             orphanRemoval: false
-    lifecycleCallbacks: {  }
-    oneToMany:
-        studentsSession:
-            targetEntity: StudentsSession
-            mappedBy: session
+    manyToMany:
+        persons:
+            targetEntity: Person
+            mappedBy: sessionStudents

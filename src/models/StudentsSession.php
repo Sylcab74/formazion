@@ -18,12 +18,12 @@ class StudentsSession
     private $note;
 
     /**
-     * @var \Formazion\Models\person
+     * @var \Formazion\Models\Person
      */
     private $students;
 
     /**
-     * @var \Formazion\Models\session
+     * @var \Formazion\Models\Session
      */
     private $sessions;
 
@@ -45,7 +45,7 @@ class StudentsSession
      *
      * @return StudentsSession
      */
-    public function setNote($note = null)
+    public function setNote($note)
     {
         $this->note = $note;
 
@@ -55,7 +55,7 @@ class StudentsSession
     /**
      * Get note.
      *
-     * @return int|null
+     * @return int
      */
     public function getNote()
     {
@@ -65,11 +65,11 @@ class StudentsSession
     /**
      * Set students.
      *
-     * @param \Formazion\Models\person|null $students
+     * @param \Formazion\Models\Person|null $students
      *
      * @return StudentsSession
      */
-    public function setStudents(\Formazion\Models\person $students = null)
+    public function setStudents(\Formazion\Models\Person $students = null)
     {
         $this->students = $students;
 
@@ -79,7 +79,7 @@ class StudentsSession
     /**
      * Get students.
      *
-     * @return \Formazion\Models\person|null
+     * @return \Formazion\Models\Person|null
      */
     public function getStudents()
     {
@@ -89,11 +89,11 @@ class StudentsSession
     /**
      * Set sessions.
      *
-     * @param \Formazion\Models\session|null $sessions
+     * @param \Formazion\Models\Session|null $sessions
      *
      * @return StudentsSession
      */
-    public function setSessions(\Formazion\Models\session $sessions = null)
+    public function setSessions(\Formazion\Models\Session $sessions = null)
     {
         $this->sessions = $sessions;
 
@@ -103,7 +103,7 @@ class StudentsSession
     /**
      * Get sessions.
      *
-     * @return \Formazion\Models\session|null
+     * @return \Formazion\Models\Session|null
      */
     public function getSessions()
     {

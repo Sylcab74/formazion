@@ -33,12 +33,7 @@ class Session
     private $report;
 
     /**
-     * @var \Doctrine\Common\Collections\Collection
-     */
-    private $studentsSession;
-
-    /**
-     * @var \Formazion\Models\formation
+     * @var \Formazion\Models\Formation
      */
     private $formations;
 
@@ -48,16 +43,21 @@ class Session
     private $rooms;
 
     /**
-     * @var \Formazion\Models\person
+     * @var \Formazion\Models\Person
      */
     private $teacher;
+
+    /**
+     * @var \Doctrine\Common\Collections\Collection
+     */
+    private $persons;
 
     /**
      * Constructor
      */
     public function __construct()
     {
-        $this->studentsSession = new \Doctrine\Common\Collections\ArrayCollection();
+        $this->persons = new \Doctrine\Common\Collections\ArrayCollection();
     }
 
     /**
@@ -71,7 +71,7 @@ class Session
     }
 
     /**
-     * Set start.
+     * Set starting.
      *
      * @param \DateTime $starting
      *
@@ -85,7 +85,7 @@ class Session
     }
 
     /**
-     * Get start.
+     * Get starting.
      *
      * @return \DateTime
      */
@@ -109,7 +109,7 @@ class Session
     }
 
     /**
-     * Get end.
+     * Get ending.
      *
      * @return \DateTime
      */
@@ -167,49 +167,13 @@ class Session
     }
 
     /**
-     * Add studentsSession.
-     *
-     * @param \Formazion\Models\studentsSession $studentsSession
-     *
-     * @return Session
-     */
-    public function addStudentsSession(\Formazion\Models\studentsSession $studentsSession)
-    {
-        $this->studentsSession[] = $studentsSession;
-
-        return $this;
-    }
-
-    /**
-     * Remove studentsSession.
-     *
-     * @param \Formazion\Models\studentsSession $studentsSession
-     *
-     * @return boolean TRUE if this collection contained the specified element, FALSE otherwise.
-     */
-    public function removeStudentsSession(\Formazion\Models\studentsSession $studentsSession)
-    {
-        return $this->studentsSession->removeElement($studentsSession);
-    }
-
-    /**
-     * Get studentsSession.
-     *
-     * @return \Doctrine\Common\Collections\Collection
-     */
-    public function getStudentsSession()
-    {
-        return $this->studentsSession;
-    }
-
-    /**
      * Set formations.
      *
-     * @param \Formazion\Models\formation|null $formations
+     * @param \Formazion\Models\Formation|null $formations
      *
      * @return Session
      */
-    public function setFormations(\Formazion\Models\formation $formations = null)
+    public function setFormations(\Formazion\Models\Formation $formations = null)
     {
         $this->formations = $formations;
 
@@ -219,7 +183,7 @@ class Session
     /**
      * Get formations.
      *
-     * @return \Formazion\Models\formation|null
+     * @return \Formazion\Models\Formation|null
      */
     public function getFormations()
     {
@@ -253,11 +217,11 @@ class Session
     /**
      * Set teacher.
      *
-     * @param \Formazion\Models\person|null $teacher
+     * @param \Formazion\Models\Person|null $teacher
      *
      * @return Session
      */
-    public function setTeacher(\Formazion\Models\person $teacher = null)
+    public function setTeacher(\Formazion\Models\Person $teacher = null)
     {
         $this->teacher = $teacher;
 
@@ -267,10 +231,46 @@ class Session
     /**
      * Get teacher.
      *
-     * @return \Formazion\Models\person|null
+     * @return \Formazion\Models\Person|null
      */
     public function getTeacher()
     {
         return $this->teacher;
+    }
+
+    /**
+     * Add person.
+     *
+     * @param \Formazion\Models\Person $person
+     *
+     * @return Session
+     */
+    public function addPerson(\Formazion\Models\Person $person)
+    {
+        $this->persons[] = $person;
+
+        return $this;
+    }
+
+    /**
+     * Remove person.
+     *
+     * @param \Formazion\Models\Person $person
+     *
+     * @return boolean TRUE if this collection contained the specified element, FALSE otherwise.
+     */
+    public function removePerson(\Formazion\Models\Person $person)
+    {
+        return $this->persons->removeElement($person);
+    }
+
+    /**
+     * Get persons.
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getPersons()
+    {
+        return $this->persons;
     }
 }

@@ -45,6 +45,19 @@ Formazion\Models\Person:
                     referencedColumnName: id
             orphanRemoval: false
     lifecycleCallbacks: {  }
+
+    manyToMany:
+        sessionStudents:
+            targetEntity: Session
+            joinTable:
+                name: formazion.students_sessions
+                joinColumns:
+                    students_id:
+                        referencedColumnName: id
+                inverseJoinColumns:
+                    sessions_id:
+                        referencedColumnName: id
+                        unique: true
     oneToMany:
         formations:
             targetEntity: Formation
@@ -52,6 +65,3 @@ Formazion\Models\Person:
         sessions:
             targetEntity: Session
             mappedBy: teacher
-        students:
-            targetEntity: StudentsSession
-            mappedBy: students

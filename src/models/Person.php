@@ -38,14 +38,14 @@ class Person
     private $sessions;
 
     /**
-     * @var \Doctrine\Common\Collections\Collection
-     */
-    private $students;
-
-    /**
-     * @var \Formazion\Models\company
+     * @var \Formazion\Models\Company
      */
     private $companies;
+
+    /**
+     * @var \Doctrine\Common\Collections\Collection
+     */
+    private $sessionStudents;
 
     /**
      * Constructor
@@ -54,7 +54,7 @@ class Person
     {
         $this->formations = new \Doctrine\Common\Collections\ArrayCollection();
         $this->sessions = new \Doctrine\Common\Collections\ArrayCollection();
-        $this->students = new \Doctrine\Common\Collections\ArrayCollection();
+        $this->sessionStudents = new \Doctrine\Common\Collections\ArrayCollection();
     }
 
     /**
@@ -142,11 +142,11 @@ class Person
     /**
      * Add formation.
      *
-     * @param \Formazion\Models\formation $formation
+     * @param \Formazion\Models\Formation $formation
      *
      * @return Person
      */
-    public function addFormation(\Formazion\Models\formation $formation)
+    public function addFormation(\Formazion\Models\Formation $formation)
     {
         $this->formations[] = $formation;
 
@@ -156,11 +156,11 @@ class Person
     /**
      * Remove formation.
      *
-     * @param \Formazion\Models\formation $formation
+     * @param \Formazion\Models\Formation $formation
      *
      * @return boolean TRUE if this collection contained the specified element, FALSE otherwise.
      */
-    public function removeFormation(\Formazion\Models\formation $formation)
+    public function removeFormation(\Formazion\Models\Formation $formation)
     {
         return $this->formations->removeElement($formation);
     }
@@ -178,11 +178,11 @@ class Person
     /**
      * Add session.
      *
-     * @param \Formazion\Models\session $session
+     * @param \Formazion\Models\Session $session
      *
      * @return Person
      */
-    public function addSession(\Formazion\Models\session $session)
+    public function addSession(\Formazion\Models\Session $session)
     {
         $this->sessions[] = $session;
 
@@ -192,11 +192,11 @@ class Person
     /**
      * Remove session.
      *
-     * @param \Formazion\Models\session $session
+     * @param \Formazion\Models\Session $session
      *
      * @return boolean TRUE if this collection contained the specified element, FALSE otherwise.
      */
-    public function removeSession(\Formazion\Models\session $session)
+    public function removeSession(\Formazion\Models\Session $session)
     {
         return $this->sessions->removeElement($session);
     }
@@ -212,49 +212,13 @@ class Person
     }
 
     /**
-     * Add student.
-     *
-     * @param \Formazion\Models\StudentsSession $student
-     *
-     * @return Person
-     */
-    public function addStudent(\Formazion\Models\StudentsSession $student)
-    {
-        $this->students[] = $student;
-
-        return $this;
-    }
-
-    /**
-     * Remove student.
-     *
-     * @param \Formazion\Models\StudentsSession $student
-     *
-     * @return boolean TRUE if this collection contained the specified element, FALSE otherwise.
-     */
-    public function removeStudent(\Formazion\Models\StudentsSession $student)
-    {
-        return $this->students->removeElement($student);
-    }
-
-    /**
-     * Get students.
-     *
-     * @return \Doctrine\Common\Collections\Collection
-     */
-    public function getStudents()
-    {
-        return $this->students;
-    }
-
-    /**
      * Set companies.
      *
-     * @param \Formazion\Models\company|null $companies
+     * @param \Formazion\Models\Company|null $companies
      *
      * @return Person
      */
-    public function setCompanies(\Formazion\Models\company $companies = null)
+    public function setCompanies(\Formazion\Models\Company $companies = null)
     {
         $this->companies = $companies;
 
@@ -264,10 +228,46 @@ class Person
     /**
      * Get companies.
      *
-     * @return \Formazion\Models\company|null
+     * @return \Formazion\Models\Company|null
      */
     public function getCompanies()
     {
         return $this->companies;
+    }
+
+    /**
+     * Add sessionStudent.
+     *
+     * @param \Formazion\Models\Session $sessionStudent
+     *
+     * @return Person
+     */
+    public function addSessionStudent(\Formazion\Models\Session $sessionStudent)
+    {
+        $this->sessionStudents[] = $sessionStudent;
+
+        return $this;
+    }
+
+    /**
+     * Remove sessionStudent.
+     *
+     * @param \Formazion\Models\Session $sessionStudent
+     *
+     * @return boolean TRUE if this collection contained the specified element, FALSE otherwise.
+     */
+    public function removeSessionStudent(\Formazion\Models\Session $sessionStudent)
+    {
+        return $this->sessionStudents->removeElement($sessionStudent);
+    }
+
+    /**
+     * Get sessionStudents.
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getSessionStudents()
+    {
+        return $this->sessionStudents;
     }
 }

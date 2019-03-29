@@ -212,11 +212,11 @@ class Company
     /**
      * Add person.
      *
-     * @param \Formazion\Models\person $person
+     * @param \Formazion\Models\Person $person
      *
      * @return Company
      */
-    public function addPerson(\Formazion\Models\person $person)
+    public function addPerson(\Formazion\Models\Person $person)
     {
         $this->persons[] = $person;
 
@@ -226,11 +226,11 @@ class Company
     /**
      * Remove person.
      *
-     * @param \Formazion\Models\person $person
+     * @param \Formazion\Models\Person $person
      *
      * @return boolean TRUE if this collection contained the specified element, FALSE otherwise.
      */
-    public function removePerson(\Formazion\Models\person $person)
+    public function removePerson(\Formazion\Models\Person $person)
     {
         return $this->persons->removeElement($person);
     }
