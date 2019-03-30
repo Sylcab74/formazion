@@ -14,8 +14,8 @@
   <p>Hours performed : <b>{{$session->getHoursPerformed()}}</b></p>
   <p>Students : </p>
   <ul>
-    @foreach($studentsSession as $students)
-      <a href="/studentsSession/show/{{$students->getId()}}"><li>{{$students->getStudents()->getFirstname()}} {{$students->getStudents()->getLastname()}}</li></a>
+    @foreach($session->getPersons() as $students)
+      <a href="/studentsSession/show/{{$students->getId()}}"><li>{{$students->getFirstname()}} {{$students->getLastname()}}</li></a>
     @endforeach
   </ul>
 

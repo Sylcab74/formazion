@@ -24,11 +24,9 @@ class SessionController
     {
         $id = $params['URL'][0];
         $session = Manager::$em->find(Session::class, $id);
-        $studentsSession = Manager::$em->getRepository(StudentsSession::class)->findBy(['sessions' => $session]);
 
         return Views::render('session.show', [
-            'session' => $session,
-            'studentsSession' => $studentsSession
+            'session' => $session
         ]);
     }
 
