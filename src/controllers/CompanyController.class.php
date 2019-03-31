@@ -35,23 +35,21 @@ class CompanyController
         $company = Manager::$em->find(Company::class, $id);
 
         if (count($post) > 0) {
-            $errors = [];
 
-                $company->setName($post['name']);
-                $company->setNumberAddress($post['numberAddress']);
-                $company->setStreet($post['street']);
-                $company->setPostalCode($post['postalcode']);
-                $company->setCity($post['city']);
-                $company->setCountry($post['country']);
-                Manager::$em->persist($company);
-                Manager::$em->flush();
+            $company->setName($post['name']);
+            $company->setNumberAddress($post['numberAddress']);
+            $company->setStreet($post['street']);
+            $company->setPostalCode($post['postalcode']);
+            $company->setCity($post['city']);
+            $company->setCountry($post['country']);
+            Manager::$em->persist($company);
+            Manager::$em->flush();
 
-                $companies = Manager::$em->getRepository(Company::class)->findAll();
-                return Views::render('company.index', [
-                    'companies' => $companies
-                ]);
-            }
-
+            $companies = Manager::$em->getRepository(Company::class)->findAll();
+            return Views::render('company.index', [
+                'companies' => $companies
+            ]);
+        }
 
         return Views::render('company.edit', [
             'company' => $company
@@ -62,27 +60,20 @@ class CompanyController
     {
         $post = $params['POST'];
         if (count($post) > 0) {
-            $errors = [];
             $company = new Company();
+            $company->setName($post['name']);
+            $company->setNumberAddress($post['numberAddress']);
+            $company->setStreet($post['street']);
+            $company->setPostalCode($post['postalcode']);
+            $company->setCity($post['city']);
+            $company->setCountry($post['country']);
+            Manager::$em->persist($company);
+            Manager::$em->flush();
 
-            if (count( Manager::$em->getRepository(Company::class)->findBy( ['name' => $post['name']] ) ) > 0) {
-                $errors[] = "Désolé ce nom est déjà utilisé.";
-            } else {
-
-                $company->setName($post['name']);
-                $company->setNumberAddress($post['numberAddress']);
-                $company->setStreet($post['street']);
-                $company->setPostalCode($post['postalcode']);
-                $company->setCity($post['city']);
-                $company->setCountry($post['country']);
-                Manager::$em->persist($company);
-                Manager::$em->flush();
-
-                $companies = Manager::$em->getRepository(Company::class)->findAll();
-                return Views::render('company.index', [
-                    'companies' => $companies
-                ]);
-            }
+            $companies = Manager::$em->getRepository(Company::class)->findAll();
+            return Views::render('company.index', [
+                'companies' => $companies
+            ]);
         }
 
         return Views::render('company.create');
