@@ -33,31 +33,18 @@ class FormationController
         $teachers = Manager::$em->getRepository(Person::class)->findBy(['role' => 'ROLE_TEACHER']);
 
         if (count($post) > 0) {
-            $errors = [];
-            $room = new Formation();
+            $formation = new Formation();
+            $teacher = Manager::$em->find(Person::class, $post['teacher']);
+            $formation->setName($post['name']);
+            $formation->setResponsibleProfessor($teacher);
             
-            if (count( Manager::$em->getRepository(Formation::class)->findBy( ['name' => $post['name']] ) ) > 0) {
-                $errors[] = "Désolé ce nom est déjà utilisé.";
-            } 
-            if (count($errors)) {
-                return Views::render('formation.create', [
-                    'errors' => $errors,
-                    'teachers' => $teachers
-                ]);
-            } else {
-                $formation = new Formation();
-                $teacher = Manager::$em->find(Person::class, $post['teacher']);
-                $formation->setName($post['name']);
-                $formation->setResponsibleProfessor($teacher);
-                
-                Manager::$em->persist($formation);
-                Manager::$em->flush();
-                
-                $formations = Manager::$em->getRepository(Formation::class)->findAll();
-                return Views::render('formation.index', [
-                    'formations' => $formations,
-                ]);
-            }
+            Manager::$em->persist($formation);
+            Manager::$em->flush();
+            $formations = Manager::$em->getRepository(Formation::class)->findAll();
+            
+            return Views::render('formation.index', [
+                'formations' => $formations,
+            ]);
         }
 
         return Views::render('formation.create', [
@@ -73,30 +60,18 @@ class FormationController
         $teachers = Manager::$em->getRepository(Person::class)->findBy(['role' => 'ROLE_TEACHER']);
 
         if (count($post) > 0) {
-            $errors = [];
-            if (count( Manager::$em->getRepository(Formation::class)->findBy( ['name' => $post['name']] ) ) > 0) {
-                $errors[] = "Désolé ce nom est déjà utilisé.";
-            }
-            if (count($errors)) {
-                return Views::render('formation.edit', [
-                    'errors' => $errors,
-                    'formation' => $formation,
-                    'teachers' => $teachers
-                ]);
-            } else {
-                $teacher = Manager::$em->find(Person::class, $post['teacher']);
-                $formation->setName($post['name']);
-                $formation->setResponsibleProfessor($teacher);
-                
-                Manager::$em->persist($formation);
-                Manager::$em->flush();
-                
-                $formations = Manager::$em->getRepository(Formation::class)->findAll();
-                
-                return Views::render('formation.index', [
-                    'formations' => $formations
-                ]);
-            }
+            $teacher = Manager::$em->find(Person::class, $post['teacher']);
+            $formation->setName($post['name']);
+            $formation->setResponsibleProfessor($teacher);
+            
+            Manager::$em->persist($formation);
+            Manager::$em->flush();
+            
+            $formations = Manager::$em->getRepository(Formation::class)->findAll();
+            
+            return Views::render('formation.index', [
+                'formations' => $formations
+            ]);
         }
 
         return Views::render('formation.edit', [
