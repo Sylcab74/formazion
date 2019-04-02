@@ -33,19 +33,14 @@ class RoomController
         if (count($post) > 0) {
             $errors = [];
             $room = new Room();
+            $room->setNumber($post['number']);
+            Manager::$em->persist($room);
+            Manager::$em->flush();
             
-            if (count( Manager::$em->getRepository(Room::class)->findBy( ['number' => $post['number']] ) ) > 0) {
-                $errors[] = "Désolé ce numéro est déjà utilisé.";
-            } else {
-                $room->setNumber($post['number']);
-                Manager::$em->persist($room);
-                Manager::$em->flush();
-                
-                $rooms = Manager::$em->getRepository(Room::class)->findAll();
-                return Views::render('room.index', [
-                    'rooms' => $rooms
-                ]);
-            }
+            $rooms = Manager::$em->getRepository(Room::class)->findAll();
+            return Views::render('room.index', [
+                'rooms' => $rooms
+            ]);
         }
 
         return Views::render('room.create');
@@ -58,19 +53,14 @@ class RoomController
         $room = Manager::$em->find(Room::class, $id);
 
         if (count($post) > 0) {
-            $errors = [];
-            if (count( Manager::$em->getRepository(Room::class)->findBy( ['number' => $post['number']] ) ) > 0) {
-                $errors[] = "Désolé ce numéro est déjà utilisé.";
-            } else {
-                $room->setNumber($post['number']);
-                Manager::$em->persist($room);
-                Manager::$em->flush();
-                
-                $rooms = Manager::$em->getRepository(Room::class)->findAll();
-                return Views::render('room.index', [
-                    'rooms' => $rooms
-                ]);
-            }
+            $room->setNumber($post['number']);
+            Manager::$em->persist($room);
+            Manager::$em->flush();
+            
+            $rooms = Manager::$em->getRepository(Room::class)->findAll();
+            return Views::render('room.index', [
+                'rooms' => $rooms
+            ]);
         }
 
         return Views::render('room.edit', [
