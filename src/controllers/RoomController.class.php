@@ -31,7 +31,6 @@ class RoomController
     {
         $post = $params['POST'];
         if (count($post) > 0) {
-            $errors = [];
             $room = new Room();
             $room->setNumber($post['number']);
             Manager::$em->persist($room);

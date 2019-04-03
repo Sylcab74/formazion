@@ -8,11 +8,6 @@ build:
 	php vendor/bin/doctrine orm:schema-tool:create
 	php vendor/bin/doctrine orm:schema-tool:update --force
 
-test:
-	echo "FIXME: Implement tests"
-
-analysis:
-	echo "FIXME: Implement linting"
 
 #
 # Project specific build rules
